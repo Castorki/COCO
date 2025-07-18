@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { store } from './store/store';
 import { Header } from './components/header/Header';
+import { Footer } from './components/footer/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path='/' element={
             <div className="App">
               <Header />
+              <Footer theme='light' />
             </div>
           }
           />

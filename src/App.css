@@ -38,4 +38,73 @@ a {
 .header__nav_link:last-child {
   margin-left: 34px;
   border-bottom: 1px solid black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+.footer__dark {
+  background-color: #1D1E25;
+}
+.footer__logoAndNavWrapper {
+  display: flex;
+}
+.footer__logo {
+  flex: 1 min-content;
+  display: flex;
+  flex-direction: column;
+  margin-right: 144px;
+}
+.footer__logo_title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 19px;
+}
+.footer__logo_descr {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1D1E25;
+}
+.footer__nav {
+  display: flex;
+  gap: 93px;
+}
+.footer__nav_company, .footer__nav_discover, .footer__nav_product, .footer__nav_helpCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__nav_company_title, .footer__nav_discover_title, .footer__nav_product_title, .footer__nav_helpCenter_title {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1E25;
+}
+.footer__nav_company_link, .footer__nav_discover_link, .footer__nav_product_link, .footer__nav_helpCenter_link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1E25;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #CED1D8;
+  margin-top: 79px;
+  margin-bottom: 59px;
+}
+.footer__bottom_copyright {
+  padding-top: 46px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AFB3BB;
 }/*# sourceMappingURL=App.css.map */

@@ -45,3 +45,87 @@ a {
 
 
 }
+
+.footer {
+
+    &__dark {
+        background-color: #1D1E25;
+    }
+
+    display: flex;
+    flex-direction: column;
+
+    &__logoAndNavWrapper {
+        display: flex;
+    }
+
+    &__logo {
+        flex: 1 min-content;
+        display: flex;
+        flex-direction: column;
+        margin-right: 144px;
+
+        &_title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 19px;
+        }
+
+        &_descr {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            color: #1D1E25;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        gap: 93px;
+
+        &_company,
+        &_discover,
+        &_product,
+        &_helpCenter {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &_title {
+                margin-bottom: 8px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #1D1E25;
+            }
+
+            &_link {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #1D1E25;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #CED1D8;
+        margin-top: 79px;
+        margin-bottom: 59px;
+
+        &_copyright {
+            padding-top: 46px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #AFB3BB;
+        }
+    }
+}
