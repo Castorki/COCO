@@ -4,9 +4,9 @@ import { Product } from './Product'
 import { Discover } from './Discover'
 import { HelpCenter } from './HelpCenter'
 
-export const Navigation = () => {
+export const Navigation = ({theme}) => {
   return (
-    <div className='footer__nav'>
+    <div className={`footer__nav ${theme}`}>
       <Company />
       <Product />
       <Discover />

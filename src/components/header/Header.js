@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
-    <div className='header'>
+    <div className='header center'>
       <div className='header__logo'>
-        <img className='header__logo_imeg' src='logo.svg' alt='Site logo'></img>
+        <img className='header__logo_imeg' src='logoLight.svg' alt='Site logo'></img>
         <h2 className='header__logo_title'>COCA</h2>
       </div>
       <div className='header__nav'>

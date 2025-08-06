@@ -7,7 +7,7 @@ a {
   text-decoration: none;
 }
 
-.App {
+.center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -43,12 +43,89 @@ a {
 .footer {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.footer__backround {
+  position: absolute;
+}
+.footer__backround_greenCircle {
+  position: inherit;
+  z-index: -1;
+  margin-left: calc(50% - 600px);
+  left: 86.5%;
+  top: 0;
+}
+.footer__backround.dark {
+  visibility: hidden;
 }
 .footer__dark {
+  background: #1D1E25;
+}
+.footer__head {
+  display: flex;
+  flex-direction: column;
+  margin-top: 181px;
+  margin-bottom: 52px;
+}
+.footer__head_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+.footer__head_button {
+  align-self: flex-end;
+  max-width: 177px;
+  border-radius: 100px;
+  padding: 10px 32px;
+  background-color: #fff;
+}
+.footer__head_button_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1E25;
+}
+.footer__head_article {
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #AFB3BB;
+  width: 45%;
+}
+.footer__head.light .footer__head_title {
+  color: #1D1E25;
+}
+.footer__head.light .footer__head_button {
   background-color: #1D1E25;
+}
+.footer__head.light .footer__head_button_text {
+  color: #FFFFFF;
+}
+.footer__head.light .footer__head_article::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  height: 1px;
+  width: 76px;
+  background: currentColor;
+}
+.footer__head.light .footer__head_article {
+  padding-left: 100px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #1D1E25;
 }
 .footer__logoAndNavWrapper {
   display: flex;
+  margin-top: 76px;
 }
 .footer__logo {
   flex: 1 min-content;
@@ -69,6 +146,17 @@ a {
   line-height: 26px;
   color: #1D1E25;
 }
+.footer__logo.dark .footer__logo_title {
+  color: #FFFFFF;
+}
+.footer__logo.dark .footer__logo_descr {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7E8492;
+}
 .footer__nav {
   display: flex;
   gap: 93px;
@@ -78,7 +166,7 @@ a {
   flex-direction: column;
   gap: 16px;
 }
-.footer__nav_company_title, .footer__nav_discover_title, .footer__nav_product_title, .footer__nav_helpCenter_title {
+.footer__nav_title {
   margin-bottom: 8px;
   font-style: normal;
   font-weight: 700;
@@ -86,12 +174,18 @@ a {
   line-height: 24px;
   color: #1D1E25;
 }
-.footer__nav_company_link, .footer__nav_discover_link, .footer__nav_product_link, .footer__nav_helpCenter_link {
+.footer__nav_link {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #1D1E25;
+}
+.footer__nav.dark .footer__nav_title {
+  color: #FFFFFF;
+}
+.footer__nav.dark .footer__nav_link {
+  color: #7E8492;
 }
 .footer__bottom {
   display: flex;
@@ -99,12 +193,34 @@ a {
   border-top: 1px solid #CED1D8;
   margin-top: 79px;
   margin-bottom: 59px;
+  padding-top: 40px;
+}
+.footer__bottom_socialMedia {
+  display: flex;
+  gap: 24px;
+}
+.footer__bottom_legal {
+  display: flex;
+  gap: 40px;
+  padding-left: 72px;
+}
+.footer__bottom_legal_link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 .footer__bottom_copyright {
-  padding-top: 46px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #AFB3BB;
+}
+.footer__bottom.dark {
+  justify-content: unset;
+}
+.footer__bottom.dark .footer__bottom_copyright {
+  padding-left: 352px;
 }/*# sourceMappingURL=App.css.map */

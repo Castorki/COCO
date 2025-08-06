@@ -5,8 +5,8 @@ export const FooterBottom = ({ theme }) => {
 
   if (theme === 'dark') {
     return (
-      <div className='footer__bottom'>
-        <div className='footer__bottom__socialMedia'>
+      <div className='footer__bottom dark'>
+        <div className='footer__bottom_socialMedia'>
           <Link to={'/facebook'}><img src='facebook.svg' alt='facebook link'></img></Link>
           <Link to={'/tweeter'}><img src='tweeter.svg' alt='tweeter link'></img></Link>
           <Link to={'/instagram'}><img src='instagram.svg' alt='instagram link'></img></Link>
