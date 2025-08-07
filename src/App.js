@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { store } from './store/store';
 import { Header } from './components/header/Header';
 import { Footer } from './components/footer/Footer';
+import { MainPage } from './components/pages/mainPage/MainPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path='/' element={
             <div className="App">
               <Header />
+              <MainPage />
               <Footer theme='light' />
             </div>
           }

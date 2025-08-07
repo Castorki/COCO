@@ -40,6 +40,73 @@ a {
   border-bottom: 1px solid black;
 }
 
+.main__prewie {
+  padding-top: 87px;
+  padding-bottom: 137px;
+}
+.main__prewie_info {
+  max-width: 617px;
+}
+.main__prewie_info_header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -3px;
+  color: #1D1E25;
+}
+.main__prewie_info_slogan {
+  padding-top: 114px;
+  padding-bottom: 69px;
+  width: 80%;
+  padding-left: 100px;
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  color: #1D1E25;
+}
+.main__prewie_info_slogan::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 135px;
+  height: 1px;
+  width: 76px;
+  background: currentColor;
+}
+.main__prewie_info_buttonWrapper {
+  display: flex;
+  gap: 16px;
+}
+.main__prewie_info_buttonWrapper_email {
+  padding-right: 118px;
+  padding-bottom: 23px;
+  border: none;
+  border-bottom: 1px solid #CED1D8;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #7E8492;
+}
+.main__prewie_info_buttonWrapper_button {
+  padding: 16px 46px;
+  background-color: #1D1E25;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 100px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;

@@ -1,7 +1,10 @@
 import React from 'react'
+import { Prewie } from './Prewie'
 
 export const MainPage = () => {
   return (
-    <div>MainPage</div>
+    <div className='main center'>
+      <Prewie />
+    </div>
   )
 }
