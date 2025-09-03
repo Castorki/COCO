@@ -41,8 +41,29 @@ a {
 }
 
 .main__prewie {
+  display: flex;
   padding-top: 87px;
   padding-bottom: 137px;
+  position: relative;
+  gap: 20px;
+}
+.main__prewie_redCircle {
+  position: absolute;
+  z-index: -2;
+  width: 551px;
+  height: 551px;
+  background-color: #FA7515;
+  border-radius: 100%;
+  filter: blur(110px);
+  opacity: 13%;
+  top: 12px;
+  left: -60px;
+}
+.main__prewie_greenCircle {
+  position: absolute;
+  z-index: -2;
+  left: 570px;
+  top: -10px;
 }
 .main__prewie_info {
   max-width: 617px;
@@ -88,6 +109,7 @@ a {
   padding-bottom: 23px;
   border: none;
   border-bottom: 1px solid #CED1D8;
+  background: none;
   outline: none;
   font-style: normal;
   font-weight: 400;
@@ -105,6 +127,25 @@ a {
   text-align: center;
   color: #FFFFFF;
   border-radius: 100px;
+}
+.main__prewie_graphics {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 29px;
+  justify-content: flex-end;
+}
+.main__prewie_graphics_sales {
+  box-shadow: 20px 40px 80px rgba(89, 96, 135, 0.12);
+}
+.main__prewie_graphics_customerGrowth {
+  position: absolute;
+  bottom: 330px;
+  left: 320px;
+  box-shadow: 20px 40px 80px rgba(45, 51, 81, 0.12);
+}
+.main__prewie_graphics_statistic {
+  box-shadow: 20px 40px 80px rgba(45, 51, 81, 0.12);
 }
 
 .footer {
