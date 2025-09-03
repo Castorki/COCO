@@ -44,10 +44,13 @@ a {
   display: flex;
   padding-top: 87px;
   padding-bottom: 137px;
-  position: relative;
   gap: 20px;
 }
-.main__prewie_redCircle {
+.main__prewie_info {
+  position: relative;
+  max-width: 617px;
+}
+.main__prewie_info_redCircle {
   position: absolute;
   z-index: -2;
   width: 551px;
@@ -56,17 +59,8 @@ a {
   border-radius: 100%;
   filter: blur(110px);
   opacity: 13%;
-  top: 12px;
-  left: -60px;
-}
-.main__prewie_greenCircle {
-  position: absolute;
-  z-index: -2;
-  left: 570px;
-  top: -10px;
-}
-.main__prewie_info {
-  max-width: 617px;
+  top: -65px;
+  left: -75px;
 }
 .main__prewie_info_header {
   font-style: normal;
@@ -135,6 +129,12 @@ a {
   gap: 29px;
   justify-content: flex-end;
 }
+.main__prewie_graphics_greenCircle {
+  position: absolute;
+  z-index: -2;
+  left: -66px;
+  top: -62px;
+}
 .main__prewie_graphics_sales {
   box-shadow: 20px 40px 80px rgba(89, 96, 135, 0.12);
 }
@@ -146,6 +146,58 @@ a {
 }
 .main__prewie_graphics_statistic {
   box-shadow: 20px 40px 80px rgba(45, 51, 81, 0.12);
+}
+.main__ourOffers {
+  background: #1D1E25;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.main__ourOffers_title {
+  width: 60%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #FFFFFF;
+}
+.main__ourOffers_article {
+  width: 53%;
+  margin-top: 24px;
+  margin-bottom: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #7E8492;
+}
+.main__ourOffers_list {
+  display: grid;
+  grid-template-columns: repeat(2, 481px);
+  justify-content: space-between;
+  gap: 56px;
+}
+.main__ourOffers_list_listElement {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main__ourOffers_list_listElement_title {
+  width: 50%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+.main__ourOffers_list_listElement_article {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7E8492;
 }
 
 .footer {
