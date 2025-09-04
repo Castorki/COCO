@@ -3,6 +3,7 @@ import { Prewie } from './Prewie'
 import { OurOffers } from './OurOffers'
 import { Advantages } from './Advantages'
 import { GrowthWithUs } from './GrowthWithUs'
+import { Partners } from './Partners'
 
 export const MainPage = () => {
   return (
@@ -11,6 +12,7 @@ export const MainPage = () => {
       <OurOffers />
       <Advantages />
       <GrowthWithUs />
+      <Partners />
     </div>
   )
 }
