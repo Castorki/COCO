@@ -6,6 +6,9 @@
 a {
     text-decoration: none;
 }
+body{
+    font-family: 'Inter', sans-serif;
+}
 
 .center {
     padding-left: calc(50% - 600px);
@@ -232,7 +235,99 @@ a {
         }
 
     }
+
+    &__advantages {
+        display: flex;
+        padding-top: 160px;
+        padding-bottom: 94px;
+        gap: 58px;
+
+        &_photoWrapper {
+            position: relative;
+
+            &_barChart {
+                position: absolute;
+                left: 259px;
+                top: 313px;
+            }
+        }
+
+        &_wrapper {
+
+            &_title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 56px;
+                line-height: 120%;
+                letter-spacing: -2px;
+                color: #1D1E25;
+            }
+
+            &_article {
+                max-width: 360px;
+                margin-top: 24px;
+                margin-bottom: 40px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 32px;
+                color: #7E8492;
+            }
+
+            &_list {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                max-width: 400px;
+
+                &_element {
+                    list-style: none;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 32px;
+                    color: #1D1E25;
+                    position: relative;
+                    margin-left: 40px;
+                }
+
+                &_element::before {
+                    content: url('../public/listMarker.svg');
+                    margin-right: 16px;
+                    position: absolute;
+                    top: 22px;
+                    left: -40px;
+
+                }
+            }
+        }
+    }
 }
+
+/* Automate your sales, marketing and service in one platform. Avoid date leaks and enable consistent messaging */
+
+// width: 360px;
+// height: 96px;
+
+// /* Heading/H6/Medium */
+// font-family: 'Inter';
+// font-style: normal;
+// font-weight: 500;
+// font-size: 18px;
+// line-height: 32px;
+// /* or 178% */
+// display: flex;
+// align-items: center;
+
+// /* Neutral/60 */
+// color: #7E8492;
+
+
+// /* Inside auto layout */
+// flex: none;
+// order: 1;
+// flex-grow: 0;
+
 
 .footer {
     display: flex;

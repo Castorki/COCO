@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -199,7 +203,63 @@ a {
   line-height: 26px;
   color: #7E8492;
 }
+.main__advantages {
+  display: flex;
+  padding-top: 160px;
+  padding-bottom: 94px;
+  gap: 58px;
+}
+.main__advantages_photoWrapper {
+  position: relative;
+}
+.main__advantages_photoWrapper_barChart {
+  position: absolute;
+  left: 259px;
+  top: 313px;
+}
+.main__advantages_wrapper_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #1D1E25;
+}
+.main__advantages_wrapper_article {
+  max-width: 360px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
+}
+.main__advantages_wrapper_list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 400px;
+}
+.main__advantages_wrapper_list_element {
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1D1E25;
+  position: relative;
+  margin-left: 40px;
+}
+.main__advantages_wrapper_list_element::before {
+  content: url("../public/listMarker.svg");
+  margin-right: 16px;
+  position: absolute;
+  top: 22px;
+  left: -40px;
+}
 
+/* Automate your sales, marketing and service in one platform. Avoid date leaks and enable consistent messaging */
 .footer {
   display: flex;
   flex-direction: column;
