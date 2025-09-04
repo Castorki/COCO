@@ -258,8 +258,68 @@ body {
   top: 22px;
   left: -40px;
 }
+.main__growthWithUs {
+  margin-top: 66px;
+  margin-bottom: 160px;
+}
+.main__growthWithUs_info {
+  display: flex;
+  gap: 143px;
+}
+.main__growthWithUs_info_element {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  position: relative;
+}
+.main__growthWithUs_info_element_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 120%;
+  color: #1D1E25;
+}
+.main__growthWithUs_info_element_article {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
+}
+.main__growthWithUs_info_element:not(:first-child):after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 99px;
+  background-color: #CED1D8;
+  bottom: 30px;
+  left: -72px;
+}
+.main__growthWithUs_photo {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.main__growthWithUs_quote {
+  display: flex;
+  gap: 177px;
+}
+.main__growthWithUs_quote_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #1D1E25;
+}
+.main__growthWithUs_quote_article {
+  max-width: 420px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
+}
 
-/* Automate your sales, marketing and service in one platform. Avoid date leaks and enable consistent messaging */
 .footer {
   display: flex;
   flex-direction: column;
@@ -267,6 +327,7 @@ body {
 }
 .footer__backround {
   position: absolute;
+  z-index: -1;
 }
 .footer__backround_greenCircle {
   position: inherit;
