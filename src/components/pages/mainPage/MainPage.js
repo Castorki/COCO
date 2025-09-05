@@ -4,6 +4,7 @@ import { OurOffers } from './OurOffers'
 import { Advantages } from './Advantages'
 import { GrowthWithUs } from './GrowthWithUs'
 import { Partners } from './Partners'
+import { Benefits } from './Benefits'
 
 export const MainPage = () => {
   return (
@@ -13,6 +14,7 @@ export const MainPage = () => {
       <Advantages />
       <GrowthWithUs />
       <Partners />
+      <Benefits />
     </div>
   )
 }

@@ -374,6 +374,70 @@ body {
   padding: 31px 33px;
   margin-left: 30px;
 }
+.main__benefits {
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+.main__benefits_title {
+  max-width: 601px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #1D1E25;
+}
+.main__benefits_article {
+  margin-top: 24px;
+  margin-bottom: 80px;
+  max-width: 462px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
+}
+.main__benefits_list {
+  display: grid;
+  grid-template-columns: repeat(2, 568px);
+  row-gap: 56px;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+}
+.main__benefits_list_listEl {
+  display: flex;
+  gap: 60px;
+}
+.main__benefits_list_listEl_pictures {
+  position: relative;
+}
+.main__benefits_list_listEl_pictures_icon {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+.main__benefits_list_listEl_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.main__benefits_list_listEl_info_title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  color: #1D1E25;
+}
+.main__benefits_list_listEl_info_article {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7E8492;
+}
 
 .footer {
   display: flex;
