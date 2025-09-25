@@ -514,6 +514,108 @@ body {
             }
         }
     }
+
+    &__trandingNews {
+        padding-top: 60px;
+        padding-bottom: 91px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 120%;
+            letter-spacing: -2px;
+            color: #1D1E25;
+        }
+
+        &_article {
+            padding-top: 24px;
+            padding-bottom: 80px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+            color: #7E8492;
+        }
+
+        &_wrapper {
+            display: flex;
+            gap: 32px;
+            position: relative;
+
+            &_itemWrapper {
+
+                &_publishData {
+
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    &_dateOfPublication {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: #7E8492;
+                    }
+
+                    &_author {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: #7E8492;
+                    }
+
+                }
+
+                &_title {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 150%;
+                    letter-spacing: -0.02em;
+                    color: #1D1E25;
+                }
+
+                &_nav {
+                    position: absolute;
+                    z-index: 1;
+                    right: 47%;
+                    bottom: 50%;
+                    background-color: #fff;
+                    padding: 33px 27px;
+                    border-radius: 100%;
+
+                    &_button {
+                        position: absolute;
+                        width: 20px;
+                        height: 40px;
+                        background: none;
+                        border: none;
+
+                        &.left {
+                            left: 21px;
+                            top: 22px;
+                        }
+
+                        &.right {
+                            left: 42px;
+                            top: 22px;
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
+    }
 }
 
 .footer {

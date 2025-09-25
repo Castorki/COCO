@@ -438,6 +438,87 @@ body {
   line-height: 26px;
   color: #7E8492;
 }
+.main__trandingNews {
+  padding-top: 60px;
+  padding-bottom: 91px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__trandingNews_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #1D1E25;
+}
+.main__trandingNews_article {
+  padding-top: 24px;
+  padding-bottom: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
+}
+.main__trandingNews_wrapper {
+  display: flex;
+  gap: 32px;
+  position: relative;
+}
+.main__trandingNews_wrapper_itemWrapper_publishData {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.main__trandingNews_wrapper_itemWrapper_publishData_dateOfPublication {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7E8492;
+}
+.main__trandingNews_wrapper_itemWrapper_publishData_author {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #7E8492;
+}
+.main__trandingNews_wrapper_itemWrapper_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #1D1E25;
+}
+.main__trandingNews_wrapper_itemWrapper_nav {
+  position: absolute;
+  z-index: 1;
+  right: 47%;
+  bottom: 50%;
+  background-color: #fff;
+  padding: 33px 27px;
+  border-radius: 100%;
+}
+.main__trandingNews_wrapper_itemWrapper_nav_button {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+.main__trandingNews_wrapper_itemWrapper_nav_button.left {
+  left: 21px;
+  top: 22px;
+}
+.main__trandingNews_wrapper_itemWrapper_nav_button.right {
+  left: 42px;
+  top: 22px;
+}
 
 .footer {
   display: flex;

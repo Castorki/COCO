@@ -5,6 +5,7 @@ import { Advantages } from './Advantages'
 import { GrowthWithUs } from './GrowthWithUs'
 import { Partners } from './Partners'
 import { Benefits } from './Benefits'
+import { TrandingNews } from './TrandingNews'
 
 export const MainPage = () => {
   return (
@@ -15,6 +16,7 @@ export const MainPage = () => {
       <GrowthWithUs />
       <Partners />
       <Benefits />
+      <TrandingNews />
     </div>
   )
 }
