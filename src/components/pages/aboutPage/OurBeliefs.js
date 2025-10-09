@@ -16,6 +16,7 @@ export const OurBeliefs = () => {
                     Over the years at Sans, we’ve put a lot of thought into what it is that makes us who we are. The qualities that unite us, that make us such an effective team, and...
                 </p>
                 <button className='ourBeliefs__miniBlog_button'><span className='ourBeliefs__miniBlog_button-text'> See Details &rarr;</span></button>
+            <div className='ourBeliefs__miniBlog_redCircle'></div>
             </div>
         </div>
     )

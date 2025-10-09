@@ -46,13 +46,14 @@
 .ourBeliefs {
   padding-bottom: 165px;
   display: flex;
+  position: relative;
 }
 .ourBeliefs__buttonWraper {
   position: relative;
 }
 .ourBeliefs__buttonWraper_arrows {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 21%;
   left: -4px;
 }
@@ -64,6 +65,7 @@
   border: none;
 }
 .ourBeliefs__buttonWraper_button.left {
+  z-index: 1;
   height: 100px;
   width: 50px;
   right: -10px;
@@ -72,6 +74,7 @@
   clip-path: ellipse(50px 50% at right center);
 }
 .ourBeliefs__buttonWraper_button.right {
+  z-index: 1;
   height: 100px;
   width: 50px;
   left: 10px;
@@ -80,6 +83,7 @@
   clip-path: ellipse(50px 50% at left center);
 }
 .ourBeliefs__miniBlog {
+  position: relative;
   padding-left: 32px;
 }
 .ourBeliefs__miniBlog_title {
@@ -111,4 +115,16 @@
   text-align: center;
   color: #FFFFFF;
   border-radius: 100px;
+}
+.ourBeliefs__miniBlog_redCircle {
+  position: absolute;
+  z-index: -2;
+  width: 551px;
+  height: 551px;
+  background-color: #FA7515;
+  border-radius: 100%;
+  filter: blur(110px);
+  opacity: 13%;
+  top: 57%;
+  right: 100%;
 }/*# sourceMappingURL=AboutPage.css.map */
