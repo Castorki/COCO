@@ -15,9 +15,9 @@ export const TrandingNews = () => {
                     <h2 className='trandingNews__wrapper_itemWrapper_title'>What makes an authentic employee profile, and why does it matter ?</h2>
                 </div>
                 <div className='trandingNews__wrapper_itemWrapper_nav'>
-                    <img className='main__trandingNews_wrapper_itemWrapper_nav_arrows' src='newsArrows.svg' alt='news navigation'></img>
-                    <button className='main__trandingNews_wrapper_itemWrapper_nav_button left'></button>
-                    <button className='main__trandingNews_wrapper_itemWrapper_nav_button right'></button>
+                    <img className='trandingNews__wrapper_itemWrapper_nav_arrows' src='newsArrows.svg' alt='news navigation'></img>
+                    <button className='trandingNews__wrapper_itemWrapper_nav_button left'></button>
+                    <button className='trandingNews__wrapper_itemWrapper_nav_button right'></button>
                 </div>
                 <div className='trandingNews__wrapper_itemWrapper'>
                     <img className='trandingNews__wrapper_itemWrapper_img' src='kaylenRalationship.png' alt='Kaylen ralationship'></img>

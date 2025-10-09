@@ -1,5 +1,4 @@
 .audienceAttention {
-  position: relative;
   padding-top: 105px;
   padding-bottom: 135px;
   display: flex;
@@ -42,4 +41,74 @@
   position: absolute;
   left: 85%;
   bottom: 45px;
+}
+
+.ourBeliefs {
+  padding-bottom: 165px;
+  display: flex;
+}
+.ourBeliefs__buttonWraper {
+  position: relative;
+}
+.ourBeliefs__buttonWraper_arrows {
+  position: absolute;
+  z-index: 1;
+  top: 21%;
+  left: -4px;
+}
+.ourBeliefs__buttonWraper_button {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+.ourBeliefs__buttonWraper_button.left {
+  height: 100px;
+  width: 50px;
+  right: -10px;
+  top: 92px;
+  background-color: #FFFFFF;
+  clip-path: ellipse(50px 50% at right center);
+}
+.ourBeliefs__buttonWraper_button.right {
+  height: 100px;
+  width: 50px;
+  left: 10px;
+  top: 92px;
+  background-color: #FFFFFF;
+  clip-path: ellipse(50px 50% at left center);
+}
+.ourBeliefs__miniBlog {
+  padding-left: 32px;
+}
+.ourBeliefs__miniBlog_title {
+  padding-top: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #1D1E25;
+}
+.ourBeliefs__miniBlog_article {
+  padding-top: 8px;
+  padding-bottom: 32px;
+  max-width: 70%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
+}
+.ourBeliefs__miniBlog_button {
+  padding: 16px 46px;
+  background-color: #1D1E25;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 100px;
 }/*# sourceMappingURL=AboutPage.css.map */
