@@ -2,8 +2,11 @@
   position: relative;
   padding-top: 105px;
   padding-bottom: 135px;
+  display: flex;
+  flex-direction: column;
 }
 .audienceAttention__header {
+  max-width: 70%;
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
@@ -12,10 +15,31 @@
   color: #1D1E25;
 }
 .audienceAttention__article {
+  padding-top: 118px;
+  max-width: 55%;
+  padding-left: 100px;
+  position: relative;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
   line-height: 42px;
   letter-spacing: -1px;
   color: #1D1E25;
+}
+.audienceAttention__article::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 60%;
+  height: 1px;
+  width: 76px;
+  background: currentColor;
+}
+.audienceAttention__link {
+  position: relative;
+}
+.audienceAttention__link_icon {
+  position: absolute;
+  left: 85%;
+  bottom: 45px;
 }/*# sourceMappingURL=AboutPage.css.map */

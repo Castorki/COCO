@@ -2,8 +2,13 @@
     position: relative;
     padding-top: 105px;
     padding-bottom: 135px;
+    display: flex;
+    flex-direction: column;
+    // gap: 118px;
 
     &__header {
+        max-width: 70%;
+
         font-style: normal;
         font-weight: 700;
         font-size: 72px;
@@ -13,6 +18,10 @@
     }
 
     &__article {
+        padding-top: 118px;
+        max-width: 55%;
+        padding-left: 100px;
+        position: relative;
         font-style: normal;
         font-weight: 600;
         font-size: 32px;
@@ -20,14 +29,24 @@
         letter-spacing: -1px;
         color: #1D1E25;
 
-        // &::before {
-        //     content: "";
-        //     position: absolute;
-        //     left: 0;
-        //     top: 135px;
-        //     height: 1px;
-        //     width: 76px;
-        //     background: currentColor;
-        // }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            bottom: 60%;
+            height: 1px;
+            width: 76px;
+            background: currentColor;
+        }
+    }
+
+    &__link {
+        position: relative;
+
+        &_icon {
+            position: absolute;
+            left: 85%;
+            bottom: 45px;
+        }
     }
 }
