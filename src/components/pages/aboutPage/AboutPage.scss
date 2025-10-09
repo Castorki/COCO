@@ -1,0 +1,33 @@
+.audienceAttention {
+    position: relative;
+    padding-top: 105px;
+    padding-bottom: 135px;
+
+    &__header {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 120%;
+        letter-spacing: -3px;
+        color: #1D1E25;
+    }
+
+    &__article {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: -1px;
+        color: #1D1E25;
+
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     left: 0;
+        //     top: 135px;
+        //     height: 1px;
+        //     width: 76px;
+        //     background: currentColor;
+        // }
+    }
+}

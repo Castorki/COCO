@@ -1,0 +1,21 @@
+.audienceAttention {
+  position: relative;
+  padding-top: 105px;
+  padding-bottom: 135px;
+}
+.audienceAttention__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  letter-spacing: -3px;
+  color: #1D1E25;
+}
+.audienceAttention__article {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: -1px;
+  color: #1D1E25;
+}/*# sourceMappingURL=AboutPage.css.map */

@@ -5,6 +5,7 @@ import { store } from './store/store';
 import { Header } from './components/header/Header';
 import { Footer } from './components/footer/Footer';
 import { MainPage } from './components/pages/mainPage/MainPage';
+import { AudienceAttention } from './components/pages/aboutPage/AudienceAttention';
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
           <Route path='/about' element={
             <div className="App">
               <Header />
+              <AudienceAttention />
+              <Footer theme='dark' />
             </div>
           }
           />

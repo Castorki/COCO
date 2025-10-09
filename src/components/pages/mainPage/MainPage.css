@@ -1,14 +1,14 @@
-.main__prewie {
+.prewie {
   display: flex;
   padding-top: 87px;
   padding-bottom: 137px;
   gap: 20px;
 }
-.main__prewie_info {
+.prewie__info {
   position: relative;
   max-width: 617px;
 }
-.main__prewie_info_redCircle {
+.prewie__info_redCircle {
   position: absolute;
   z-index: -2;
   width: 551px;
@@ -20,7 +20,7 @@
   top: -65px;
   left: -75px;
 }
-.main__prewie_info_header {
+.prewie__info_header {
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -30,7 +30,7 @@
   letter-spacing: -3px;
   color: #1D1E25;
 }
-.main__prewie_info_slogan {
+.prewie__info_slogan {
   padding-top: 114px;
   padding-bottom: 69px;
   width: 80%;
@@ -43,7 +43,7 @@
   letter-spacing: -1px;
   color: #1D1E25;
 }
-.main__prewie_info_slogan::before {
+.prewie__info_slogan::before {
   content: "";
   position: absolute;
   left: 0;
@@ -52,11 +52,11 @@
   width: 76px;
   background: currentColor;
 }
-.main__prewie_info_buttonWrapper {
+.prewie__info_buttonWrapper {
   display: flex;
   gap: 16px;
 }
-.main__prewie_info_buttonWrapper_email {
+.prewie__info_buttonWrapper_email {
   padding-right: 118px;
   padding-bottom: 23px;
   border: none;
@@ -69,7 +69,7 @@
   line-height: 150%;
   color: #7E8492;
 }
-.main__prewie_info_buttonWrapper_button {
+.prewie__info_buttonWrapper_button {
   padding: 16px 46px;
   background-color: #1D1E25;
   font-style: normal;
@@ -80,37 +80,38 @@
   color: #FFFFFF;
   border-radius: 100px;
 }
-.main__prewie_graphics {
+.prewie__graphics {
   display: flex;
   position: relative;
   flex-direction: column;
   gap: 29px;
   justify-content: flex-end;
 }
-.main__prewie_graphics_greenCircle {
+.prewie__graphics_greenCircle {
   position: absolute;
   z-index: -2;
   left: -66px;
   top: -62px;
 }
-.main__prewie_graphics_sales {
+.prewie__graphics_sales {
   box-shadow: 20px 40px 80px rgba(89, 96, 135, 0.12);
 }
-.main__prewie_graphics_customerGrowth {
+.prewie__graphics_customerGrowth {
   position: absolute;
   bottom: 330px;
   left: 320px;
   box-shadow: 20px 40px 80px rgba(45, 51, 81, 0.12);
 }
-.main__prewie_graphics_statistic {
+.prewie__graphics_statistic {
   box-shadow: 20px 40px 80px rgba(45, 51, 81, 0.12);
 }
-.main__ourOffers {
+
+.ourOffers {
   background: #1D1E25;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.main__ourOffers_title {
+.ourOffers__title {
   width: 60%;
   font-style: normal;
   font-weight: 600;
@@ -119,7 +120,7 @@
   letter-spacing: -2px;
   color: #FFFFFF;
 }
-.main__ourOffers_article {
+.ourOffers__article {
   width: 53%;
   margin-top: 24px;
   margin-bottom: 80px;
@@ -129,19 +130,19 @@
   line-height: 150%;
   color: #7E8492;
 }
-.main__ourOffers_list {
+.ourOffers__list {
   display: grid;
   grid-template-columns: repeat(2, 481px);
   justify-content: space-between;
   gap: 56px;
 }
-.main__ourOffers_list_listElement {
+.ourOffers__list_listElement {
   display: flex;
   gap: 24px;
   flex-direction: column;
   align-items: flex-start;
 }
-.main__ourOffers_list_listElement_title {
+.ourOffers__list_listElement_title {
   width: 50%;
   font-style: normal;
   font-weight: 600;
@@ -150,28 +151,29 @@
   letter-spacing: -1px;
   color: #FFFFFF;
 }
-.main__ourOffers_list_listElement_article {
+.ourOffers__list_listElement_article {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   color: #7E8492;
 }
-.main__advantages {
+
+.advantages {
   display: flex;
   padding-top: 160px;
   padding-bottom: 94px;
   gap: 58px;
 }
-.main__advantages_photoWrapper {
+.advantages__photoWrapper {
   position: relative;
 }
-.main__advantages_photoWrapper_barChart {
+.advantages__photoWrapper_barChart {
   position: absolute;
   left: 259px;
   top: 313px;
 }
-.main__advantages_wrapper_title {
+.advantages__wrapper_title {
   font-style: normal;
   font-weight: 600;
   font-size: 56px;
@@ -179,7 +181,7 @@
   letter-spacing: -2px;
   color: #1D1E25;
 }
-.main__advantages_wrapper_article {
+.advantages__wrapper_article {
   max-width: 360px;
   margin-top: 24px;
   margin-bottom: 40px;
@@ -189,13 +191,13 @@
   line-height: 32px;
   color: #7E8492;
 }
-.main__advantages_wrapper_list {
+.advantages__wrapper_list {
   display: flex;
   flex-direction: column;
   gap: 32px;
   max-width: 400px;
 }
-.main__advantages_wrapper_list_element {
+.advantages__wrapper_list_element {
   list-style: none;
   font-style: normal;
   font-weight: 500;
@@ -205,42 +207,43 @@
   position: relative;
   margin-left: 40px;
 }
-.main__advantages_wrapper_list_element::before {
+.advantages__wrapper_list_element::before {
   content: url("../../../../public/listMarker.svg");
   margin-right: 16px;
   position: absolute;
   top: 22px;
   left: -40px;
 }
-.main__growthWithUs {
+
+.growthWithUs {
   margin-top: 66px;
   margin-bottom: 160px;
 }
-.main__growthWithUs_info {
+.growthWithUs__info {
   display: flex;
   gap: 143px;
 }
-.main__growthWithUs_info_element {
+.growthWithUs__info_element {
   display: flex;
   gap: 8px;
   flex-direction: column;
   position: relative;
 }
-.main__growthWithUs_info_element_title {
+.growthWithUs__info_element_title {
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
   line-height: 120%;
   color: #1D1E25;
 }
-.main__growthWithUs_info_element_article {
+.growthWithUs__info_element_article {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
   color: #7E8492;
 }
-.main__growthWithUs_info_element:not(:first-child):after {
+.growthWithUs__info_element:not(:first-child):after {
   content: "";
   position: absolute;
   width: 1px;
@@ -249,15 +252,15 @@
   bottom: 30px;
   left: -72px;
 }
-.main__growthWithUs_photo {
+.growthWithUs__photo {
   margin-top: 80px;
   margin-bottom: 80px;
 }
-.main__growthWithUs_quote {
+.growthWithUs__quote {
   display: flex;
   gap: 177px;
 }
-.main__growthWithUs_quote_title {
+.growthWithUs__quote_title {
   font-style: normal;
   font-weight: 600;
   font-size: 56px;
@@ -265,7 +268,7 @@
   letter-spacing: -2px;
   color: #1D1E25;
 }
-.main__growthWithUs_quote_article {
+.growthWithUs__quote_article {
   max-width: 420px;
   font-style: normal;
   font-weight: 500;
@@ -273,7 +276,8 @@
   line-height: 32px;
   color: #7E8492;
 }
-.main__partners {
+
+.partners {
   padding-top: 103px;
   padding-bottom: 103px;
   display: flex;
@@ -281,7 +285,7 @@
   align-items: center;
   position: relative;
 }
-.main__partners::before {
+.partners::before {
   content: "";
   background-color: #EDEDED;
   width: 100%;
@@ -290,7 +294,7 @@
   position: absolute;
   top: 0px;
 }
-.main__partners::after {
+.partners::after {
   content: "";
   background-color: #EDEDED;
   width: 100%;
@@ -299,12 +303,12 @@
   position: absolute;
   bottom: 0px;
 }
-.main__partners_info {
+.partners__info {
   display: flex;
   flex-direction: column;
   max-width: 323px;
 }
-.main__partners_info_title {
+.partners__info_title {
   font-style: normal;
   font-weight: 600;
   font-size: 56px;
@@ -312,27 +316,28 @@
   letter-spacing: -2px;
   color: #1D1E25;
 }
-.main__partners_info_article {
+.partners__info_article {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
   color: #7E8492;
 }
-.main__partners_logos {
+.partners__logos {
   display: grid;
   grid-template-columns: repeat(4, 160px);
   justify-items: center;
 }
-.main__partners_logos_logo {
+.partners__logos_logo {
   padding: 31px 33px;
   margin-left: 30px;
 }
-.main__benefits {
+
+.benefits {
   margin-top: 160px;
   margin-bottom: 100px;
 }
-.main__benefits_title {
+.benefits__title {
   max-width: 601px;
   font-style: normal;
   font-weight: 600;
@@ -341,7 +346,7 @@
   letter-spacing: -2px;
   color: #1D1E25;
 }
-.main__benefits_article {
+.benefits__article {
   margin-top: 24px;
   margin-bottom: 80px;
   max-width: 462px;
@@ -351,32 +356,32 @@
   line-height: 32px;
   color: #7E8492;
 }
-.main__benefits_list {
+.benefits__list {
   display: grid;
   grid-template-columns: repeat(2, 568px);
   row-gap: 56px;
   -moz-column-gap: 64px;
        column-gap: 64px;
 }
-.main__benefits_list_listEl {
+.benefits__list_listEl {
   display: flex;
   gap: 60px;
 }
-.main__benefits_list_listEl_pictures {
+.benefits__list_listEl_pictures {
   position: relative;
 }
-.main__benefits_list_listEl_pictures_icon {
+.benefits__list_listEl_pictures_icon {
   position: absolute;
   right: 10px;
   top: 12px;
 }
-.main__benefits_list_listEl_info {
+.benefits__list_listEl_info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 24px;
 }
-.main__benefits_list_listEl_info_title {
+.benefits__list_listEl_info_title {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -385,21 +390,22 @@
   letter-spacing: -1px;
   color: #1D1E25;
 }
-.main__benefits_list_listEl_info_article {
+.benefits__list_listEl_info_article {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   color: #7E8492;
 }
-.main__trandingNews {
+
+.trandingNews {
   padding-top: 60px;
   padding-bottom: 91px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.main__trandingNews_title {
+.trandingNews__title {
   font-style: normal;
   font-weight: 600;
   font-size: 56px;
@@ -407,7 +413,7 @@
   letter-spacing: -2px;
   color: #1D1E25;
 }
-.main__trandingNews_article {
+.trandingNews__article {
   padding-top: 24px;
   padding-bottom: 80px;
   font-style: normal;
@@ -416,32 +422,32 @@
   line-height: 32px;
   color: #7E8492;
 }
-.main__trandingNews_wrapper {
+.trandingNews__wrapper {
   display: flex;
   gap: 32px;
   position: relative;
 }
-.main__trandingNews_wrapper_itemWrapper_publishData {
+.trandingNews__wrapper_itemWrapper_publishData {
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;
   justify-content: space-between;
 }
-.main__trandingNews_wrapper_itemWrapper_publishData_dateOfPublication {
+.trandingNews__wrapper_itemWrapper_publishData_dateOfPublication {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #7E8492;
 }
-.main__trandingNews_wrapper_itemWrapper_publishData_author {
+.trandingNews__wrapper_itemWrapper_publishData_author {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #7E8492;
 }
-.main__trandingNews_wrapper_itemWrapper_title {
+.trandingNews__wrapper_itemWrapper_title {
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -449,7 +455,7 @@
   letter-spacing: -0.02em;
   color: #1D1E25;
 }
-.main__trandingNews_wrapper_itemWrapper_nav {
+.trandingNews__wrapper_itemWrapper_nav {
   position: absolute;
   z-index: 1;
   right: 47%;
@@ -458,34 +464,35 @@
   padding: 33px 27px;
   border-radius: 100%;
 }
-.main__trandingNews_wrapper_itemWrapper_nav_button {
+.trandingNews__wrapper_itemWrapper_nav_button {
   position: absolute;
   width: 20px;
   height: 40px;
   background: none;
   border: none;
 }
-.main__trandingNews_wrapper_itemWrapper_nav_button.left {
+.trandingNews__wrapper_itemWrapper_nav_button.left {
   left: 21px;
   top: 22px;
 }
-.main__trandingNews_wrapper_itemWrapper_nav_button.right {
+.trandingNews__wrapper_itemWrapper_nav_button.right {
   left: 42px;
   top: 22px;
 }
-.main__rewies {
+
+.rewies {
   padding-top: 69px;
   padding-bottom: 160px;
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.main__rewies_header {
+.rewies__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main__rewies_header_title {
+.rewies__header_title {
   width: 40%;
   font-style: normal;
   font-weight: 600;
@@ -494,7 +501,7 @@
   letter-spacing: -2px;
   color: #101010;
 }
-.main__rewies_header_article {
+.rewies__header_article {
   width: 30%;
   font-style: normal;
   font-weight: 500;
@@ -502,20 +509,25 @@
   line-height: 32px;
   color: #7E8492;
 }
-.main__rewies_watermark {
-  position: absolute;
+.rewies__watermarkWrapper {
+  position: relative;
 }
-.main__rewies_rewieWrapper {
+.rewies__watermarkWrapper_watermark {
+  position: absolute;
+  top: 47px;
+  left: 47px;
+}
+.rewies__rewieWrapper {
   padding-top: 112px;
   max-width: 960px;
   display: flex;
   flex-direction: column;
   align-self: flex-end;
 }
-.main__rewies_rewieWrapper_rating {
+.rewies__rewieWrapper_rating {
   width: 164px;
 }
-.main__rewies_rewieWrapper_rewieText {
+.rewies__rewieWrapper_rewieText {
   padding-top: 16px;
   padding-bottom: 40px;
   width: 90%;
@@ -526,49 +538,49 @@
   letter-spacing: -1px;
   color: #1D1E25;
 }
-.main__rewies_rewieWrapper_footer {
+.rewies__rewieWrapper_footer {
   display: flex;
   justify-content: space-between;
 }
-.main__rewies_rewieWrapper_footer_author {
+.rewies__rewieWrapper_footer_author {
   display: flex;
   gap: 24px;
 }
-.main__rewies_rewieWrapper_footer_author_authorInfo {
+.rewies__rewieWrapper_footer_author_authorInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 4px;
 }
-.main__rewies_rewieWrapper_footer_author_authorInfo_name {
+.rewies__rewieWrapper_footer_author_authorInfo_name {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
   color: #1D1E25;
 }
-.main__rewies_rewieWrapper_footer_author_authorInfo_position {
+.rewies__rewieWrapper_footer_author_authorInfo_position {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   color: #7E8492;
 }
-.main__rewies_rewieWrapper_footer_buttonWrapper {
+.rewies__rewieWrapper_footer_buttonWrapper {
   display: flex;
   gap: 16px;
 }
-.main__rewies_rewieWrapper_footer_buttonWrapper_button {
+.rewies__rewieWrapper_footer_buttonWrapper_button {
   padding: 19px 18px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
 }
-.main__rewies_rewieWrapper_footer_buttonWrapper_button.left {
+.rewies__rewieWrapper_footer_buttonWrapper_button.left {
   background-color: #fff;
   border: 1px solid #CED1D8;
 }
-.main__rewies_rewieWrapper_footer_buttonWrapper_button.right {
+.rewies__rewieWrapper_footer_buttonWrapper_button.right {
   background-color: #1D1E25;
   border: 1px solid #1D1E25;
 }/*# sourceMappingURL=MainPage.css.map */

@@ -11,7 +11,7 @@ import { Rewies } from './Rewies';
 
 export const MainPage = () => {
   return (
-    <div className='main '>
+    <div>
       <Prewie />
       <OurOffers />
       <Advantages />
