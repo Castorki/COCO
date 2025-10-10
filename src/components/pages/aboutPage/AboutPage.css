@@ -217,7 +217,29 @@
   gap: 32px;
 }
 .ourTeam__list_buttonWraper {
+  display: flex;
   position: absolute;
+  z-index: 1;
+  left: 29.5%;
+  top: 37%;
+  background-color: #fff;
+  padding: 33px 27px;
+  border-radius: 100%;
+}
+.ourTeam__list_buttonWraper .ourTeam__buttonWraper_button {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background: none;
+  border: none;
+}
+.ourTeam__list_buttonWraper .ourTeam__buttonWraper_button.left {
+  left: 21px;
+  top: 22px;
+}
+.ourTeam__list_buttonWraper .ourTeam__buttonWraper_button.right {
+  left: 42px;
+  top: 22px;
 }
 .ourTeam__list .ourTeam__item {
   display: flex;
