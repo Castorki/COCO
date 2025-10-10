@@ -130,11 +130,30 @@
 }
 
 .ourSpecialization {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.ourSpecialization::before {
+  content: "";
+  background-color: #EDEDED;
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  position: absolute;
+  top: 0px;
+}
+.ourSpecialization::after {
+  content: "";
+  background-color: #EDEDED;
+  width: 100%;
+  max-width: 1200px;
+  height: 1px;
+  position: absolute;
+  bottom: 0px;
 }
 .ourSpecialization__title {
   max-width: 40%;
@@ -151,5 +170,110 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 150%;
+  color: #1D1E25;
+}
+
+.ourTeam {
+  padding-top: 160px;
+  padding-bottom: 165px;
+}
+.ourTeam__header {
+  position: relative;
+}
+.ourTeam__header_title {
+  max-width: 60%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #1D1E25;
+}
+.ourTeam__header_article {
+  padding-top: 24px;
+  max-width: 43.5%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
+}
+.ourTeam__header_greenCircle {
+  position: absolute;
+  z-index: -2;
+  width: 525px;
+  height: 525px;
+  background-color: rgba(226, 248, 240, 0.7);
+  border-radius: 100%;
+  filter: blur(90px);
+  top: -55%;
+  right: 0;
+}
+.ourTeam__list {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  position: relative;
+  gap: 32px;
+}
+.ourTeam__list_buttonWraper {
+  position: absolute;
+}
+.ourTeam__list .ourTeam__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ourTeam__list .ourTeam__item_personalDate {
+  display: flex;
+  gap: 51px;
+}
+.ourTeam__list .ourTeam__item_personalDate .ourTeam__personalDate_name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #1D1E25;
+}
+.ourTeam__list .ourTeam__item_personalDate .ourTeam__personalDate_jobTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #7E8492;
+}
+.ourTeam__list .ourTeam__item_personalDate .ourTeam__personalDate_socialMedia {
+  display: flex;
+  gap: 8px;
+}
+.ourTeam__footer {
+  display: flex;
+  gap: 71px;
+  position: relative;
+}
+.ourTeam__footer_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #1D1E25;
+}
+.ourTeam__footer_article {
+  max-width: 42%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
+}
+.ourTeam__footer_otherOptions {
+  position: absolute;
+  right: 345px;
+  bottom: -10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
   color: #1D1E25;
 }/*# sourceMappingURL=AboutPage.css.map */
