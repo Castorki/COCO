@@ -1,0 +1,250 @@
+.pricingHeader {
+  padding-top: 90px;
+  padding-bottom: 122px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricingHeader__background {
+  position: relative;
+}
+.pricingHeader__background_redCircle {
+  position: absolute;
+  z-index: -2;
+  width: 551px;
+  height: 551px;
+  background-color: #FA7515;
+  border-radius: 100%;
+  filter: blur(110px);
+  opacity: 13%;
+  top: -110px;
+  right: 45px;
+}
+.pricingHeader__background_greenCircle {
+  position: absolute;
+  z-index: -2;
+  width: 481px;
+  height: 525px;
+  background-color: rgba(226, 248, 240, 0.7);
+  border-radius: 100%;
+  filter: blur(90px);
+  top: 85px;
+  left: 120px;
+}
+.pricingHeader__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 144px;
+  height: 32px;
+  background: rgba(20, 99, 255, 0.1);
+  border-radius: 16px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1463FF;
+}
+.pricingHeader__title {
+  padding-top: 24px;
+  padding-bottom: 26px;
+  max-width: 80%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  letter-spacing: -3px;
+  color: #1D1E25;
+}
+.pricingHeader__annual {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7E8492;
+  gap: 12px;
+}
+
+.pricingPlans {
+  display: flex;
+  gap: 32px;
+}
+.pricingPlans__plan {
+  position: relative;
+  margin-top: 64px;
+  margin-bottom: 78px;
+  padding: 40px 24px;
+  border: 1px solid #EDEDED;
+  border-radius: 16px;
+}
+.pricingPlans__plan_bestOffer {
+  position: absolute;
+  right: 24px;
+  top: 40px;
+  display: flex;
+  gap: 8px;
+  justify-self: end;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 6px 12px;
+  background: #1463FF;
+  border-radius: 100px;
+}
+.pricingPlans__plan_title {
+  padding-top: 16px;
+  padding-bottom: 8px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #1D1E25;
+}
+.pricingPlans__plan_article {
+  padding-bottom: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7E8492;
+}
+.pricingPlans__plan_price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #1D1E25;
+}
+.pricingPlans__plan_perMonth {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7E8492;
+}
+.pricingPlans__plan_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1E25;
+}
+.pricingPlans__plan_list .pricingPlans__list_item {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #1D1E25;
+  position: relative;
+  margin-left: 32px;
+}
+.pricingPlans__plan_list .pricingPlans__list_item::before {
+  content: url("../../../../public/listMarker.svg");
+  position: absolute;
+  top: 0;
+  left: -35px;
+}
+.pricingPlans__plan_button {
+  display: flex;
+  justify-self: center;
+  margin-top: 40px;
+  padding: 10px 30px;
+  border: 1px solid #CED1D8;
+  background-color: #fff;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1D1E25;
+}
+.pricingPlans__plan.popular {
+  margin-bottom: 154px;
+  margin-top: 0;
+  background: #161A34;
+  border: 1px solid #1463FF;
+  box-shadow: 0px 16px 24px rgba(30, 30, 30, 0.08);
+}
+.pricingPlans__plan.popular .pricingPlans__plan_title,
+.pricingPlans__plan.popular .pricingPlans__plan_price,
+.pricingPlans__plan.popular .pricingPlans__plan_perMonth,
+.pricingPlans__plan.popular .pricingPlans__plan_list,
+.pricingPlans__plan.popular .pricingPlans__list_item {
+  color: #fff;
+}
+.pricingPlans__plan.popular .pricingPlans__plan_button {
+  border: none;
+}
+
+.frequantlyQuestions {
+  padding-top: 82px;
+  padding-bottom: 160px;
+}
+.frequantlyQuestions__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 80px;
+}
+.frequantlyQuestions__header_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  color: #1D1E25;
+}
+.frequantlyQuestions__header_article {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
+}
+.frequantlyQuestions__question {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-bottom: 1px solid #EDEDED;
+  padding-bottom: 32px;
+  margin-bottom: 56px;
+}
+.frequantlyQuestions__question:last-child {
+  margin-bottom: 0;
+}
+.frequantlyQuestions__question_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #1D1E25;
+}
+.frequantlyQuestions__question_article {
+  max-width: 53%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
+}
+.frequantlyQuestions__question_button {
+  position: absolute;
+  border: none;
+  background: none;
+  right: 0;
+  top: 5px;
+}/*# sourceMappingURL=PricingPage.css.map */

@@ -6,6 +6,7 @@ import { Header } from './components/header/Header';
 import { Footer } from './components/footer/Footer';
 import { MainPage } from './components/pages/mainPage/MainPage';
 import { AboutPage } from './components/pages/aboutPage/AboutPage';
+import { PricingPage } from './components/pages/pricingPage/PricingPage';
 
 
 function App() {
@@ -29,13 +30,15 @@ function App() {
             </div>
           }
           />
-          <Route path='/blog' element={
+          <Route path='/pricing' element={
             <div className="App">
               <Header />
+              <PricingPage />
+              <Footer theme='dark' />
             </div>
           }
           />
-          <Route path='/pricing' element={
+          <Route path='/blog' element={
             <div className="App">
               <Header />
             </div>
