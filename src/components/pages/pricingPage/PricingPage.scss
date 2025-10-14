@@ -264,12 +264,19 @@
         }
 
         &_article {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
             max-width: 53%;
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
             line-height: 32px;
             color: #7E8492;
+
+            &.open {
+                max-height: 500px;
+            }
         }
 
         &_button {

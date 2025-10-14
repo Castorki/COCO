@@ -234,12 +234,18 @@
   color: #1D1E25;
 }
 .frequantlyQuestions__question_article {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
   max-width: 53%;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
   color: #7E8492;
+}
+.frequantlyQuestions__question_article.open {
+  max-height: 500px;
 }
 .frequantlyQuestions__question_button {
   position: absolute;
