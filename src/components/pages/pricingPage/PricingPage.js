@@ -6,7 +6,7 @@ import { FrequantlyQuestions } from './FrequantlyQuestions'
 
 export const PricingPage = () => {
     return (
-        <div>
+        <div id='pricing'> 
             <PricingHeader />
             <PricingPlans />
             <FrequantlyQuestions />

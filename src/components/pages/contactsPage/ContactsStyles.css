@@ -1,0 +1,53 @@
+.contactsHeader {
+  display: flex;
+  gap: 83px;
+  padding-top: 90px;
+  padding-bottom: 85px;
+}
+.contactsHeader__icon {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.contactsHeader__icon_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  letter-spacing: -3px;
+  color: #1D1E25;
+}
+.contactsHeader__teamContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: flex-end;
+}
+.contactsHeader__teamContacts .teamContacts__item {
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ACACB9;
+}
+.contactsHeader__teamContacts .teamContacts__item_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1D1E25;
+}
+.contactsHeader__teamContacts .teamContacts__item_article {
+  padding-top: 8px;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7E8492;
+}
+.contactsHeader__teamContacts .teamContacts__item_contactInformation {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #1D1E25;
+}/*# sourceMappingURL=ContactsStyles.css.map */
