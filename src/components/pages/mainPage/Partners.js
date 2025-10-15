@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const Partners = () => {
+export const Partners = ({showBorder}) => {
     return (
-        <div className='partners center'>
+        <div className={`partners ${showBorder ? 'showBorder' : ''} center`}>
             <div className='partners__info'>
                 <h2 className='partners__info_title'>890+</h2>
                 <p className='partners__info_article'>

@@ -285,7 +285,7 @@
   align-items: center;
   position: relative;
 }
-.partners::before {
+.partners.showBorder::before {
   content: "";
   background-color: #EDEDED;
   width: 100%;
@@ -294,7 +294,7 @@
   position: absolute;
   top: 0px;
 }
-.partners::after {
+.partners.showBorder::after {
   content: "";
   background-color: #EDEDED;
   width: 100%;

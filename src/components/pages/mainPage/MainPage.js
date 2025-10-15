@@ -16,7 +16,7 @@ export const MainPage = () => {
       <OurOffers />
       <Advantages />
       <GrowthWithUs />
-      <Partners />
+      <Partners showBorder={true} />
       <Benefits />
       <TrandingNews />
       <Rewies />

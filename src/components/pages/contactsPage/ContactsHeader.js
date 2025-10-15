@@ -11,17 +11,17 @@ export const ContactsHeader = () => {
                 <div className='teamContacts__item'>
                     <h3 className='teamContacts__item_title'>Support</h3>
                     <p className='teamContacts__item_article'>Our friendly team is here to help.</p>
-                    <p className='teamContacts__item_contactInformation'>support@sans.com</p>
+                    <button className='teamContacts__item_contactInformation'>support@sans.com</button>
                 </div>
                 <div className='teamContacts__item'>
                     <h3 className='teamContacts__item_title'>Sales</h3>
                     <p className='teamContacts__item_article'>Questions or queries? Get in touch!</p>
-                    <p className='teamContacts__item_contactInformation'>sales@sans.com</p>
+                    <button className='teamContacts__item_contactInformation'>sales@sans.com</button>
                 </div>
                 <div className='teamContacts__item'>
                     <h3 className='teamContacts__item_title'>Phone</h3>
                     <p className='teamContacts__item_article'>Mon-Fri from 8am to 5pm.</p>
-                    <p className='teamContacts__item_contactInformation'>+1 (435) 345-7655</p>
+                    <button className='teamContacts__item_contactInformation'>+1 (435) 345-7655</button>
                 </div>
             </div>
         </div>

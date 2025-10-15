@@ -8,6 +8,7 @@
         display: flex;
         flex-direction: column;
         gap: 100px;
+        max-width: 975px;
 
         &_title {
             font-style: normal;
@@ -26,6 +27,7 @@
         justify-content: flex-end;
 
         .teamContacts__item {
+            width: 165px;
             padding-bottom: 14px;
             border-bottom: 1px solid #ACACB9;
 
@@ -48,11 +50,12 @@
             }
 
             &_contactInformation {
+                background: none;
+                border: none;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 26px;
-                text-align: center;
                 color: #1D1E25;
             }
         }
