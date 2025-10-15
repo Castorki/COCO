@@ -62,3 +62,117 @@
     }
 
 }
+
+.contactsForm {
+    &__form {
+        max-width: 608px;
+        padding: 56px 48px;
+        border: 1px solid #EDEDED;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .form__header {
+            padding-bottom: 24px;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+
+            &_title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 44px;
+                letter-spacing: -0.02em;
+                color: #1D1E25;
+            }
+
+            &_article {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                color: #7E8492;
+            }
+        }
+
+        .form__userData {
+            display: flex;
+            gap: 32px;
+            flex-direction: row;
+
+            &_firstName {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                &.label {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #1D1E25;
+                }
+            }
+
+            &_lastName {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                &.label {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #1D1E25;
+                }
+            }
+        }
+
+        .form__userEmail {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            &_label {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #1D1E25;
+            }
+        }
+
+        .form__userPhoneNumber {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            &_label {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #1D1E25;
+            }
+        }
+
+        .form__userMessage {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 6px;
+
+            &_label {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #1D1E25;
+            }
+        }
+
+    }
+}

@@ -53,4 +53,101 @@
   font-size: 16px;
   line-height: 26px;
   color: #1D1E25;
+}
+
+.contactsForm__form {
+  max-width: 608px;
+  padding: 56px 48px;
+  border: 1px solid #EDEDED;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contactsForm__form .form__header {
+  padding-bottom: 24px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.contactsForm__form .form__header_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  color: #1D1E25;
+}
+.contactsForm__form .form__header_article {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7E8492;
+}
+.contactsForm__form .form__userData {
+  display: flex;
+  gap: 32px;
+  flex-direction: row;
+}
+.contactsForm__form .form__userData_firstName {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.contactsForm__form .form__userData_firstName.label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1E25;
+}
+.contactsForm__form .form__userData_lastName {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.contactsForm__form .form__userData_lastName.label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1E25;
+}
+.contactsForm__form .form__userEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.contactsForm__form .form__userEmail_label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1E25;
+}
+.contactsForm__form .form__userPhoneNumber {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.contactsForm__form .form__userPhoneNumber_label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1E25;
+}
+.contactsForm__form .form__userMessage {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.contactsForm__form .form__userMessage_label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1D1E25;
 }/*# sourceMappingURL=ContactsStyles.css.map */
