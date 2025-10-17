@@ -1,3 +1,35 @@
+@mixin userForm {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+@mixin input ($max-width) {
+    max-width: $max-width;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+
+}
+
+
+@mixin form-label() {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1D1E25;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 .contactsHeader {
     display: flex;
     gap: 83px;
@@ -64,11 +96,13 @@
 }
 
 .contactsForm {
+
     &__form {
-        max-width: 608px;
+        margin-bottom: 261px;
+        max-width: 550px;
         padding: 56px 48px;
         border: 1px solid #EDEDED;
-        position: relative;
+        background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -103,76 +137,107 @@
             flex-direction: row;
 
             &_firstName {
-                display: flex;
-                flex-direction: column;
-                gap: 6px;
+                @include userForm();
 
                 &.label {
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #1D1E25;
+                    @include form-label();
+                }
+
+                &.input {
+                    @include input(240px);
                 }
             }
 
             &_lastName {
-                display: flex;
-                flex-direction: column;
-                gap: 6px;
+                @include userForm();
+
 
                 &.label {
-                    font-style: normal;
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #1D1E25;
+                    @include form-label();
+
+                }
+
+                &.input {
+                    @include input(240px);
                 }
             }
         }
 
         .form__userEmail {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
+            @include userForm();
 
             &_label {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                color: #1D1E25;
+                @include form-label();
+            }
+
+            &_input {
+                @include input(512px)
             }
         }
 
         .form__userPhoneNumber {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
+            @include userForm();
+
 
             &_label {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                color: #1D1E25;
+                @include form-label();
+            }
+
+            &_input {
+                @include input(512px)
             }
         }
 
         .form__userMessage {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
+            @include userForm();
             margin-bottom: 6px;
 
             &_label {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                color: #1D1E25;
+                @include form-label();
             }
+
+            &_textArea {
+                @include input(512px);
+                height: 134px;
+                outline: none;
+                resize: none;
+
+                &::placeholder {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #7E8492;
+                }
+            }
+
+        }
+
+        .form__submitButton {
+            padding: 16px 32px;
+            background-color: #1D1E25;
+            border-radius: 100px;
+            max-width: 167px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #FFFFFF;
         }
 
     }
+
+    &__wrapper {
+        position: relative;
+
+        &_photo {
+            position: absolute;
+            left: 35%;
+            z-index: -1;
+            bottom: 170px;
+        }
+    }
+
+
 }

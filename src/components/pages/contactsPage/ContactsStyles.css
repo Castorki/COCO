@@ -1,3 +1,12 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .contactsHeader {
   display: flex;
   gap: 83px;
@@ -56,10 +65,11 @@
 }
 
 .contactsForm__form {
-  max-width: 608px;
+  margin-bottom: 261px;
+  max-width: 550px;
   padding: 56px 48px;
   border: 1px solid #EDEDED;
-  position: relative;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -102,6 +112,12 @@
   line-height: 20px;
   color: #1D1E25;
 }
+.contactsForm__form .form__userData_firstName.input {
+  max-width: 240px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #EDEDED;
+}
 .contactsForm__form .form__userData_lastName {
   display: flex;
   flex-direction: column;
@@ -113,6 +129,12 @@
   font-size: 14px;
   line-height: 20px;
   color: #1D1E25;
+}
+.contactsForm__form .form__userData_lastName.input {
+  max-width: 240px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #EDEDED;
 }
 .contactsForm__form .form__userEmail {
   display: flex;
@@ -126,6 +148,12 @@
   line-height: 20px;
   color: #1D1E25;
 }
+.contactsForm__form .form__userEmail_input {
+  max-width: 512px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #EDEDED;
+}
 .contactsForm__form .form__userPhoneNumber {
   display: flex;
   flex-direction: column;
@@ -137,6 +165,12 @@
   font-size: 14px;
   line-height: 20px;
   color: #1D1E25;
+}
+.contactsForm__form .form__userPhoneNumber_input {
+  max-width: 512px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #EDEDED;
 }
 .contactsForm__form .form__userMessage {
   display: flex;
@@ -150,4 +184,48 @@
   font-size: 14px;
   line-height: 20px;
   color: #1D1E25;
+}
+.contactsForm__form .form__userMessage_textArea {
+  max-width: 512px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #EDEDED;
+  height: 134px;
+  outline: none;
+  resize: none;
+}
+.contactsForm__form .form__userMessage_textArea::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #7E8492;
+}
+.contactsForm__form .form__userMessage_textArea::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #7E8492;
+}
+.contactsForm__form .form__submitButton {
+  padding: 16px 32px;
+  background-color: #1D1E25;
+  border-radius: 100px;
+  max-width: 167px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.contactsForm__wrapper {
+  position: relative;
+}
+.contactsForm__wrapper_photo {
+  position: absolute;
+  left: 35%;
+  z-index: -1;
+  bottom: 170px;
 }/*# sourceMappingURL=ContactsStyles.css.map */
