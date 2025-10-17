@@ -263,6 +263,7 @@
   padding-bottom: 24px;
 }
 .articles__list .list__item_button {
+  cursor: pointer;
   padding: 16px 46px;
   border: 1px solid #CED1D8;
   border-radius: 100px;

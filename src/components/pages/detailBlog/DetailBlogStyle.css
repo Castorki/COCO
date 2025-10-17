@@ -1,0 +1,77 @@
+.fullArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 160px;
+}
+.fullArticle__title {
+  padding-top: 80px;
+  padding-bottom: 48px;
+  max-width: 70%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  letter-spacing: -3px;
+  color: #1D1E25;
+}
+.fullArticle__author {
+  margin-top: 32px;
+  margin-bottom: 24px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.fullArticle__author .fullArticle__author_name.avatar {
+  position: absolute;
+  bottom: 0;
+}
+.fullArticle__author .fullArticle__author_name.moniker {
+  margin-left: 80px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #1D1E25;
+}
+.fullArticle__author .fullArticle__author_name.jobTitle {
+  margin-left: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7E8492;
+}
+.fullArticle__author_publishDate {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #7E8492;
+  align-self: flex-end;
+}
+.fullArticle__preface {
+  margin-top: 80px;
+  margin-bottom: 56px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1D1E25;
+}
+.fullArticle__subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000000;
+}
+.fullArticle__text {
+  margin-top: 24px;
+  margin-bottom: 56px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #1D1E25;
+}/*# sourceMappingURL=DetailBlogStyle.css.map */

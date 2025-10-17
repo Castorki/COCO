@@ -9,6 +9,7 @@ import { AboutPage } from './components/pages/aboutPage/AboutPage';
 import { PricingPage } from './components/pages/pricingPage/PricingPage';
 import { ContactsPage } from './components/pages/contactsPage/ContactsPage';
 import { BlogPage } from './components/pages/blogPage/BlogPage';
+import { DetailBlog } from './components/pages/detailBlog/DetailBlog';
 
 
 function App() {
@@ -45,7 +46,6 @@ function App() {
               <Header />
               <BlogPage />
               <Footer theme='light' />
-
             </div>
           }
           />
@@ -53,6 +53,14 @@ function App() {
             <div className="App">
               <Header />
               <ContactsPage />
+              <Footer theme='dark' />
+            </div>
+          }
+          />
+          <Route path='/detailBlog' element={
+            <div className="App">
+              <Header />
+              <DetailBlog />
               <Footer theme='dark' />
             </div>
           }
