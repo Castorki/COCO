@@ -8,6 +8,7 @@ import { MainPage } from './components/pages/mainPage/MainPage';
 import { AboutPage } from './components/pages/aboutPage/AboutPage';
 import { PricingPage } from './components/pages/pricingPage/PricingPage';
 import { ContactsPage } from './components/pages/contactsPage/ContactsPage';
+import { BlogPage } from './components/pages/blogPage/BlogPage';
 
 
 function App() {
@@ -42,6 +43,9 @@ function App() {
           <Route path='/blog' element={
             <div className="App">
               <Header />
+              <BlogPage />
+              <Footer theme='light' />
+
             </div>
           }
           />
