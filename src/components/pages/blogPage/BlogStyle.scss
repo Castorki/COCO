@@ -175,3 +175,49 @@
         }
     }
 }
+
+.usefulTips {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 584px);
+    gap: 32px;
+    background-color: #1D1E25;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        &:nth-child(1) {
+            margin-bottom: -159px;
+        }
+
+        &:nth-child(3) {
+            align-self: flex-end;
+        }
+
+        &_title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 120%;
+            color: #FFFFFF;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &_article {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+            color: #7E8492;
+        }
+    }
+
+
+}

@@ -154,4 +154,42 @@
 .blogsPrewie__buttonWrapper_button.right {
   left: 42px;
   top: 22px;
+}
+
+.usefulTips {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 584px);
+  gap: 32px;
+  background-color: #1D1E25;
+}
+.usefulTips__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.usefulTips__item:nth-child(1) {
+  margin-bottom: -159px;
+}
+.usefulTips__item:nth-child(3) {
+  align-self: flex-end;
+}
+.usefulTips__item_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+.usefulTips__item_title:hover {
+  text-decoration: underline;
+}
+.usefulTips__item_article {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7E8492;
 }/*# sourceMappingURL=BlogStyle.css.map */
