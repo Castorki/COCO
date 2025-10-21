@@ -52,8 +52,6 @@ export const ContactForm = () => {
                             className='userPhoneNumber__inputElements_select'
                             id="countryCode"
                             name='countryCode'
-                            size={1}
-                        // multiple
                         >
                             <option className='inputElements__select_option' value="+1">US</option>
                             <option className='inputElements__select_option' value="+32">BEL</option>

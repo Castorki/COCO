@@ -1,6 +1,10 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
-export const Partners = ({showBorder}) => {
+export const Partners = ({ showBorder }) => {
+
+    const partners = useSelector(state => state.partners)
+
     return (
         <div className={`partners ${showBorder ? 'showBorder' : ''} center`}>
             <div className='partners__info'>
@@ -10,14 +14,18 @@ export const Partners = ({showBorder}) => {
                 </p>
             </div>
             <div className='partners__logos'>
-                <img className='partners__logos_logo' src='airbnbLogo.svg' alt='Airbnb Logo'></img>
+                {partners.map(item => (
+
+                    <img key={item.id} className='partners__logos_logo' src={item.logo} alt={item.alt}></img>
+                ))}
+                {/* <img className='partners__logos_logo' src='airbnbLogo.svg' alt='Airbnb Logo'></img>
                 <img className='partners__logos_logo' src='amazonLogo.svg' alt='Amazon Logo'></img>
                 <img className='partners__logos_logo' src='fedExLogo.svg' alt='FedEx Logo'></img>
                 <img className='partners__logos_logo' src='microsoftLogo.svg' alt='Microsoft Logo'></img>
                 <img className='partners__logos_logo' src='googleLogo.svg' alt='Google Logo'></img>
                 <img className='partners__logos_logo' src='OLAlogo.svg' alt='OLA Logo'></img>
                 <img className='partners__logos_logo' src='walmartLogo.svg' alt='Walmart Logo'></img>
-                <img className='partners__logos_logo' src='OYOLogo.svg' alt='OYO Logo'></img>
+                <img className='partners__logos_logo' src='OYOLogo.svg' alt='OYO Logo'></img> */}
             </div>
         </div>
     )

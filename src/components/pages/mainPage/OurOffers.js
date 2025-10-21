@@ -1,6 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
+
 
 export const OurOffers = () => {
+
+    const offers = useSelector(state => state.offers)
+
     return (
         <div className='ourOffers center'>
             <h2 className='ourOffers__title'>
@@ -10,43 +15,18 @@ export const OurOffers = () => {
                 Our platform offers the modern enterprise full control of how date can be access and used with industry leading software solutions for identity, activation, and date collaboration
             </p>
             <div className='ourOffers__list'>
-                <div className='ourOffers__list_listElement'>
-                    <img className='ourOffers__list_listElement_icon' src='buildIcon.svg'></img>
-                    <h3 className='ourOffers__list_listElement_title'>
-                        Build your date fundamental
-                    </h3>
-                    <p className='ourOffers__list_listElement_article'>
-                        Build access to date, develop valuable business insights and drive revenue while maintaining full control over access and use of date at all times.
-                    </p>
-                </div>
-                <div className='ourOffers__list_listElement'>
-                    <img className='ourOffers__list_listElement_icon' src='measureIcon.svg'></img>
-                    <h3 className='ourOffers__list_listElement_title'>
-                        Measure more effective
-                    </h3>
-                    <p className='ourOffers__list_listElement_article'>
-                        Effectively measure people-based campaigns with the freedom to choose from best-of breed partners to optimize and drive media innovation.
-                    </p>
-                </div>
-                <div className='ourOffers__list_listElement'>
-                    <img className='ourOffers__list_listElement_icon' src='activateIcon.svg'></img>
-                    <h3 className='ourOffers__list_listElement_title'>
-                        Activate your date
-                    </h3>
-                    <p className='ourOffers__list_listElement_article'>
-                        Accurately address your specific audiences at scale across any channel, platform, publisher or network and safely translate date between identity space to improve results.
-                    </p>
-                </div>
-                <div className='ourOffers__list_listElement'>
-                    <img className='ourOffers__list_listElement_icon' src='privacyIcon.svg'></img>
-                    <h3 className='ourOffers__list_listElement_title'>
-                        Strengthen consumer privacy
-                    </h3>
-                    <p className='ourOffers__list_listElement_article'>
-                        Protect your customer date with leading privacy-preserving technologies and advanced techniques to minimize date movement while still enabling insight generation.
-                    </p>
-                </div>
+                {offers.map(offer => (
+                    < div key={offer.id} className='ourOffers__list_listElement' >
+                        <img className='ourOffers__list_listElement_icon' src={offer.img} alt=''></img>
+                        <h3 className='ourOffers__list_listElement_title'>
+                            {offer.title}
+                        </h3>
+                        <p className='ourOffers__list_listElement_article'>
+                            {offer.article}
+                        </p>
+                    </div>
+                ))}
             </div>
-        </div>
+        </div >
     )
 }

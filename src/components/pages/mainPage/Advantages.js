@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 export const Advantages = () => {
+    const advantages = useSelector(state => state.advantages);
+
     return (
         <div className='advantages center'>
             <div className='advantages__photoWrapper'>
@@ -15,15 +18,12 @@ export const Advantages = () => {
                     Automate your sales, marketing and service in one platform. Avoid date leaks and enable consistent messaging
                 </p>
                 <ul className='advantages__wrapper_list'>
-                    <li className='advantages__wrapper_list_element'>
-                        Close more deals with single - page contact managment
-                    </li>
-                    <li className='advantages__wrapper_list_element'>
-                        Enjoy one-click calling, call scripts and voicemail automation
-                    </li>
-                    <li className='advantages__wrapper_list_element'>
-                        Take stages and milestones of your deals to keep the sales process an track
-                    </li>
+
+                    {advantages.map(item => (
+                        <li key={item.id} className='advantages__wrapper_list_element'>
+                            {item.article}
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>
