@@ -5,7 +5,7 @@
 }
 
 @mixin input ($max-width) {
-    max-width: $max-width;
+    width: $max-width;
     padding: 10px 14px;
     border-radius: 8px;
     border: 1px solid #EDEDED;
@@ -183,9 +183,34 @@ input[type="number"] {
                 @include form-label();
             }
 
-            &_input {
-                @include input(512px)
+            .form__userPhoneNumber_inputElements {
+
+                .userPhoneNumber__inputElements_select {
+                    outline: none;
+                    @include input(70px);
+                    border-right: none;
+                    border-radius: 8px 0 0 8px;
+                    appearance: none;
+                    background-image: url(../../../../public/dropDownArrow.svg);
+                    background-repeat: no-repeat;
+                    background-position: right 9px center;
+
+                    .inputElements__select_option {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #1D1E25;
+                    }
+                }
+
+                .userPhoneNumber__inputElements_input {
+                    @include input(442px);
+                    border-radius: 0 8px 8px 0;
+                    border-left: none
+                }
             }
+
         }
 
         .form__userMessage {
