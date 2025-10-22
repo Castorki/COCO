@@ -73,6 +73,9 @@
         margin-bottom: 80px;
 
         &_filter {
+            cursor: pointer;
+            border: none;
+            background: none;
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
@@ -91,9 +94,11 @@
     }
 
     &__blogs {
+        overflow: hidden;
         position: relative;
         display: flex;
         gap: 32px;
+
     }
 
     &__blog {
@@ -102,6 +107,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+
 
         &_photo {
             max-height: 428px;
@@ -278,6 +284,11 @@
     &__list {
         display: flex;
         gap: 32px;
+        list-style: none;
+
+        .list__item_photo {
+            max-width: 350px;
+        }
 
         .list__item_title {
             padding-top: 24px;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -6,7 +6,13 @@ export const OurTeam = () => {
 
     const team = useSelector(state => state.team);
     const [teamArray, setTeamArray] = useState(team);
-    console.log(teamArray);
+    const teamButton = useRef(null);
+
+    useEffect(() => {
+        if (teamArray.length < 1) {
+            teamButton.current.style.display = 'none'
+        }
+    })
 
     const handleSwitchLeft = (e) => {
         e.preventDefault();
@@ -28,14 +34,14 @@ export const OurTeam = () => {
                 <div className='ourTeam__header_greenCircle'></div>
             </div>
             <ul className='ourTeam__list'>
-                <div className='ourTeam__list_buttonWraper'>
+                <div ref={teamButton} className='ourTeam__list_buttonWraper'>
                     <img className='ourTeam__buttonWraper_arrows' src='newsArrows.svg' alt='Team list navigation'></img>
                     <button className='ourTeam__buttonWraper_button left' onClick={handleSwitchLeft}></button>
                     <button className='ourTeam__buttonWraper_button right' onClick={handleSwitchRight}></button>
                 </div>
                 {teamArray.map(item => (
                     <li key={item.id} className='ourTeam__item'>
-                        <img className='ourTeam__item_photo' src={item.emploeePhoto} alt='Emploee photo'></img>
+                        <img className='ourTeam__item_photo' src={item.emploeePhoto} alt='Emploee'></img>
                         <div className='ourTeam__item_personalDate'>
                             <div className='ourTeam__personalDate'>
                                 <p className='ourTeam__personalDate_name'>{item.emploeeName}</p>

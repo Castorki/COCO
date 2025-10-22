@@ -66,6 +66,9 @@
   margin-bottom: 80px;
 }
 .blogsPrewie__filters_filter {
+  cursor: pointer;
+  border: none;
+  background: none;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -81,6 +84,7 @@
   color: #1D1E25;
 }
 .blogsPrewie__blogs {
+  overflow: hidden;
   position: relative;
   display: flex;
   gap: 32px;
@@ -243,6 +247,10 @@
 .articles__list {
   display: flex;
   gap: 32px;
+  list-style: none;
+}
+.articles__list .list__item_photo {
+  max-width: 350px;
 }
 .articles__list .list__item_title {
   padding-top: 24px;

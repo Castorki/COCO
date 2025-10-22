@@ -10,6 +10,10 @@ import rewies from '../components/slices/rewiesSlicer';
 import belifs from '../components/slices/beliefsSlicer';
 import team from '../components/slices/teamSlicer';
 import plans from '../components/slices/pricingPlansSlicer';
+import blogs from '../components/slices/blogsSlicer';
+import filters from '../components/slices/filtersSlicer';
+import tips from '../components/slices/tipsSlicer';
+import articles from '../components/slices/articlesSlicer';
 
 
 
@@ -25,6 +29,10 @@ export const store = configureStore({
         rewies: rewies,
         belifs: belifs,
         team: team,
-        plans: plans
+        plans: plans,
+        blogs: blogs,
+        filters: filters,
+        tips: tips,
+        articles: articles
     }
 })

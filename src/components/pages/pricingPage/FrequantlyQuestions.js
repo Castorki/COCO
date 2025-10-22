@@ -34,13 +34,6 @@ export const FrequantlyQuestions = () => {
 
             ))
             }
-            {/* <div className='frequantlyQuestions__question'>
-                <h3 className='frequantlyQuestions__question_title'>Is there a free trial available?</h3>
-                <p className='frequantlyQuestions__question_article'>
-                    Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.
-                </p>
-                <button className='frequantlyQuestions__question_button'><img src='frequantlyQuestionButtonClose.svg'></img></button>
-            </div> */}
         </div >
     )
 }

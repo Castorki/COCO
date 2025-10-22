@@ -136,9 +136,9 @@
 }
 .ourBeliefs__emptyList {
   display: flex;
-  gap: 32px;
 }
 .ourBeliefs__emptyList_title {
+  margin-left: 32px;
   align-self: center;
   font-style: normal;
   font-weight: 600;

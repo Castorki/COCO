@@ -1,0 +1,1 @@
+export const filters = ['View all', 'Design', 'Articles', 'Product', 'Software Development', 'Customer Success']
