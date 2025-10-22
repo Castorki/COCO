@@ -4,6 +4,7 @@ export const Prewie = () => {
 
     const [isLoading, setIsLoading] = useState(false);
     const [showSuccess, setShowSuccess] = useState(false);
+    const [wrongEmail, setWrongEmail] = useState(false)
     const [requestError, setRequestError] = useState(null);
     const [email, setEmail] = useState('');
 
@@ -11,8 +12,12 @@ export const Prewie = () => {
     const hendleSubmit = async (e) => {
         e.preventDefault();
 
-        if (email === '') {
-            alert('Enter an email!')
+        if (email === '' || !email.includes('@')) {
+            setWrongEmail(true);
+            setTimeout(() => {
+                setWrongEmail(false)
+            }, 3000);
+            setEmail('');
             return
         }
 
@@ -40,7 +45,6 @@ export const Prewie = () => {
             if (response.ok) {
                 setShowSuccess(true);
                 setTimeout(() => setShowSuccess(false), 3000);
-                setEmail('')
             } else {
                 setRequestError(true);
                 setTimeout(() => setRequestError(false), 3000);
@@ -49,6 +53,7 @@ export const Prewie = () => {
         } catch (error) {
             console.error('Ошибка:', error);
         } finally {
+            setEmail('');
             setIsLoading(false);
         }
     }
@@ -66,7 +71,7 @@ export const Prewie = () => {
                     When it comes to interactive marketing, we've got you covered.
                     Be where the world is going</p>
 
-                <form className='prewie__info_buttonWrapper' onSubmit={hendleSubmit}>
+                <form className='prewie__info_buttonWrapper' noValidate onSubmit={hendleSubmit}>
                     <input className='prewie__info_buttonWrapper_email'
                         placeholder='Enter your email'
                         type='email'
@@ -81,17 +86,22 @@ export const Prewie = () => {
                     </button>
                 </form>
                 {isLoading && (
-                    <div className='prewie__info_loading'>
+                    <div className='loading'>
                         Данные отправляются на сервер. Это может занять какое-то время...
                     </div>
                 )}
                 {showSuccess && (
-                    <div className="prewie__info_success">
+                    <div className="success">
                         Заявка успешно оформлена! Дальниешие инструкции будут отправлены вам на почту.
                     </div>
                 )}
+                {wrongEmail && (
+                    <div className="wrongEmail">
+                        Неккоректный формат данных!
+                    </div>
+                )}
                 {requestError && (
-                    <div className="prewie__info_requestError">
+                    <div className="requestError">
                         Что-то пошло не так. Попробуйте ещё раз позже или обратитесь в тех. поддержку.
                     </div>
                 )}

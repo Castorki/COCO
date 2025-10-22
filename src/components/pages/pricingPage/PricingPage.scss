@@ -165,17 +165,33 @@
                 margin-left: 32px;
 
                 &::before {
-                    content: url('../../../../public/listMarker.svg');
-                    // margin-right: 16px;
+                    content: url('../../../../public/availableListMarker.svg');
                     position: absolute;
                     top: 0;
                     left: -35px;
+                }
+
+                &.unavailable {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-decoration-line: line-through;
+                    color: #7E8492;
+
+                    &::before {
+                        content: url('../../../../public/unAvailableListMarker.svg');
+                        position: absolute;
+                        top: 0;
+                        left: -35px;
+                    }
 
                 }
             }
         }
 
         &_button {
+            cursor: pointer;
             display: flex;
             justify-self: center;
             margin-top: 40px;
@@ -205,6 +221,10 @@
         .pricingPlans__plan_list,
         .pricingPlans__list_item {
             color: #fff;
+
+            &.unavailabl {
+                color: #7E8492;
+            }
         }
 
         .pricingPlans__plan_button {
@@ -280,6 +300,7 @@
         }
 
         &_button {
+            cursor: pointer;
             position: absolute;
             border: none;
             background: none;

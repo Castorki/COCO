@@ -10,7 +10,6 @@ export const FrequantlyQuestions = () => {
     const [openIndex, setOpenIndex] = useState(null);
 
     const toggleItem = (index) => {
-        console.log(index);
         setOpenIndex(openIndex === index ? null : index);
     };
 
@@ -29,7 +28,7 @@ export const FrequantlyQuestions = () => {
                     </p>
                     <button className='frequantlyQuestions__question_button'
                         onClick={() => toggleItem(index)}>
-                        <img src={openIndex === index ? `frequantlyQuestionButtonOpen.svg` : `frequantlyQuestionButtonClose.svg`}></img>
+                        <img src={openIndex === index ? `frequantlyQuestionButtonOpen.svg` : `frequantlyQuestionButtonClose.svg`} alt=''></img>
                     </button>
                 </div>
 

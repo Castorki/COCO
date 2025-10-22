@@ -9,6 +9,7 @@ import growthWithUs from '../components/slices/growWithUsSlicer';
 import rewies from '../components/slices/rewiesSlicer';
 import belifs from '../components/slices/beliefsSlicer';
 import team from '../components/slices/teamSlicer';
+import plans from '../components/slices/pricingPlansSlicer';
 
 
 
@@ -23,6 +24,7 @@ export const store = configureStore({
         growthWithUs: growthWithUs,
         rewies: rewies,
         belifs: belifs,
-        team: team
+        team: team,
+        plans: plans
     }
 })

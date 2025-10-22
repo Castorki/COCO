@@ -150,12 +150,27 @@
   margin-left: 32px;
 }
 .pricingPlans__plan_list .pricingPlans__list_item::before {
-  content: url("../../../../public/listMarker.svg");
+  content: url("../../../../public/availableListMarker.svg");
+  position: absolute;
+  top: 0;
+  left: -35px;
+}
+.pricingPlans__plan_list .pricingPlans__list_item.unavailable {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration-line: line-through;
+  color: #7E8492;
+}
+.pricingPlans__plan_list .pricingPlans__list_item.unavailable::before {
+  content: url("../../../../public/unAvailableListMarker.svg");
   position: absolute;
   top: 0;
   left: -35px;
 }
 .pricingPlans__plan_button {
+  cursor: pointer;
   display: flex;
   justify-self: center;
   margin-top: 40px;
@@ -183,6 +198,13 @@
 .pricingPlans__plan.popular .pricingPlans__plan_list,
 .pricingPlans__plan.popular .pricingPlans__list_item {
   color: #fff;
+}
+.pricingPlans__plan.popular .pricingPlans__plan_title.unavailabl,
+.pricingPlans__plan.popular .pricingPlans__plan_price.unavailabl,
+.pricingPlans__plan.popular .pricingPlans__plan_perMonth.unavailabl,
+.pricingPlans__plan.popular .pricingPlans__plan_list.unavailabl,
+.pricingPlans__plan.popular .pricingPlans__list_item.unavailabl {
+  color: #7E8492;
 }
 .pricingPlans__plan.popular .pricingPlans__plan_button {
   border: none;
@@ -248,6 +270,7 @@
   max-height: 500px;
 }
 .frequantlyQuestions__question_button {
+  cursor: pointer;
   position: absolute;
   border: none;
   background: none;
