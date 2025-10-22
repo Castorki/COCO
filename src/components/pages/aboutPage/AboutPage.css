@@ -86,6 +86,11 @@
   position: relative;
   padding-left: 32px;
 }
+.ourBeliefs__miniBlog_prewie {
+  max-height: 370px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .ourBeliefs__miniBlog_title {
   padding-top: 24px;
   font-style: normal;
@@ -106,6 +111,7 @@
   color: #7E8492;
 }
 .ourBeliefs__miniBlog_button {
+  cursor: pointer;
   padding: 16px 46px;
   background-color: #1D1E25;
   font-style: normal;
@@ -127,6 +133,19 @@
   opacity: 13%;
   top: 57%;
   right: 100%;
+}
+.ourBeliefs__emptyList {
+  display: flex;
+  gap: 32px;
+}
+.ourBeliefs__emptyList_title {
+  align-self: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #1D1E25;
 }
 
 .ourSpecialization {

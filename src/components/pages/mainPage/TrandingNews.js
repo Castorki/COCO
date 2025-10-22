@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 export const TrandingNews = () => {
 
@@ -24,12 +25,12 @@ export const TrandingNews = () => {
                 {trendinNews.length > 0 ? (
                     trendinNews.slice(0, 2).map(item => (
                         <div key={item.id} className='trandingNews__wrapper_itemWrapper'>
-                            <img className='trandingNews__wrapper_itemWrapper_img' src={item.img} alt=''></img>
+                            <img className='trandingNews__wrapper_itemWrapper_img' src={item.img} alt='' ></img>
                             <div className='trandingNews__wrapper_itemWrapper_publishData'>
                                 <p className='trandingNews__wrapper_itemWrapper_publishData_dateOfPublication'> {item.publishDate}</p>
                                 <p className='trandingNews__wrapper_itemWrapper_publishData_author'>{item.author}</p>
                             </div>
-                            <h2 className='trandingNews__wrapper_itemWrapper_title'>{item.title}</h2>
+                            <Link to={'/detailBlog'}><h2 className='trandingNews__wrapper_itemWrapper_title'>{item.title}</h2></Link>
                         </div>
                     ))
                 ) : (

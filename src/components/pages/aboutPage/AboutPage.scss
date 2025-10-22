@@ -54,7 +54,6 @@
     display: flex;
     position: relative;
 
-
     &__buttonWraper {
         position: relative;
 
@@ -99,6 +98,11 @@
         position: relative;
         padding-left: 32px;
 
+        &_prewie {
+            max-height: 370px;
+            object-fit: cover;
+        }
+
         &_title {
             padding-top: 24px;
             font-style: normal;
@@ -121,6 +125,7 @@
         }
 
         &_button {
+            cursor: pointer;
             padding: 16px 46px;
             background-color: #1D1E25;
             font-style: normal;
@@ -146,7 +151,20 @@
         }
     }
 
+    &__emptyList {
+        display: flex;
+        gap: 32px;
 
+        &_title {
+            align-self: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 150%;
+            letter-spacing: -0.01em;
+            color: #1D1E25;
+        }
+    }
 }
 
 .ourSpecialization {

@@ -18,14 +18,6 @@ export const Partners = ({ showBorder }) => {
 
                     <img key={item.id} className='partners__logos_logo' src={item.logo} alt={item.alt}></img>
                 ))}
-                {/* <img className='partners__logos_logo' src='airbnbLogo.svg' alt='Airbnb Logo'></img>
-                <img className='partners__logos_logo' src='amazonLogo.svg' alt='Amazon Logo'></img>
-                <img className='partners__logos_logo' src='fedExLogo.svg' alt='FedEx Logo'></img>
-                <img className='partners__logos_logo' src='microsoftLogo.svg' alt='Microsoft Logo'></img>
-                <img className='partners__logos_logo' src='googleLogo.svg' alt='Google Logo'></img>
-                <img className='partners__logos_logo' src='OLAlogo.svg' alt='OLA Logo'></img>
-                <img className='partners__logos_logo' src='walmartLogo.svg' alt='Walmart Logo'></img>
-                <img className='partners__logos_logo' src='OYOLogo.svg' alt='OYO Logo'></img> */}
             </div>
         </div>
     )

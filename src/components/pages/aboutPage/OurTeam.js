@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 export const OurTeam = () => {
+
+    const team = useSelector(state => state.team);
+    const [teamArray, setTeamArray] = useState(team);
+    console.log(teamArray);
+
+    const handleSwitchLeft = (e) => {
+        e.preventDefault();
+
+        setTeamArray(prev => [prev[prev.length - 1], ...prev.slice(0, -1)]);
+    };
+
+    const handleSwitchRight = (e) => {
+        e.preventDefault();
+
+        setTeamArray(prev => [...prev.slice(1), prev[0]]);
+    };
+
     return (
         <div className='ourTeam center'>
             <div className='ourTeam__header'>
@@ -12,51 +30,35 @@ export const OurTeam = () => {
             <ul className='ourTeam__list'>
                 <div className='ourTeam__list_buttonWraper'>
                     <img className='ourTeam__buttonWraper_arrows' src='newsArrows.svg' alt='Team list navigation'></img>
-                    <button className='ourTeam__buttonWraper_button left'></button>
-                    <button className='ourTeam__buttonWraper_button right'></button>
+                    <button className='ourTeam__buttonWraper_button left' onClick={handleSwitchLeft}></button>
+                    <button className='ourTeam__buttonWraper_button right' onClick={handleSwitchRight}></button>
                 </div>
-                <div className='ourTeam__item'>
-                    <img className='ourTeam__item_photo' src='ArlynePhoto.png' alt='Emploee photo'></img>
-                    <div className='ourTeam__item_personalDate'>
-                        <div className='ourTeam__personalDate'>
-                            <p className='ourTeam__personalDate_name'>Arlyne Stefano</p>
-                            <p className='ourTeam__personalDate_jobTitle'>Founder & CEO</p>
+                {teamArray.map(item => (
+                    <li key={item.id} className='ourTeam__item'>
+                        <img className='ourTeam__item_photo' src={item.emploeePhoto} alt='Emploee photo'></img>
+                        <div className='ourTeam__item_personalDate'>
+                            <div className='ourTeam__personalDate'>
+                                <p className='ourTeam__personalDate_name'>{item.emploeeName}</p>
+                                <p className='ourTeam__personalDate_jobTitle'>{item.emploeeJobTitle}</p>
+                            </div>
+                            <div className='ourTeam__personalDate_socialMedia'>
+                                {item.emploeeSocialMedia.map(socialItem => (
+                                    <Link
+                                        key={socialItem.link}
+                                        to={socialItem.link}
+                                        className='personalSocialMediaIcon'
+                                    >
+                                        <img
+                                            src={socialItem.icon}
+                                            alt={`${item.emploeeName} ${socialItem.icon}`}
+                                            className='personalSocialMediaIcon'
+                                        />
+                                    </Link>
+                                ))}
+                            </div>
                         </div>
-                        <div className='ourTeam__personalDate_socialMedia'>
-                            <Link to={'https://x.com/'} id='personalSocialMediaIcon'><img id='personalSocialMediaIcon' src='tweeterIcon.svg' alt='Tweetwr link'></img></Link>
-                            <Link to={'https://www.linkedin.com/'} id='personalSocialMediaIcon'><img id='personalSocialMediaIcon' src='linkedinIcon.svg' alt='Linked In link'></img></Link>
-                            <Link to={'https://www.instagram.com/'} id='personalSocialMediaIcon'><img id='personalSocialMediaIcon' src='instagramIcon.svg' alt='Instagramlink'></img></Link>
-                        </div>
-                    </div>
-                </div>
-                <div className='ourTeam__item'>
-                    <img className='ourTeam__item_photo' src='KatyPhoto.png' alt='Emploee photo'></img>
-                    <div className='ourTeam__item_personalDate'>
-                        <div className='ourTeam__personalDate'>
-                            <p className='ourTeam__personalDate_name'>Katy Cristy</p>
-                            <p className='ourTeam__personalDate_jobTitle'>Chief Technology Officer</p>
-                        </div>
-                        <div className='ourTeam__personalDate_socialMedia'>
-                            <Link to={'https://x.com/'} id='personalSocialMediaIcon'><img id='personalSocialMediaIcon' src='tweeterIcon.svg' alt='Tweetwr link'></img></Link>
-                            <Link to={'https://www.linkedin.com/'} id='personalSocialMediaIcon'><img id='personalSocialMediaIcon' src='linkedinIcon.svg' alt='Linked In link'></img></Link>
-                            <Link to={'https://www.instagram.com/'} id='personalSocialMediaIcon'><img id='personalSocialMediaIcon' src='instagramIcon.svg' alt='Instagramlink'></img></Link>
-                        </div>
-                    </div>
-                </div>
-                <div className='ourTeam__item'>
-                    <img className='ourTeam__item_photo' src='RogerPhoto.png' alt='Emploee photo'></img>
-                    <div className='ourTeam__item_personalDate'>
-                        <div className='ourTeam__personalDate'>
-                            <p className='ourTeam__personalDate_name'>Roger Dzawin</p>
-                            <p className='ourTeam__personalDate_jobTitle'>Chief Technology Officer</p>
-                        </div>
-                        <div className='ourTeam__personalDate_socialMedia'>
-                            <Link to={'https://x.com/'} id='personalSocialMediaIcon'><img id='personalSocialMediaIcon' src='tweeterIcon.svg' alt='Tweetwr link'></img></Link>
-                            <Link to={'https://www.linkedin.com/'} id='personalSocialMediaIcon'><img id='personalSocialMediaIcon' src='linkedinIcon.svg' alt='Linked In link'></img></Link>
-                            <Link to={'https://www.instagram.com/'} id='personalSocialMediaIcon'><img id='personalSocialMediaIcon' src='instagramIcon.svg' alt='Instagramlink'></img></Link>
-                        </div>
-                    </div>
-                </div>
+                    </li>
+                ))}
             </ul>
             <div className='ourTeam__footer'>
                 <h2 className='ourTeam__footer_title'>Join our team, The one with the master touch</h2>

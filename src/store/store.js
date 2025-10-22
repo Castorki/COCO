@@ -7,6 +7,8 @@ import benefits from '../components/slices/benefitsSlicer';
 import news from '../components/slices/trendingNewsSlicer';
 import growthWithUs from '../components/slices/growWithUsSlicer';
 import rewies from '../components/slices/rewiesSlicer';
+import belifs from '../components/slices/beliefsSlicer';
+import team from '../components/slices/teamSlicer';
 
 
 
@@ -19,6 +21,8 @@ export const store = configureStore({
         benefits : benefits,
         news : news,
         growthWithUs: growthWithUs,
-        rewies: rewies
+        rewies: rewies,
+        belifs: belifs,
+        team: team
     }
 })
