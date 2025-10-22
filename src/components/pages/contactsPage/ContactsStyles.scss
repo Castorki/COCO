@@ -97,6 +97,8 @@ input[type="number"] {
 
 .contactsForm {
 
+    overflow: hidden;
+
     &__form {
         margin-bottom: 261px;
         max-width: 550px;

@@ -64,6 +64,9 @@ input[type=number] {
   color: #1D1E25;
 }
 
+.contactsForm {
+  overflow: hidden;
+}
 .contactsForm__form {
   margin-bottom: 261px;
   max-width: 550px;

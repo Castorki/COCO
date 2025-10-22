@@ -14,6 +14,7 @@ import blogs from '../components/slices/blogsSlicer';
 import filters from '../components/slices/filtersSlicer';
 import tips from '../components/slices/tipsSlicer';
 import articles from '../components/slices/articlesSlicer';
+import contacts from '../components/slices/contactsSlicer';
 
 
 
@@ -33,6 +34,7 @@ export const store = configureStore({
         blogs: blogs,
         filters: filters,
         tips: tips,
-        articles: articles
+        articles: articles,
+        contacts: contacts
     }
 })
