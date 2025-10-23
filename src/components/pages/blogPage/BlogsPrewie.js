@@ -58,8 +58,12 @@ export const BlogsPrewie = () => {
                     <li key={item.id} className='blogsPrewie__blog'>
                         <img className='blogsPrewie__blog_photo' src={item.photo} alt=''></img>
                         <p className='blogsPrewie__blog_dateOfPublish'>{item.dateOfPublish}</p>
-                        <p className='blogsPrewie__blog_author'>{item.author}</p>
-                        <Link to={'/detailBlog'}><h3 className='blogsPrewie__blog_title'>{item.title}</h3></Link>
+                        <p className='blogsPrewie__blog_author'>by : {item.author}</p>
+                        <Link
+                            to={'/detailBlog'}
+                            state={{ title: item.title, author: item.author }}>
+                            <h3 className='blogsPrewie__blog_title'>{item.title}</h3>
+                        </Link>
                         <p className='blogsPrewie__blog_article'>{item.desr}</p>
                     </li>
                 ))}

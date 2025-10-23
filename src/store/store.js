@@ -15,17 +15,19 @@ import filters from '../components/slices/filtersSlicer';
 import tips from '../components/slices/tipsSlicer';
 import articles from '../components/slices/articlesSlicer';
 import contacts from '../components/slices/contactsSlicer';
+import fullArticles from '../components/slices/fullArticlesSlicer';
+import authors from '../components/slices/authorsSlicer';
 
 
 
 export const store = configureStore({
     reducer: {
-        questions : questions,
-        offers : offers,
-        advantages : advantages,
-        partners : partners,
-        benefits : benefits,
-        news : news,
+        questions: questions,
+        offers: offers,
+        advantages: advantages,
+        partners: partners,
+        benefits: benefits,
+        news: news,
         growthWithUs: growthWithUs,
         rewies: rewies,
         belifs: belifs,
@@ -35,6 +37,8 @@ export const store = configureStore({
         filters: filters,
         tips: tips,
         articles: articles,
-        contacts: contacts
+        contacts: contacts,
+        fullArticles: fullArticles,
+        authors: authors
     }
 })

@@ -85,6 +85,21 @@
         line-height: 32px;
         color: #1D1E25;
     }
+
+    &__noArticle {
+        height: 55vh;
+        display: flex;
+        align-items: center;
+
+        &_title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 72px;
+            line-height: 120%;
+            letter-spacing: -3px;
+            color: #1D1E25;
+        }
+    }
 }
 
 .author {
@@ -142,6 +157,20 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 32px;
+            color: #1D1E25;
+        }
+    }
+
+    &__noAuthor {
+        display: flex;
+        align-items: center;
+
+        &_title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -1px;
             color: #1D1E25;
         }
     }
