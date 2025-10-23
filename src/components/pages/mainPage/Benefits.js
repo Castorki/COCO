@@ -19,18 +19,18 @@ export const Benefits = () => {
             <div className='benefits__list'>
                 {benefits.map(item => (
                     <div key={item.id} className='benefits__list_listEl'>
-                        <div className='benefits__list_listEl_pictures'>
-                            <img className='benefits__list_listEl_picture_photo' src={item.photo} alt=''></img>
-                            <Link to={'/detailBlog'}  state={{ title: item.title, author: item.author }} className='list__item_link'> <img className='benefits__list_listEl_pictures_icon' src={item.icon} alt=''></img></Link>
+                        <div className='benefits__listEl_pictures'>
+                            <img className='listEl__picture_photo' src={item.photo} alt=''></img>
+                            <Link to={'/detailBlog'}  state={{ title: item.title, author: item.author }} className='list__item_link'> <img className='listEl__pictures_icon' src={item.icon} alt=''></img></Link>
                         </div>
-                        <div className='benefits__list_listEl_info'>
+                        <div className='benefits__listEl_info'>
                             <Link to={'/detailBlog' }  state={{ title: item.title, author: item.author }} className='list__item_link'>
-                                <h3 className='benefits__list_listEl_info_title'>
+                                <h3 className='listEl_info_title'>
                                     {item.title}
 
                                 </h3>
                             </Link>
-                            <p className='benefits__list_listEl_info_article'>
+                            <p className='listEl_info_article'>
                                 {item.article}
                             </p>
                         </div>

@@ -43,7 +43,7 @@ export const OurBeliefs = () => {
                         <p className='ourBeliefs__miniBlog_article'>
                             {item.article}
                         </p>
-                        <Link to={'/detailBlog'} state={{ title: item.title, author: item.author }}> <button className='ourBeliefs__miniBlog_button'><span className='ourBeliefs__miniBlog_button-text'> See Details &rarr;</span></button></Link>
+                        <Link to={'/detailBlog'} state={{ title: item.title, author: item.author }}> <button className='ourBeliefs__miniBlog_button'> See Details &rarr;</button></Link>
                         <div className='ourBeliefs__miniBlog_redCircle'></div>
                     </div>
                 ))

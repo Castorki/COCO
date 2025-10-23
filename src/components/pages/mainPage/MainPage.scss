@@ -251,7 +251,7 @@
             max-width: 400px;
 
 
-            &_element {
+            .advantages__list_element {
                 list-style: none;
                 font-style: normal;
                 font-weight: 500;
@@ -262,7 +262,7 @@
                 margin-left: 40px;
             }
 
-            &_element::before {
+            .advantages__list_element::before {
                 content: url('../../../../public/availableListMarker.svg');
                 margin-right: 16px;
                 position: absolute;
@@ -445,24 +445,24 @@
             display: flex;
             gap: 60px;
 
-            &_pictures {
+            .benefits__listEl_pictures {
                 position: relative;
 
-                &_icon {
+                .listEl__pictures_icon {
                     position: absolute;
                     right: 10px;
                     top: 12px;
                 }
             }
 
-            &_info {
+            .benefits__listEl_info {
 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 gap: 24px;
 
-                &_title {
+                .listEl_info_title {
                     font-family: 'Inter';
                     font-style: normal;
                     font-weight: 600;
@@ -472,7 +472,7 @@
                     color: #1D1E25;
                 }
 
-                &_article {
+                .listEl_info_article {
                     font-style: normal;
                     font-weight: 500;
                     font-size: 16px;

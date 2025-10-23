@@ -20,7 +20,7 @@ export const Advantages = () => {
                 <ul className='advantages__wrapper_list'>
 
                     {advantages.map(item => (
-                        <li key={item.id} className='advantages__wrapper_list_element'>
+                        <li key={item.id} className='advantages__list_element'>
                             {item.article}
                         </li>
                     ))}
