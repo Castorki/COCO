@@ -40,7 +40,7 @@ export const Articles = () => {
                         <img className='list__item_photo' src={item.photo} alt=''></img>
                         <h3 className='list__item_title'>{item.title}</h3>
                         <p className='list__item_article'>{item.descr}</p>
-                        <Link to={'/detailBlog'} className='list__item_link'><button className='list__item_button'>Read More</button></Link>
+                        <Link to={'/detailBlog'}  state={{ title: item.title, author: item.author }} className='list__item_link'><button className='list__item_button'>Read More</button></Link>
                     </li>
                 ))}
             </ul>

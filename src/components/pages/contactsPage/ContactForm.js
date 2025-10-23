@@ -91,9 +91,8 @@ export const ContactForm = () => {
 
         const { name, value } = e.target;
 
-        // Для phone поля - оставляем только цифры
         if (name === 'phone') {
-            const numbersOnly = value.replace(/\D/g, ''); // Удаляем всё кроме цифр
+            const numbersOnly = value.replace(/\D/g, '');
             setFormData(prev => ({
                 ...prev,
                 [name]: numbersOnly

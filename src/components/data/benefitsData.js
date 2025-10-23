@@ -1,6 +1,7 @@
 export const benefits = [
     {
         id: Math.floor(Math.random() * 1000000),
+        author: 'Mary Sew',
         photo: 'lead.png',
         icon: 'leadIcon.svg',
         title: 'Lead happiness for customers',
@@ -8,6 +9,7 @@ export const benefits = [
     },
     {
         id: Math.floor(Math.random() * 1000000),
+        author: 'Clar',
         photo: 'mattually.png',
         icon: 'mattuallyIcon.svg',
         title: ' Mutually support each other',
@@ -15,6 +17,7 @@ export const benefits = [
     },
     {
         id: Math.floor(Math.random() * 1000000),
+        author: 'Jhon Smith',
         photo: 'growing.png',
         icon: 'growingIcon.svg',
         title: 'Have fun growing together',
@@ -22,6 +25,7 @@ export const benefits = [
     },
     {
         id: Math.floor(Math.random() * 1000000),
+        author: 'Albert Sans',
         photo: 'buisness.png',
         icon: 'buisnessIcon.svg',
         title: 'Make Your Business Grow',

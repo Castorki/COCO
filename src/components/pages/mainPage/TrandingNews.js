@@ -28,9 +28,9 @@ export const TrandingNews = () => {
                             <img className='trandingNews__wrapper_itemWrapper_img' src={item.img} alt='' ></img>
                             <div className='trandingNews__wrapper_itemWrapper_publishData'>
                                 <p className='trandingNews__wrapper_itemWrapper_publishData_dateOfPublication'> {item.publishDate}</p>
-                                <p className='trandingNews__wrapper_itemWrapper_publishData_author'>{item.author}</p>
+                                <p className='trandingNews__wrapper_itemWrapper_publishData_author'>by : {item.author}</p>
                             </div>
-                            <Link to={'/detailBlog'}><h2 className='trandingNews__wrapper_itemWrapper_title'>{item.title}</h2></Link>
+                            <Link to={'/detailBlog'}  state={{ title: item.title, author: item.author }}><h2 className='trandingNews__wrapper_itemWrapper_title'>{item.title}</h2></Link>
                         </div>
                     ))
                 ) : (

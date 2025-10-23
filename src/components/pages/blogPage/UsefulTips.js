@@ -1,5 +1,7 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+
 
 export const UsefulTips = () => {
 
@@ -10,7 +12,7 @@ export const UsefulTips = () => {
       {tips.map(item => (
         <div key={item.id} className='usefulTips__item'>
           <img className='usefulTips__item_photo' src={item.photo} alt=''></img>
-          <h3 className='usefulTips__item_title'>{item.title}</h3>
+          <Link to={'/detailBlog'} state={{ title: item.title, author: item.author }} className='usefulTips__item_link'><h3 className='usefulTips__item_title'>{item.title}</h3></Link>
           <p className='usefulTips__item_article'>{item.article}</p>
         </div>
       ))}

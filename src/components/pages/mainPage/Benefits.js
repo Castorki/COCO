@@ -21,10 +21,10 @@ export const Benefits = () => {
                     <div key={item.id} className='benefits__list_listEl'>
                         <div className='benefits__list_listEl_pictures'>
                             <img className='benefits__list_listEl_picture_photo' src={item.photo} alt=''></img>
-                            <Link to={'/detailBlog'} className='list__item_link'> <img className='benefits__list_listEl_pictures_icon' src={item.icon} alt=''></img></Link>
+                            <Link to={'/detailBlog'}  state={{ title: item.title, author: item.author }} className='list__item_link'> <img className='benefits__list_listEl_pictures_icon' src={item.icon} alt=''></img></Link>
                         </div>
                         <div className='benefits__list_listEl_info'>
-                            <Link to={'/detailBlog'} className='list__item_link'>
+                            <Link to={'/detailBlog' }  state={{ title: item.title, author: item.author }} className='list__item_link'>
                                 <h3 className='benefits__list_listEl_info_title'>
                                     {item.title}
 
