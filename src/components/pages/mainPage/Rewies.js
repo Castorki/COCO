@@ -55,11 +55,11 @@ export const Rewies = () => {
                             <div className='rewies__rewieWrapper_footer_buttonWrapper'>
                                 <button className='rewies__rewieWrapper_footer_buttonWrapper_button left'
                                     onClick={handleSwitchLeft}>
-                                    <img src='rewieNavLeft.svg' alt='left'></img>
+                                    <img className='rewies__button_arrow' src='rewieNavLeft.svg' alt='left'></img>
                                 </button>
                                 <button className='rewies__rewieWrapper_footer_buttonWrapper_button right'
                                     onClick={handleSwitchRight}>
-                                    <img src='rewieNavRight.svg' alt='right'></img>
+                                    <img className='rewies__button_arrow' src='rewieNavRight.svg' alt='right'></img>
                                 </button>
                             </div>
                         </div>

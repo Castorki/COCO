@@ -107,7 +107,7 @@ export const Prewie = () => {
                 )}
             </div>
             <div className='prewie__graphics'>
-                <img className='prewie__graphics_greenCircle' src='prewieGreenCircle.svg' alt='background'></img>
+                <div className='prewie__graphics_greenCircle' ></div>
                 <img className='prewie__graphics_sales' src='sales.png' alt='sales'></img>
                 <img className='prewie__graphics_customerGrowth' src='customerGrowth.png' alt='Customer Growth'></img>
                 <img className='prewie__graphics_statistic' src='statistic.png' alt='statistic'></img>
