@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
@@ -6,6 +6,13 @@ export const TrandingNews = () => {
 
     const news = useSelector(state => state.news);
     const [trendinNews, setNews] = useState(news);
+    const buttonWrapper = useRef(null);
+
+    useEffect(() => {
+        if (trendinNews.length < 1) {
+            buttonWrapper.current.style.display = 'none';
+        }
+    })
 
     const handleSwitchLeft = (e) => {
         e.preventDefault();
@@ -30,7 +37,7 @@ export const TrandingNews = () => {
                                 <p className='trandingNews__wrapper_itemWrapper_publishData_dateOfPublication'> {item.publishDate}</p>
                                 <p className='trandingNews__wrapper_itemWrapper_publishData_author'>by : {item.author}</p>
                             </div>
-                            <Link to={'/detailBlog'}  state={{ title: item.title, author: item.author }}><h2 className='trandingNews__wrapper_itemWrapper_title'>{item.title}</h2></Link>
+                            <Link to={'/detailBlog'} state={{ title: item.title, author: item.author }}><h2 className='trandingNews__wrapper_itemWrapper_title'>{item.title}</h2></Link>
                         </div>
                     ))
                 ) : (
@@ -39,7 +46,7 @@ export const TrandingNews = () => {
                         <h2 className='wrapper__emptyNews_title'>Interesting news will be added soon</h2>
                     </div>
                 )}
-                <div className='trandingNews__wrapper_itemWrapper_nav'>
+                <div ref={buttonWrapper} className='trandingNews__wrapper_itemWrapper_nav'>
                     <img className='trandingNews__wrapper_itemWrapper_nav_arrows' src='newsArrows.svg' alt='news navigation'></img>
                     <button className='trandingNews__wrapper_itemWrapper_nav_button left' onClick={handleSwitchLeft}></button>
                     <button className='trandingNews__wrapper_itemWrapper_nav_button right' onClick={handleSwitchRight}></button>

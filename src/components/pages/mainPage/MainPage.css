@@ -480,6 +480,7 @@
   color: #1D1E25;
 }
 .trandingNews__wrapper_itemWrapper_nav {
+  display: flex;
   position: absolute;
   z-index: 1;
   right: 47%;
@@ -639,51 +640,50 @@
   border: 1px solid #1D1E25;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1025px) {
   .prewie {
     padding-top: 70px;
     padding-bottom: 125px;
   }
-  .prewie_buttonWrapper {
+  .prewie__info_redCircle {
+    width: 450px;
+    height: 450px;
+  }
+  .prewie__info_header {
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 110%;
+  }
+  .prewie__info_slogan {
+    padding-top: 90px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .prewie__info_slogan::before {
+    top: 110px;
+  }
+  .prewie__info_buttonWrapper {
     display: flex;
     gap: 16px;
   }
-  .prewie_buttonWrapper_email {
+  .prewie__info_buttonWrapper_email {
     padding-right: 90px;
   }
-  .prewie_buttonWrapper_button {
+  .prewie__info_buttonWrapper_button {
     padding: 16px 30px;
   }
-  .ourOffers {
-    display: none;
-    background: #1D1E25;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  .prewie .prewie__graphics_greenCircle {
+    width: 450px;
+    height: 450px;
   }
   .ourOffers__title {
-    width: 60%;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 120%;
-    letter-spacing: -2px;
-    color: #FFFFFF;
+    font-size: 45px;
   }
   .ourOffers__article {
-    width: 53%;
-    margin-top: 24px;
-    margin-bottom: 80px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-    color: #7E8492;
+    font-size: 15px;
   }
   .ourOffers__list {
-    display: grid;
-    grid-template-columns: repeat(2, 481px);
-    justify-content: space-between;
-    gap: 56px;
+    grid-template-columns: repeat(2, 360px);
   }
   .ourOffers__list_listElement {
     display: flex;
@@ -692,472 +692,106 @@
     align-items: flex-start;
   }
   .ourOffers__list_listElement_title {
-    width: 51%;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 42px;
-    letter-spacing: -1px;
-    color: #FFFFFF;
+    width: 58%;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0;
   }
-  .ourOffers__list_listElement_article {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    color: #7E8492;
-  }
-  .advantages {
-    display: none;
-    padding-top: 160px;
-    padding-bottom: 94px;
-    gap: 58px;
-  }
-  .advantages__photoWrapper {
-    position: relative;
+  .advantages__photoWrapper_photo {
+    width: 390px;
   }
   .advantages__photoWrapper_barChart {
-    position: absolute;
-    left: 259px;
-    top: 313px;
-  }
-  .advantages__wrapper_title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 120%;
-    letter-spacing: -2px;
-    color: #1D1E25;
-  }
-  .advantages__wrapper_article {
-    max-width: 360px;
-    margin-top: 24px;
-    margin-bottom: 40px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: #7E8492;
-  }
-  .advantages__wrapper_list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    max-width: 400px;
-  }
-  .advantages__wrapper_list .advantages__list_element {
-    list-style: none;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: #1D1E25;
-    position: relative;
-    margin-left: 40px;
-  }
-  .advantages__wrapper_list .advantages__list_element::before {
-    content: url("../../../../public/availableListMarker.svg");
-    margin-right: 16px;
-    position: absolute;
-    top: 22px;
-    left: -40px;
+    width: 200px;
+    left: 43%;
+    top: 34%;
   }
   .growthWithUs {
-    display: none;
-    margin-top: 66px;
-    margin-bottom: 160px;
+    margin-bottom: 130px;
   }
   .growthWithUs__info {
-    display: flex;
-    gap: 143px;
-  }
-  .growthWithUs__info_element {
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-    position: relative;
+    gap: 100px;
   }
   .growthWithUs__info_element_title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 120%;
-    color: #1D1E25;
+    font-size: 50px;
+    line-height: 100%;
   }
   .growthWithUs__info_element_article {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: #7E8492;
+    font-size: 15px;
+    line-height: 25px;
   }
   .growthWithUs__info_element:not(:first-child):after {
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 99px;
-    background-color: #CED1D8;
-    bottom: 30px;
-    left: -72px;
+    bottom: 10px;
+    left: -55px;
   }
   .growthWithUs__photo {
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-  .growthWithUs__quote {
     display: flex;
-    gap: 177px;
+    justify-self: center;
   }
   .growthWithUs__quote_title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 120%;
-    letter-spacing: -2px;
-    color: #1D1E25;
+    font-size: 35px;
+    line-height: 110%;
+    letter-spacing: 0;
   }
   .growthWithUs__quote_article {
-    max-width: 420px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: #7E8492;
-  }
-  .partners {
-    display: none;
-    padding-top: 103px;
-    padding-bottom: 103px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .partners.showBorder::before {
-    content: "";
-    background-color: #EDEDED;
-    width: 100%;
-    max-width: 1200px;
-    height: 1px;
-    position: absolute;
-    top: 0px;
-  }
-  .partners.showBorder::after {
-    content: "";
-    background-color: #EDEDED;
-    width: 100%;
-    max-width: 1200px;
-    height: 1px;
-    position: absolute;
-    bottom: 0px;
-  }
-  .partners__info {
-    display: flex;
-    flex-direction: column;
-    max-width: 323px;
-  }
-  .partners__info_title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 120%;
-    letter-spacing: -2px;
-    color: #1D1E25;
-  }
-  .partners__info_article {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: #7E8492;
-  }
-  .partners__logos {
-    display: grid;
-    grid-template-columns: repeat(4, 160px);
-    justify-items: center;
-  }
-  .partners__logos_logo {
-    padding: 31px 33px;
-    margin-left: 30px;
+    font-size: 15px;
   }
   .benefits {
-    display: none;
-    margin-top: 160px;
-    margin-bottom: 100px;
-  }
-  .benefits__title {
-    max-width: 601px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 120%;
-    letter-spacing: -2px;
-    color: #1D1E25;
-  }
-  .benefits__article {
-    margin-top: 24px;
-    margin-bottom: 80px;
-    max-width: 462px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: #7E8492;
+    margin-top: 130px;
   }
   .benefits__list {
-    display: grid;
-    grid-template-columns: repeat(2, 568px);
-    row-gap: 56px;
-    -moz-column-gap: 64px;
-         column-gap: 64px;
+    grid-template-columns: repeat(2, 423px);
+    row-gap: 45px;
+    -moz-column-gap: 50px;
+         column-gap: 50px;
   }
   .benefits__list_listEl {
-    display: flex;
-    gap: 60px;
+    gap: 45px;
   }
-  .benefits__list_listEl .benefits__listEl_pictures {
-    position: relative;
+  .benefits__list_listEl .listEl__picture_photo {
+    width: 200px;
   }
-  .benefits__list_listEl .benefits__listEl_pictures .listEl__pictures_icon {
-    position: absolute;
-    right: 10px;
-    top: 12px;
+  .benefits__list_listEl .listEl__pictures_icon {
+    width: 45px;
   }
   .benefits__list_listEl .benefits__listEl_info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 24px;
   }
   .benefits__list_listEl .benefits__listEl_info .listEl_info_title {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 42px;
-    letter-spacing: -1px;
-    color: #1D1E25;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0;
   }
   .benefits__list_listEl .benefits__listEl_info .listEl_info_article {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    color: #7E8492;
-  }
-  .trandingNews {
-    display: none;
-    padding-top: 60px;
-    padding-bottom: 91px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .trandingNews__title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 120%;
-    letter-spacing: -2px;
-    color: #1D1E25;
-  }
-  .trandingNews__article {
-    padding-top: 24px;
-    padding-bottom: 80px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: #7E8492;
-  }
-  .trandingNews__wrapper {
-    display: flex;
-    gap: 32px;
-    position: relative;
-  }
-  .trandingNews__wrapper_itemWrapper_publishData {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .trandingNews__wrapper_itemWrapper_publishData_dateOfPublication {
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 150%;
-    color: #7E8492;
+    line-height: 23px;
   }
-  .trandingNews__wrapper_itemWrapper_publishData_author {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: #7E8492;
+  .trandingNews__wrapper_itemWrapper_img {
+    width: 450px;
   }
   .trandingNews__wrapper_itemWrapper_title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 150%;
-    letter-spacing: -0.02em;
-    color: #1D1E25;
+    font-size: 28px;
   }
   .trandingNews__wrapper_itemWrapper_nav {
-    position: absolute;
-    z-index: 1;
-    right: 47%;
-    bottom: 50%;
-    background-color: #fff;
-    padding: 33px 27px;
-    border-radius: 100%;
-  }
-  .trandingNews__wrapper_itemWrapper_nav_button {
-    position: absolute;
-    width: 20px;
-    height: 40px;
-    background: none;
-    border: none;
-  }
-  .trandingNews__wrapper_itemWrapper_nav_button.left {
-    left: 21px;
-    top: 22px;
-  }
-  .trandingNews__wrapper_itemWrapper_nav_button.right {
-    left: 42px;
-    top: 22px;
-  }
-  .trandingNews__wrapper_emptyNews {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    align-items: center;
-  }
-  .trandingNews__wrapper_emptyNews .wrapper__emptyNews_title {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 120%;
-    letter-spacing: -2px;
-    color: #1D1E25;
+    right: 46%;
+    bottom: 52%;
   }
   .rewies {
-    display: none;
     padding-top: 69px;
     padding-bottom: 160px;
     position: relative;
     flex-direction: column;
   }
-  .rewies__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .rewies__header_title {
-    width: 40%;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 120%;
-    letter-spacing: -2px;
-    color: #101010;
-  }
-  .rewies__header_article {
-    width: 30%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    color: #7E8492;
-  }
-  .rewies__emptyRewies {
-    padding-top: 112px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 120%;
-    letter-spacing: -3px;
-    color: #1D1E25;
+  .rewies .rewies__header_title {
+    font-size: 46px;
+    line-height: 115%;
+    letter-spacing: 0;
   }
   .rewies__rewieWrapper {
-    padding-top: 112px;
-    max-width: 960px;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-  }
-  .rewies__rewieWrapper .rewies__watermarkWrapper {
-    position: relative;
-  }
-  .rewies__rewieWrapper .rewies__watermarkWrapper_watermark {
-    position: absolute;
-    bottom: -12px;
-    left: -25%;
-  }
-  .rewies__rewieWrapper_rating {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    color: #1D1E25;
+    width: 720px;
   }
   .rewies__rewieWrapper_rewieText {
-    padding-top: 16px;
-    padding-bottom: 40px;
-    width: 90%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 130%;
-    letter-spacing: -1px;
-    color: #1D1E25;
-  }
-  .rewies__rewieWrapper_footer {
-    display: flex;
-    justify-content: space-between;
-  }
-  .rewies__rewieWrapper_footer_author {
-    display: flex;
-    gap: 24px;
-  }
-  .rewies__rewieWrapper_footer_author_authorInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
-  }
-  .rewies__rewieWrapper_footer_author_authorInfo_name {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 26px;
-    color: #1D1E25;
-  }
-  .rewies__rewieWrapper_footer_author_authorInfo_position {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    color: #7E8492;
-  }
-  .rewies__rewieWrapper_footer_buttonWrapper {
-    display: flex;
-    gap: 16px;
-  }
-  .rewies__rewieWrapper_footer_buttonWrapper_button {
-    padding: 19px 18px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .rewies__rewieWrapper_footer_buttonWrapper_button.left {
-    background-color: #fff;
-    border: 1px solid #CED1D8;
-  }
-  .rewies__rewieWrapper_footer_buttonWrapper_button.right {
-    background-color: #1D1E25;
-    border: 1px solid #1D1E25;
+    font-size: 32px;
+    letter-spacing: 0;
   }
 }
 @media (max-width: 769px) {
@@ -1206,6 +840,10 @@
     padding: 8px 16px;
     font-size: 12px;
     line-height: 20px;
+  }
+  .prewie .prewie__graphics_customerGrowth {
+    bottom: 180px;
+    left: 370px;
   }
   .ourOffers {
     padding-top: 40px;
@@ -1284,11 +922,7 @@
     margin-bottom: 56px;
   }
   .growthWithUs__info {
-    display: grid;
-    grid-template-columns: repeat(2, 160px);
-    row-gap: 16px;
-    -moz-column-gap: 32px;
-         column-gap: 32px;
+    gap: 32px;
   }
   .growthWithUs__info_element_title {
     font-size: 32px;
@@ -1300,9 +934,8 @@
     line-height: 24px;
   }
   .growthWithUs__info_element:not(:first-child):after {
-    height: 64px;
-    bottom: 0;
-    left: 0;
+    bottom: 10px;
+    left: -20px;
   }
   .growthWithUs__photo {
     margin-top: 32px;
@@ -1406,7 +1039,6 @@
   .trandingNews {
     padding-top: 0;
     padding-bottom: 39px;
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -1477,47 +1109,24 @@
     padding-top: 17px;
     padding-bottom: 80px;
   }
-  .rewies__header {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: normal;
-    align-items: normal;
-  }
-  .rewies__header_title {
-    font-size: 24px;
-    line-height: 34px;
-    letter-spacing: 0;
-  }
   .rewies__header_article {
     width: 35%;
     font-size: 14px;
     line-height: 20px;
   }
   .rewies__emptyRewies {
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 120%;
-    letter-spacing: -3px;
-    color: #1D1E25;
+    font-weight: 600;
+    font-size: 42px;
   }
   .rewies__rewieWrapper {
     padding-left: 32px;
     padding-top: 80px;
-    max-width: 960px;
-  }
-  .rewies__rewieWrapper .rewies__watermarkWrapper {
-    position: relative;
+    width: 525px;
   }
   .rewies__rewieWrapper .rewies__watermarkWrapper_watermark {
-    width: 32px;
+    width: 60px;
     bottom: 0;
-    left: -32px;
+    left: -70px;
   }
   .rewies__rewieWrapper_rating {
     font-size: 14px;
@@ -1553,5 +1162,78 @@
     height: 16px;
     align-self: center;
     width: 16px;
+  }
+}
+@media (max-width: 427px) {
+  .prewie .prewie__info_buttonWrapper {
+    flex-direction: column;
+  }
+  .prewie .prewie__graphics {
+    align-items: center;
+  }
+  .prewie .prewie__graphics_customerGrowth {
+    width: 118px;
+    top: 0;
+    left: 80%;
+  }
+  .growthWithUs__info {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    row-gap: 16px;
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  .growthWithUs__info_element:not(:first-child):after {
+    height: 64px;
+    bottom: 15px;
+    left: -15px;
+  }
+  .growthWithUs__info_element:nth-child(3)::after {
+    content: "";
+    height: 0;
+  }
+  .trandingNews {
+    overflow: hidden;
+    align-items: normal;
+  }
+  .trandingNews__wrapper {
+    position: relative;
+  }
+  .trandingNews__wrapper_itemWrapper {
+    width: 300px;
+  }
+  .trandingNews__wrapper_itemWrapper_img {
+    width: 300px;
+  }
+  .trandingNews__wrapper_itemWrapper:nth-child(2) {
+    position: absolute;
+    left: 90%;
+  }
+  .trandingNews__wrapper_itemWrapper_nav {
+    right: 7%;
+    bottom: 54%;
+  }
+  .trandingNews__wrapper .wrapper__emptyNews_title {
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .rewies__header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: normal;
+  }
+  .rewies__header .rewies__header_title {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+  .rewies__rewieWrapper {
+    width: 327px;
+  }
+  .rewies__rewieWrapper .rewies__watermarkWrapper_watermark {
+    width: 32px;
+    left: -35px;
   }
 }/*# sourceMappingURL=MainPage.css.map */
