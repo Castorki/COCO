@@ -407,7 +407,7 @@ input {
 @media (max-width: 1025px) {
 
     img {
-        max-width: 600px;
+        max-width: 450px;
         object-fit: cover;
     }
 
@@ -426,8 +426,16 @@ input {
         top: 250px;
     }
 
+    .footer__head {
+        margin-top: 130px;
+    }
+
     .footer__nav {
         gap: 55px;
+    }
+
+    .footer__bottom.dark .footer__bottom_copyright {
+        padding-left: 32px;
     }
 }
 
@@ -492,10 +500,22 @@ input {
             }
 
             &_article {
+                position: relative;
+                padding-left: 52px;
                 width: 80%;
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
+            }
+
+            &.dark .footer__head_article::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 34px;
+                width: 35px;
+                height: 1px;
+                background-color: currentColor;
             }
 
             &.light .footer__head_article::before {
@@ -533,10 +553,10 @@ input {
             }
 
             &.dark .footer__logo_descr {
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 24px;
-                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #7E8492;
             }
         }
 
@@ -572,7 +592,7 @@ input {
             }
 
             &.dark .footer__bottom_copyright {
-                padding-left: 352px;
+                padding-left: 0;
             }
         }
     }
@@ -593,134 +613,5 @@ input {
     .header {
         margin-top: 24px;
         margin-bottom: 0;
-    }
-
-    .footer {
-
-        &__backround {
-            &_redCircle {
-                width: 221px;
-                height: 221px;
-                top: -25px;
-                left: -55px;
-                filter: blur(60px);
-            }
-
-            &_greenCircle {
-                width: 293px;
-                height: 293px;
-                left: 195px;
-                top: 251px;
-            }
-
-        }
-
-        &__head {
-            gap: 24px;
-            margin-top: 51px;
-            margin-bottom: 56px;
-
-            &_title {
-                font-size: 24px;
-                line-height: 34px;
-            }
-
-            &_button {
-                margin-left: 43px;
-                align-self: normal;
-                order: 1;
-                padding: 12px 24px;
-
-                &_text {
-                    font-size: 14px;
-                    line-height: 20px;
-                }
-
-            }
-
-            &_article {
-                width: 80%;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 24px;
-            }
-
-            &.light .footer__head_article::before {
-                left: 0;
-                top: 12px;
-                width: 35px;
-            }
-
-            &.light .footer__head_article {
-                padding-left: 43px;
-                font-size: 16px;
-                line-height: 24px;
-            }
-
-        }
-
-        &__logoAndNavWrapper {
-            margin-top: 0;
-        }
-
-
-        &__logo {
-            margin-right: 0;
-            padding-bottom: 56px;
-
-            &_title {
-                gap: 8px;
-                margin-bottom: 9px;
-            }
-
-            &_descr {
-                font-size: 14px;
-                line-height: 20px;
-                color: #7E8492;
-            }
-
-            &.dark .footer__logo_descr {
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 24px;
-                color: #FFFFFF;
-            }
-        }
-
-        &__bottom {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            gap: 24px;
-            margin-top: 0;
-            margin-bottom: 30px;
-            padding-top: 40px;
-
-            &_legal {
-                gap: 24px;
-                padding-left: 0;
-
-                .footer__bottom_link {
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #7E8492;
-                }
-            }
-
-            &_copyright {
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                color: #7E8492;
-            }
-
-            &.dark {
-                justify-content: unset;
-            }
-
-            &.dark .footer__bottom_copyright {
-                padding-left: 352px;
-            }
-        }
     }
 }

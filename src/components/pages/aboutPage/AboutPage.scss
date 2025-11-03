@@ -95,6 +95,7 @@
     }
 
     &__miniBlog {
+        height: 634px;
         position: relative;
         padding-left: 32px;
 
@@ -358,6 +359,442 @@
             font-size: 16px;
             line-height: 24px;
             color: #1D1E25;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .audienceAttention {
+        padding-top: 75px;
+        padding-bottom: 100px;
+
+        &__header {
+            font-weight: 600;
+            font-size: 55px;
+            line-height: 110%;
+        }
+
+        &__article {
+            padding-top: 60px;
+            font-size: 25px;
+            line-height: 37px;
+
+            &::before {
+                bottom: 68%;
+            }
+        }
+
+
+        .audienceAttention__link_icon {
+            position: absolute;
+            left: 80%;
+            bottom: 0;
+        }
+
+    }
+
+    .ourBeliefs {
+        padding-bottom: 140px;
+    }
+
+    .ourSpecialization {
+
+        &::before {
+            width: 88%;
+        }
+
+        &::after {
+            width: 88%;
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 110%;
+        }
+
+        &__article {
+            font-size: 18px;
+        }
+    }
+
+    .ourTeam {
+        padding-top: 110px;
+        padding-bottom: 145px;
+
+        .ourTeam__header_title {
+            font-size: 45px;
+        }
+
+        &__list {
+            gap: 15px;
+
+            .ourTeam__item {
+
+                &_photo {
+                    width: 300px;
+                }
+
+                &_personalDate {
+
+                    .ourTeam__personalDate_name {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 19px;
+                        line-height: 150%;
+                        color: #1D1E25;
+                    }
+
+                    .ourTeam__personalDate_jobTitle {
+                        font-size: 16px;
+
+                    }
+                }
+            }
+        }
+
+        &__footer {
+
+            &_title {
+                font-size: 45px;
+            }
+
+            &_article {
+                font-size: 15px;
+                line-height: 25px;
+            }
+
+            &_otherOptions {
+                right: 218px;
+                bottom: -35px;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .audienceAttention {
+        padding-top: 32px;
+        padding-bottom: 69px;
+
+        &__header {
+            max-width: 70%;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -1px;
+        }
+
+        &__article {
+            padding-top: 48px;
+            padding-left: 50px;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0;
+
+            &::before {
+                bottom: 64%;
+                width: 24px;
+            }
+        }
+
+        .audienceAttention__link_icon {
+            width: 100px;
+            bottom: -30px;
+        }
+
+    }
+
+    .ourBeliefs {
+        padding-bottom: 56px;
+
+        &__miniBlogPhoto {
+            width: 300px;
+        }
+
+        &__buttonWraper {
+
+            &_arrows {
+                top: 23%;
+                left: -3px;
+            }
+
+            &_button {
+
+                &.left {
+                    height: 70px;
+                    left: -50px;
+                    top: 70px;
+                    clip-path: ellipse(26px 46% at right center);
+                }
+
+                &.right {
+                    height: 70px;
+                    left: 20px;
+                    top: 70px;
+                    clip-path: ellipse(26px 46% at left center);
+                }
+            }
+
+        }
+
+        &__miniBlog {
+            height: 428px;
+            padding-left: 20px;
+
+            &_prewie {
+                max-height: 246px;
+            }
+
+            &_title {
+                padding-top: 16px;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0;
+            }
+
+            &_article {
+                padding-bottom: 16px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &_button {
+                padding: 8px 24px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &_redCircle {
+                position: absolute;
+                z-index: -2;
+                width: 551px;
+                height: 551px;
+                background-color: #FA7515;
+                border-radius: 100%;
+                filter: blur(110px);
+                opacity: 13%;
+                top: 57%;
+                right: 100%;
+            }
+        }
+    }
+
+    .ourSpecialization {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        flex-direction: column;
+        align-items: normal;
+        gap: 16px;
+
+        &::before {
+            width: 79%;
+        }
+
+        &::after {
+            width: 79%;
+        }
+
+        &__title {
+            max-width: 90%;
+            font-size: 24px;
+            line-height: 34px;
+            letter-spacing: 0;
+        }
+
+        &__article {
+            max-width: 90%;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    .ourTeam {
+        padding-top: 56px;
+        padding-bottom: 80px;
+
+        &__header {
+
+            .ourTeam__header_title {
+                font-size: 24px;
+                line-height: 34px;
+                letter-spacing: 0;
+            }
+
+            &_article {
+                padding-top: 16px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &_greenCircle {
+                position: absolute;
+                z-index: -2;
+                width: 525px;
+                height: 525px;
+                background-color: rgba(226, 248, 240, 0.7);
+                border-radius: 100%;
+                filter: blur(90px);
+                top: -55%;
+                right: 0;
+            }
+
+        }
+
+        &__list {
+            overflow: hidden;
+            padding-top: 32px;
+            padding-bottom: 56px;
+            gap: 16px;
+
+            &_buttonWraper {
+                left: 47%;
+                padding: 16px 13px;
+
+                .ourTeam__buttonWraper_button {
+                    position: absolute;
+                    width: 20px;
+                    height: 40px;
+                    background: none;
+                    border: none;
+
+                    &.left {
+                        left: 8px;
+                        top: 6px;
+                    }
+
+                    &.right {
+                        left: 28px;
+                        top: 6px;
+                    }
+                }
+            }
+
+            .ourTeam__item {
+                gap: 8px;
+
+                &_personalDate {
+                    gap: 0;
+                    justify-content: space-between;
+
+                    .ourTeam__personalDate_name {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .ourTeam__personalDate_jobTitle {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    .personalSocialMediaIcon {
+                        max-width: 20px;
+                    }
+                }
+            }
+        }
+
+        &__footer {
+            gap: 16px;
+            flex-direction: column;
+
+            &_title {
+                font-size: 24px;
+                line-height: 34px;
+                letter-spacing: 0;
+            }
+
+            &_article {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            &_otherOptions {
+                position: static;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .audienceAttention {
+        padding-bottom: 169px;
+
+
+        .audienceAttention__article {
+            max-width: 84%;
+
+            &::before {
+                bottom: 68%;
+            }
+        }
+
+        .audienceAttention__link_icon {
+            width: 69px;
+            left: 79%;
+            bottom: -74px;
+
+        }
+    }
+
+    .ourBeliefs {
+
+        &__miniBlogPhoto {
+            display: none;
+        }
+
+        &__buttonWraper {
+
+            &_arrows {
+                top: 96%;
+                left: 287px;
+            }
+
+            &_button {
+
+                &.left {
+                    left: 251px;
+                    top: 90%;
+                    background-color: #1D1E25;
+                }
+
+                &.right {
+                    left: 300px;
+                    top: 90%;
+                    background-color: #1D1E25;
+                }
+            }
+
+        }
+    }
+
+    .ourSpecialization {
+
+        &::before {
+            width: 90%;
+        }
+
+        &::after {
+            width: 90%;
+        }
+    }
+
+    .ourTeam {
+
+        .ourTeam__list_buttonWraper {
+            left: 78%;
+        }
+
+        .ourTeam__footer_title {
+            max-width: 95%;
+            font-size: 24px;
+            line-height: 34px;
+            letter-spacing: 0;
+        }
+
+        .ourTeam__footer_article {
+            max-width: 95%;
         }
     }
 }

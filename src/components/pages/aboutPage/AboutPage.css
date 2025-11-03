@@ -83,6 +83,7 @@
   clip-path: ellipse(50px 50% at left center);
 }
 .ourBeliefs__miniBlog {
+  height: 634px;
   position: relative;
   padding-left: 32px;
 }
@@ -317,4 +318,324 @@
   font-size: 16px;
   line-height: 24px;
   color: #1D1E25;
+}
+
+@media (max-width: 1025px) {
+  .audienceAttention {
+    padding-top: 75px;
+    padding-bottom: 100px;
+  }
+  .audienceAttention__header {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 110%;
+  }
+  .audienceAttention__article {
+    padding-top: 60px;
+    font-size: 25px;
+    line-height: 37px;
+  }
+  .audienceAttention__article::before {
+    bottom: 68%;
+  }
+  .audienceAttention .audienceAttention__link_icon {
+    position: absolute;
+    left: 80%;
+    bottom: 0;
+  }
+  .ourBeliefs {
+    padding-bottom: 140px;
+  }
+  .ourSpecialization::before {
+    width: 88%;
+  }
+  .ourSpecialization::after {
+    width: 88%;
+  }
+  .ourSpecialization__title {
+    font-size: 48px;
+    line-height: 110%;
+  }
+  .ourSpecialization__article {
+    font-size: 18px;
+  }
+  .ourTeam {
+    padding-top: 110px;
+    padding-bottom: 145px;
+  }
+  .ourTeam .ourTeam__header_title {
+    font-size: 45px;
+  }
+  .ourTeam__list {
+    gap: 15px;
+  }
+  .ourTeam__list .ourTeam__item_photo {
+    width: 300px;
+  }
+  .ourTeam__list .ourTeam__item_personalDate .ourTeam__personalDate_name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 150%;
+    color: #1D1E25;
+  }
+  .ourTeam__list .ourTeam__item_personalDate .ourTeam__personalDate_jobTitle {
+    font-size: 16px;
+  }
+  .ourTeam__footer_title {
+    font-size: 45px;
+  }
+  .ourTeam__footer_article {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .ourTeam__footer_otherOptions {
+    right: 218px;
+    bottom: -35px;
+  }
+}
+@media (max-width: 769px) {
+  .audienceAttention {
+    padding-top: 32px;
+    padding-bottom: 69px;
+  }
+  .audienceAttention__header {
+    max-width: 70%;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  .audienceAttention__article {
+    padding-top: 48px;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  .audienceAttention__article::before {
+    bottom: 64%;
+    width: 24px;
+  }
+  .audienceAttention .audienceAttention__link_icon {
+    width: 100px;
+    bottom: -30px;
+  }
+  .ourBeliefs {
+    padding-bottom: 56px;
+  }
+  .ourBeliefs__miniBlogPhoto {
+    width: 300px;
+  }
+  .ourBeliefs__buttonWraper_arrows {
+    top: 23%;
+    left: -3px;
+  }
+  .ourBeliefs__buttonWraper_button.left {
+    height: 70px;
+    left: -50px;
+    top: 70px;
+    clip-path: ellipse(26px 46% at right center);
+  }
+  .ourBeliefs__buttonWraper_button.right {
+    height: 70px;
+    left: 20px;
+    top: 70px;
+    clip-path: ellipse(26px 46% at left center);
+  }
+  .ourBeliefs__miniBlog {
+    height: 428px;
+    padding-left: 20px;
+  }
+  .ourBeliefs__miniBlog_prewie {
+    max-height: 246px;
+  }
+  .ourBeliefs__miniBlog_title {
+    padding-top: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0;
+  }
+  .ourBeliefs__miniBlog_article {
+    padding-bottom: 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ourBeliefs__miniBlog_button {
+    padding: 8px 24px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ourBeliefs__miniBlog_redCircle {
+    position: absolute;
+    z-index: -2;
+    width: 551px;
+    height: 551px;
+    background-color: #FA7515;
+    border-radius: 100%;
+    filter: blur(110px);
+    opacity: 13%;
+    top: 57%;
+    right: 100%;
+  }
+  .ourSpecialization {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    align-items: normal;
+    gap: 16px;
+  }
+  .ourSpecialization::before {
+    width: 79%;
+  }
+  .ourSpecialization::after {
+    width: 79%;
+  }
+  .ourSpecialization__title {
+    max-width: 90%;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+  .ourSpecialization__article {
+    max-width: 90%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ourTeam {
+    padding-top: 56px;
+    padding-bottom: 80px;
+  }
+  .ourTeam__header .ourTeam__header_title {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+  .ourTeam__header_article {
+    padding-top: 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ourTeam__header_greenCircle {
+    position: absolute;
+    z-index: -2;
+    width: 525px;
+    height: 525px;
+    background-color: rgba(226, 248, 240, 0.7);
+    border-radius: 100%;
+    filter: blur(90px);
+    top: -55%;
+    right: 0;
+  }
+  .ourTeam__list {
+    overflow: hidden;
+    padding-top: 32px;
+    padding-bottom: 56px;
+    gap: 16px;
+  }
+  .ourTeam__list_buttonWraper {
+    left: 47%;
+    padding: 16px 13px;
+  }
+  .ourTeam__list_buttonWraper .ourTeam__buttonWraper_button {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: none;
+    border: none;
+  }
+  .ourTeam__list_buttonWraper .ourTeam__buttonWraper_button.left {
+    left: 8px;
+    top: 6px;
+  }
+  .ourTeam__list_buttonWraper .ourTeam__buttonWraper_button.right {
+    left: 28px;
+    top: 6px;
+  }
+  .ourTeam__list .ourTeam__item {
+    gap: 8px;
+  }
+  .ourTeam__list .ourTeam__item_personalDate {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .ourTeam__list .ourTeam__item_personalDate .ourTeam__personalDate_name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .ourTeam__list .ourTeam__item_personalDate .ourTeam__personalDate_jobTitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ourTeam__list .ourTeam__item_personalDate .personalSocialMediaIcon {
+    max-width: 20px;
+  }
+  .ourTeam__footer {
+    gap: 16px;
+    flex-direction: column;
+  }
+  .ourTeam__footer_title {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+  .ourTeam__footer_article {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .ourTeam__footer_otherOptions {
+    position: static;
+    line-height: 20px;
+  }
+}
+@media (max-width: 426px) {
+  .audienceAttention {
+    padding-bottom: 169px;
+  }
+  .audienceAttention .audienceAttention__article {
+    max-width: 84%;
+  }
+  .audienceAttention .audienceAttention__article::before {
+    bottom: 68%;
+  }
+  .audienceAttention .audienceAttention__link_icon {
+    width: 69px;
+    left: 79%;
+    bottom: -74px;
+  }
+  .ourBeliefs__miniBlogPhoto {
+    display: none;
+  }
+  .ourBeliefs__buttonWraper_arrows {
+    top: 96%;
+    left: 287px;
+  }
+  .ourBeliefs__buttonWraper_button.left {
+    left: 251px;
+    top: 90%;
+    background-color: #1D1E25;
+  }
+  .ourBeliefs__buttonWraper_button.right {
+    left: 300px;
+    top: 90%;
+    background-color: #1D1E25;
+  }
+  .ourSpecialization::before {
+    width: 90%;
+  }
+  .ourSpecialization::after {
+    width: 90%;
+  }
+  .ourTeam .ourTeam__list_buttonWraper {
+    left: 78%;
+  }
+  .ourTeam .ourTeam__footer_title {
+    max-width: 95%;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+  .ourTeam .ourTeam__footer_article {
+    max-width: 95%;
+  }
 }/*# sourceMappingURL=AboutPage.css.map */
