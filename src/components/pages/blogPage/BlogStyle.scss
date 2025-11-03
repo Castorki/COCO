@@ -324,3 +324,334 @@
         }
     }
 }
+
+@media (max-width: 1025px) {
+
+    .blogsPrewie__buttonWrapper {
+        left: 54%;
+    }
+
+    .usefulTips {
+        grid-template-columns: repeat(2, 433px);
+
+        &__item {
+
+            &_title {
+                font-size: 28px;
+            }
+
+            &_article {
+                font-size: 16px;
+            }
+
+            &:nth-child(1) {
+                margin-bottom: -55px;
+            }
+        }
+
+
+    }
+
+    .articles {
+        padding-top: 110px;
+        padding-bottom: 200px;
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width: 769px) {
+
+    .blogHeader {
+        padding-top: 32px;
+        padding-bottom: 56px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -1px;
+        }
+
+        &__article {
+            padding-top: 48px;
+            padding-left: 85px;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0;
+
+            &::before {
+                top: 58px;
+                width: 65px;
+            }
+        }
+
+        &__background {
+
+            position: relative;
+
+            &_redCircle {
+                width: 228px;
+                height: 228px;
+                filter: blur(15px);
+                bottom: 45px;
+                left: -65px;
+            }
+
+            &_greenCircle {
+                width: 228px;
+                height: 228px;
+                filter: blur(30px);
+                top: -60px;
+            }
+        }
+    }
+
+    .blogsPrewie {
+        margin-bottom: 36px;
+
+        &__filters {
+            gap: 8px;
+            margin-bottom: 32px;
+
+            &_filter {
+                font-size: 14px;
+                line-height: 20px;
+
+                &:first-child {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        &__blogs {
+            gap: 16px;
+
+        }
+
+        &__blog {
+            width: 247px;
+            gap: 8px;
+
+            &_dateOfPublish {
+                display: none;
+            }
+
+            &_author {
+                display: none;
+            }
+
+            &_title {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0;
+            }
+
+            &_article {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        &__buttonWrapper {
+            left: 38%;
+            padding: 16px 13px;
+
+            &_arrows {
+                width: 24px;
+            }
+
+            &_button {
+                position: absolute;
+                width: 20px;
+                height: 40px;
+                background: none;
+                border: none;
+
+                &.left {
+                    left: 5px;
+                    top: 5px;
+                }
+
+                &.right {
+                    left: 26px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+
+    .usefulTips {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(2, 284px);
+
+        &__item {
+            gap: 16px;
+
+            &_title {
+                font-size: 18px;
+                line-height: 26px;
+            }
+
+            &_article {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .articles {
+        padding-top: 56px;
+        padding-bottom: 80px;
+
+        &__header {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 96px;
+
+            &_title {
+                padding-bottom: 16px;
+                font-size: 24px;
+                line-height: 34px;
+                letter-spacing: 0;
+            }
+
+            &_article {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &_buttonWrapper {
+                gap: 12px;
+                left: 0;
+                bottom: 15%;
+
+                .articles__buttonWrapper_button {
+                    padding: 12px;
+                }
+            }
+        }
+
+        &__list {
+            gap: 16px;
+
+            .list__item_photo {
+                max-width: 350px;
+            }
+
+            .list__item_title {
+                padding-top: 16px;
+                padding-bottom: 8px;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0;
+            }
+
+            .list__item_article {
+                font-size: 14px;
+                line-height: 20px;
+                padding-bottom: 16px;
+            }
+
+            .list__item_button {
+                padding: 12px 24px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+
+    .blogHeader {
+        padding-top: 32px;
+        padding-bottom: 56px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -1px;
+        }
+
+        &__article {
+            padding-top: 48px;
+            padding-left: 85px;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0;
+
+            &::before {
+                top: 58px;
+                width: 65px;
+            }
+        }
+
+        &__background {
+
+            position: relative;
+
+            &_redCircle {
+                width: 228px;
+                height: 228px;
+                filter: blur(15px);
+                bottom: 45px;
+                left: -65px;
+            }
+
+            &_greenCircle {
+                width: 228px;
+                height: 228px;
+                filter: blur(30px);
+                top: -60px;
+            }
+        }
+    }
+
+    .blogsPrewie {
+
+        &__buttonWrapper {
+            left: 63%;
+        }
+    }
+
+    .usefulTips {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__item {
+            max-width: 335px;
+
+            &:first-child {
+                margin-bottom: 0;
+            }
+
+            &:nth-child(3) {
+                align-self: auto;
+            }
+        }
+    }
+
+    .articles {
+
+        &__header {
+
+            &_article {
+                max-width: 95%;
+            }
+        }
+
+
+
+        .list__item_photo {
+            max-width: 260px;
+        }
+
+    }
+}
