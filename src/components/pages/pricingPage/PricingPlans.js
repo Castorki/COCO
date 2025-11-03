@@ -21,6 +21,9 @@ export const PricingPlans = () => {
             {plans.map(item => (
                 <div key={item.id} className={`pricingPlans__plan ${item.type.toLowerCase() === 'popular' ? ('popular') : ('')}`}>
                     <img className='pricingPlans__plan_icon' src={item.icon} alt=''></img>
+                    {item.type.toLowerCase() === 'popular' ? (
+                        <p className='pricingPlans__plan_bestOffer'>Best Offers <img src='pricingPlanBestOffer.png' alt=''></img></p>
+                    ) : ('')}
                     <h2 className='pricingPlans__plan_title'>{item.type}</h2>
                     <p className='pricingPlans__plan_article'>{item.descr}</p>
                     <p className='pricingPlans__plan_price'>{item.price}<span className='pricingPlans__plan_perMonth'>

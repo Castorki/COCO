@@ -276,4 +276,138 @@
   background: none;
   right: 0;
   top: 5px;
+}
+
+@media (max-width: 1025px) {
+  .pricingHeader {
+    overflow: hidden;
+  }
+  .pricingHeader__title {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 74px;
+  }
+  .pricingPlans {
+    gap: 32px;
+  }
+  .pricingPlans__plan_article {
+    padding-bottom: 14px;
+  }
+  .pricingPlans__plan_list {
+    gap: 10px;
+  }
+  .frequantlyQuestions {
+    padding-top: 40px;
+    padding-bottom: 130px;
+  }
+}
+@media (max-width: 769px) {
+  .pricingHeader {
+    padding-top: 32px;
+    padding-bottom: 56px;
+  }
+  .pricingHeader__background_redCircle {
+    width: 218px;
+    height: 218px;
+    filter: blur(60px);
+  }
+  .pricingHeader__background_greenCircle {
+    width: 240px;
+    height: 240px;
+    filter: blur(60px);
+  }
+  .pricingHeader__icon {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .pricingHeader__title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  .pricingHeader__annual {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .pricingPlans {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricingPlans__plan {
+    max-width: 360px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 24px 20px;
+  }
+  .pricingPlans__plan_bestOffer {
+    top: 30px;
+  }
+  .pricingPlans__plan_title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .pricingPlans__plan_article {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .pricingPlans__plan_price {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -1px;
+  }
+  .pricingPlans__plan_list .pricingPlans__list_item {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 28px;
+  }
+  .pricingPlans__plan_list .pricingPlans__list_item.unavailable {
+    font-size: 14px;
+  }
+  .pricingPlans__plan_button {
+    margin-top: 24px;
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .pricingPlans__plan.popular {
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+  .frequantlyQuestions {
+    padding-top: 56px;
+    padding-bottom: 80px;
+  }
+  .frequantlyQuestions__header {
+    gap: 16px;
+    padding-bottom: 32px;
+  }
+  .frequantlyQuestions__header_title {
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+  .frequantlyQuestions__header_article {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .frequantlyQuestions__question {
+    padding-bottom: 12px;
+    margin-bottom: 24px;
+  }
+  .frequantlyQuestions__question_title {
+    max-width: 90%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .frequantlyQuestions__question_article {
+    max-width: 90%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=PricingPage.css.map */
