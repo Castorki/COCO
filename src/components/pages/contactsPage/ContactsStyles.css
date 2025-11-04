@@ -116,7 +116,7 @@ input[type=number] {
   color: #1D1E25;
 }
 .contactsForm__form .form__userData_firstName.input {
-  width: 240px;
+  width: 226px;
   padding: 10px 14px;
   border-radius: 8px;
   border: 1px solid #EDEDED;
@@ -134,7 +134,7 @@ input[type=number] {
   color: #1D1E25;
 }
 .contactsForm__form .form__userData_lastName.input {
-  width: 240px;
+  width: 226px;
   padding: 10px 14px;
   border-radius: 8px;
   border: 1px solid #EDEDED;
@@ -255,4 +255,112 @@ input[type=number] {
   left: 35%;
   z-index: -1;
   bottom: 170px;
+}
+
+@media (max-width: 1025px) {
+  .contactsForm__wrapper_photo {
+    left: 60%;
+    bottom: 650px;
+  }
+}
+@media (max-width: 769px) {
+  .contactsHeader {
+    gap: 59px;
+    flex-direction: column;
+    padding-top: 34px;
+    padding-bottom: 56px;
+  }
+  .contactsHeader__icon {
+    align-self: center;
+    gap: 33px;
+  }
+  .contactsHeader__icon_map {
+    align-self: center;
+  }
+  .contactsHeader__icon_title {
+    align-self: center;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  .contactsHeader__teamContacts {
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+    row-gap: 24px;
+    justify-content: center;
+  }
+  .contactsHeader__teamContacts .teamContacts__item {
+    width: 160px;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .contactsHeader__teamContacts .teamContacts__item_title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contactsHeader__teamContacts .teamContacts__item_article {
+    padding-top: 8px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contactsHeader__teamContacts .teamContacts__item_contactInformation {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contactsForm__form {
+    margin-bottom: 80px;
+    padding: 24px;
+  }
+  .contactsForm__form .form__header {
+    gap: 12px;
+  }
+  .contactsForm__form .form__header_title {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0;
+  }
+  .contactsForm__form .form__header_article {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contactsForm__form .form__submitButton {
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contactsForm .contactsForm__wrapper_photo {
+    display: none;
+  }
+}
+@media (max-width: 426px) {
+  .contactsHeader__teamContacts {
+    grid-template-columns: repeat(2, 160px);
+  }
+  .contactsForm .form__userData {
+    flex-direction: column;
+  }
+  .contactsForm .form__userData_firstName.input {
+    width: 288px;
+  }
+  .contactsForm .form__userData_lastName.input {
+    width: 288px;
+  }
+  .contactsForm .form__userEmail_input {
+    width: 288px;
+  }
+  .contactsForm .form__userPhoneNumber .form__userPhoneNumber_inputElements .userPhoneNumber__inputElements_select {
+    border-right: none;
+    width: 63px;
+  }
+  .contactsForm .form__userPhoneNumber .form__userPhoneNumber_inputElements .userPhoneNumber__inputElements_input {
+    border-left: none;
+    width: 218px;
+  }
+  .contactsForm .form__userMessage_textArea {
+    width: 288px;
+  }
 }/*# sourceMappingURL=ContactsStyles.css.map */
