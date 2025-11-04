@@ -175,3 +175,176 @@
         }
     }
 }
+
+
+@media (max-width: 1025px) {
+    .fullArticle {
+
+        &__title {
+            padding-top: 32px;
+            padding-bottom: 56px;
+            font-size: 57px;
+        }
+
+        &__photo {
+            align-self: center;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .fullArticle {
+        padding-bottom: 32px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: -1px;
+        }
+
+        &__author {
+            margin-top: 0;
+            margin-bottom: 8px;
+            flex-direction: column;
+            justify-content: unset;
+            gap: 16px;
+
+            .fullArticle__author_name {
+                &.avatar {
+                    bottom: 42px;
+                }
+
+                &.moniker {
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                &.jobTitle {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            &_publishDate {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                align-self: normal;
+            }
+        }
+
+        &__preface {
+            margin-top: 32px;
+            margin-bottom: 32px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__subtitle {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &__text {
+            margin-top: 16px;
+            margin-bottom: 32px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .fullArticle__noArticle_title {
+            font-weight: 600;
+            font-size: 41px;
+            line-height: 37px;
+            letter-spacing: 0;
+        }
+
+    }
+
+    .author {
+        gap: 16px;
+        margin-bottom: 80px;
+
+        &__info {
+            gap: 8px;
+
+            &_share {
+                display: grid;
+                gap: 8px;
+                grid-template-columns: repeat(4, 34px);
+                margin-bottom: 48px;
+
+
+                .info__share_text {
+                    grid-column: span 4;
+                    justify-self: center;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            &_name {
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0;
+            }
+
+            &_description {
+                max-width: 100%;
+                margin-left: -56%;
+                margin-top: 6px;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        &__noAuthor {
+            display: flex;
+            align-items: center;
+
+            &_title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: -1px;
+                color: #1D1E25;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .fullArticle {
+
+        &__author {
+
+            .fullArticle__author_name {
+                &.avatar {
+                    width: 32px;
+                }
+
+                &.moniker {
+                    margin-left: 40px;
+                }
+
+                &.jobTitle {
+                    margin-left: 40px;
+                }
+            }
+
+        }
+    }
+
+    .author__info_share {
+        gap: 5px;
+    }
+
+    .author__info_description {
+        margin-left: -141%;
+        max-width: max-content;
+    }
+}

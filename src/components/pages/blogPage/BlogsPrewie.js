@@ -57,8 +57,10 @@ export const BlogsPrewie = () => {
                 {blogsArray.slice(0, 3).map(item => (
                     <li key={item.id} className='blogsPrewie__blog'>
                         <img className='blogsPrewie__blog_photo' src={item.photo} alt=''></img>
-                        <p className='blogsPrewie__blog_dateOfPublish'>{item.dateOfPublish}</p>
-                        <p className='blogsPrewie__blog_author'>by : {item.author}</p>
+                        <div className='blogsPrewie__blog_data'>
+                            <p className='blogsPrewie__blog_dateOfPublish'>{item.dateOfPublish}</p>
+                            <p className='blogsPrewie__blog_author'>by : {item.author}</p>
+                        </div>
                         <Link
                             to={'/detailBlog'}
                             state={{ title: item.title, author: item.author }}>

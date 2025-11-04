@@ -151,4 +151,136 @@
   line-height: 40px;
   letter-spacing: -1px;
   color: #1D1E25;
+}
+
+@media (max-width: 1025px) {
+  .fullArticle__title {
+    padding-top: 32px;
+    padding-bottom: 56px;
+    font-size: 57px;
+  }
+  .fullArticle__photo {
+    align-self: center;
+  }
+}
+@media (max-width: 769px) {
+  .fullArticle {
+    padding-bottom: 32px;
+  }
+  .fullArticle__title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  .fullArticle__author {
+    margin-top: 0;
+    margin-bottom: 8px;
+    flex-direction: column;
+    justify-content: unset;
+    gap: 16px;
+  }
+  .fullArticle__author .fullArticle__author_name.avatar {
+    bottom: 42px;
+  }
+  .fullArticle__author .fullArticle__author_name.moniker {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .fullArticle__author .fullArticle__author_name.jobTitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .fullArticle__author_publishDate {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    align-self: normal;
+  }
+  .fullArticle__preface {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .fullArticle__subtitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .fullArticle__text {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .fullArticle .fullArticle__noArticle_title {
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 37px;
+    letter-spacing: 0;
+  }
+  .author {
+    gap: 16px;
+    margin-bottom: 80px;
+  }
+  .author__info {
+    gap: 8px;
+  }
+  .author__info_share {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, 34px);
+    margin-bottom: 48px;
+  }
+  .author__info_share .info__share_text {
+    grid-column: span 4;
+    justify-self: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .author__info_name {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+  .author__info_description {
+    max-width: 100%;
+    margin-left: -56%;
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .author__noAuthor {
+    display: flex;
+    align-items: center;
+  }
+  .author__noAuthor_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: #1D1E25;
+  }
+}
+@media (max-width: 426px) {
+  .fullArticle__author .fullArticle__author_name.avatar {
+    width: 32px;
+  }
+  .fullArticle__author .fullArticle__author_name.moniker {
+    margin-left: 40px;
+  }
+  .fullArticle__author .fullArticle__author_name.jobTitle {
+    margin-left: 40px;
+  }
+  .author__info_share {
+    gap: 5px;
+  }
+  .author__info_description {
+    margin-left: -141%;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
 }/*# sourceMappingURL=DetailBlogStyle.css.map */

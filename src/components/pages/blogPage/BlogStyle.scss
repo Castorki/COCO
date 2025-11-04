@@ -102,7 +102,6 @@
     }
 
     &__blog {
-        position: relative;
         max-width: 515px;
         display: flex;
         flex-direction: column;
@@ -112,6 +111,11 @@
         &_photo {
             max-height: 428px;
             object-fit: cover;
+        }
+
+        &_data {
+            display: flex;
+            justify-content: space-between;
         }
 
         &_dateOfPublish {
@@ -124,14 +128,11 @@
         }
 
         &_author {
-            position: absolute;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 150%;
             color: #7E8492;
-            right: 0;
-            bottom: 23%;
         }
 
         &_title {
