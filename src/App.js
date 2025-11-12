@@ -11,6 +11,7 @@ import { ContactsPage } from './components/pages/contactsPage/ContactsPage';
 import { BlogPage } from './components/pages/blogPage/BlogPage';
 import { DetailBlog } from './components/pages/detailBlog/DetailBlog';
 import { ScrollRestoration } from './components/ScrollRestoration';
+import { JobsPage } from './components/pages/jobs/JobsPage';
 
 
 
@@ -49,7 +50,6 @@ function App() {
             </ScrollRestoration>
           }
           />
-
           <Route path='/blog' element={
             <ScrollRestoration>
               <div className="App">
@@ -76,6 +76,14 @@ function App() {
                 <Header />
                 <DetailBlog />
                 <Footer theme='dark' />
+              </div>
+            </ScrollRestoration>
+          }
+          />
+          <Route path='/jobs' element={
+            <ScrollRestoration>
+              <div className="App">
+                <JobsPage />
               </div>
             </ScrollRestoration>
           }

@@ -22,10 +22,10 @@ export const FooterBottom = ({ theme }) => {
     return (
       <div className='footer__bottom dark'>
         <div className='footer__bottom_socialMedia'>
-          <Link to={'/facebook'}><img src='facebook.svg' alt='facebook link'></img></Link>
-          <Link to={'/tweeter'}><img src='tweeter.svg' alt='tweeter link'></img></Link>
-          <Link to={'/instagram'}><img src='instagram.svg' alt='instagram link'></img></Link>
-          <Link to={'/linkedIn'}><img src='linkedIn.svg' alt='linkedIn link'></img></Link>
+          <Link to={'https://www.facebook.com/'} target='_blank'><img src='facebook.svg' alt='facebook link'></img></Link>
+          <Link to={'https://x.com/'} target='_blank'><img src='tweeter.svg' alt='tweeter link'></img></Link>
+          <Link to={'https://www.instagram.com/'} target='_blank'><img src='instagram.svg' alt='instagram link'></img></Link>
+          <Link to={'https://www.linkedin.com/'} target='_blank'><img src='linkedIn.svg' alt='linkedIn link'></img></Link>
         </div>
         <div className='footer__bottom_legal'>
           <Link className='footer__bottom_legal_link' to={'/privacy'}>Privacy Policy</Link>
@@ -44,10 +44,10 @@ export const FooterBottom = ({ theme }) => {
       ) : (
         <>
           <div className='footer__bottom_socialMedia'>
-            <Link to={'/facebook'}><img src='facebookBlack.svg' alt='facebook link'></img></Link>
-            <Link to={'/tweeter'}><img src='tweeterBlack.svg' alt='tweeter link'></img></Link>
-            <Link to={'/instagram'}><img src='instagramBlack.svg' alt='instagram link'></img></Link>
-            <Link to={'/linkedIn'}><img src='linkedInBlack.svg' alt='linkedIn link'></img></Link>
+            <Link hto={'https://www.facebook.com/'} target='_blank'><img src='facebookBlack.svg' alt='facebook link'></img></Link>
+            <Link to={'https://x.com/'} target='_blank'><img src='tweeterBlack.svg' alt='tweeter link'></img></Link>
+            <Link to={'https://www.instagram.com/'} target='_blank'><img src='instagramBlack.svg' alt='instagram link'></img></Link>
+            <Link to={'https://www.linkedin.com/'} target='_blank'><img src='linkedInBlack.svg' alt='linkedIn link'></img></Link>
           </div>
           <div className='footer__bottom_legal'>
             <Link className='footer__bottom_link' to={'/privacy'}>Privacy Policy</Link>

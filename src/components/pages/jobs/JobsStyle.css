@@ -1,0 +1,29 @@
+.jobs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  justify-self: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.jobs__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 60px;
+  color: #1D1E25;
+  text-align: center;
+}
+.jobs__link {
+  cursor: pointer;
+  padding: 16px 46px;
+  background-color: #1D1E25;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 100px;
+}/*# sourceMappingURL=JobsStyle.css.map */
