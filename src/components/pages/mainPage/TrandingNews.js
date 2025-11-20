@@ -1,12 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
 
 export const TrandingNews = () => {
 
     const news = useSelector(state => state.news);
     const [trendinNews, setNews] = useState(news);
     const buttonWrapper = useRef(null);
+
+    const { ref: newsRef, inView: newsInView } = useInView({
+        threshold: 0.3,
+        triggerOnce: true,
+    });
+
 
     useEffect(() => {
         if (trendinNews.length < 1) {
@@ -25,10 +32,10 @@ export const TrandingNews = () => {
     }
 
     return (
-        <div className='trandingNews center'>
-            <h2 className='trandingNews__title'>Trending news from Coca</h2>
-            <p className='trandingNews__article'>we have some new Service to pamper you</p>
-            <div className='trandingNews__wrapper'>
+        <div ref={newsRef} className='trandingNews center'>
+            <h2 className={`trandingNews__title ${newsInView ? 'animated' : ''}`}>Trending news from Coca</h2>
+            <p className={`trandingNews__article ${newsInView ? 'animated' : ''}`}>we have some new Service to pamper you</p>
+            <div className={`trandingNews__wrapper ${newsInView ? 'animated' : ''}`}>
                 {trendinNews.length > 0 ? (
                     trendinNews.slice(0, 2).map(item => (
                         <div key={item.id} className='trandingNews__wrapper_itemWrapper'>

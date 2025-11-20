@@ -3,11 +3,17 @@ import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import StarIcon from '@mui/icons-material/Star';
 import { useSelector } from 'react-redux';
+import { useInView } from 'react-intersection-observer';
 
 export const Rewies = () => {
 
     const rewiesArray = useSelector(state => state.rewies);
     const [rewies, setRewies] = useState(rewiesArray);
+
+    const { ref: rewiesRef, inView: rewiesInView } = useInView({
+        threshold: 0.3,
+        triggerOnce: true,
+    });
 
     const handleSwitchLeft = (e) => {
         e.preventDefault();
@@ -20,14 +26,14 @@ export const Rewies = () => {
     }
 
     return (
-        <div className='rewies center'>
+        <div ref={rewiesRef} className='rewies center'>
             <div className='rewies__header'>
-                <h2 className='rewies__header_title'>What our customer are saying</h2>
-                <p className='rewies__header_article'>We are trusted numerous companies from different business to meet their needs</p>
+                <h2 className={`rewies__header_title ${rewiesInView ? 'animated' : ''}`}>What our customer are saying</h2>
+                <p className={`rewies__header_article ${rewiesInView ? 'animated' : ''}`}>We are trusted numerous companies from different business to meet their needs</p>
             </div>
             {rewies.length > 0 ? (
                 rewies.slice(0, 1).map(item => (
-                    <div key={item.id} className='rewies__rewieWrapper'>
+                    <div key={item.id} className={`rewies__rewieWrapper ${rewiesInView ? 'animated' : ''}`}>
                         <div className='rewies__watermarkWrapper'>
                             <img className='rewies__watermarkWrapper_watermark' src='rewieWatermark.svg' alt='Rewie watermark'></img>
                         </div>
@@ -65,7 +71,7 @@ export const Rewies = () => {
                         </div>
                     </div>
                 ))) : (
-                <h2 className='rewies__emptyRewies'> There are no reviews yet. Be the first.</h2>
+                <h2 className={`rewies__emptyRewies ${rewiesInView ? 'animated' : ''}`}> There are no reviews yet. Be the first.</h2>
             )
             }
         </div>

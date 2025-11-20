@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 export const Prewie = () => {
 
@@ -8,6 +9,10 @@ export const Prewie = () => {
     const [requestError, setRequestError] = useState(null);
     const [email, setEmail] = useState('');
 
+    const {ref: prewieRef, inView: prewieInView} = useInView({
+        threshold: 0.3,
+        triggerOnce: true
+    })
 
     const hendleSubmit = async (e) => {
         e.preventDefault();
@@ -63,15 +68,15 @@ export const Prewie = () => {
     }
 
     return (
-        <div className='prewie center'>
+        <div ref={prewieRef} className='prewie center' >
             <div className='prewie__info'>
                 <div className='prewie__info_redCircle'></div>
-                <h2 className='prewie__info_header'>Digitally forward creative</h2>
-                <p className='prewie__info_slogan'>
+                <h2 className={`prewie__info_header ${prewieInView ? 'animated' : ''}`}>Digitally forward creative</h2>
+                <p className={`prewie__info_slogan ${prewieInView ? 'animated' : ''}`}>
                     When it comes to interactive marketing, we've got you covered.
                     Be where the world is going</p>
 
-                <form className='prewie__info_buttonWrapper' noValidate onSubmit={hendleSubmit}>
+                <form className={`prewie__info_buttonWrapper ${prewieInView ? 'animated' : ''}`} noValidate onSubmit={hendleSubmit}>
                     <input className='prewie__info_buttonWrapper_email'
                         placeholder='Enter your email'
                         type='email'
@@ -108,9 +113,9 @@ export const Prewie = () => {
             </div>
             <div className='prewie__graphics'>
                 <div className='prewie__graphics_greenCircle' ></div>
-                <img className='prewie__graphics_sales' src='sales.png' alt='sales'></img>
-                <img className='prewie__graphics_customerGrowth' src='customerGrowth.png' alt='Customer Growth'></img>
-                <img className='prewie__graphics_statistic' src='statistic.png' alt='statistic'></img>
+                <img className={`prewie__graphics_sales ${prewieInView ? 'animated' : ''}`} src='sales.png' alt='sales'></img>
+                <img className={`prewie__graphics_customerGrowth ${prewieInView ? 'animated' : ''}`} src='customerGrowth.png' alt='Customer Growth'></img>
+                <img className={`prewie__graphics_statistic ${prewieInView ? 'animated' : ''}`} src='statistic.png' alt='statistic'></img>
             </div>
         </div>
     )
