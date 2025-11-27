@@ -281,6 +281,7 @@
         }
 
         &_title {
+            opacity: 0;
             padding-top: 24px;
             font-style: normal;
             font-weight: 600;
@@ -295,6 +296,7 @@
         }
 
         &_article {
+            opacity: 0;
             padding-top: 8px;
             padding-bottom: 32px;
             max-width: 70%;
@@ -310,6 +312,7 @@
         }
 
         &_button {
+            opacity: 0;
             cursor: pointer;
             padding: 16px 46px;
             background-color: #1D1E25;

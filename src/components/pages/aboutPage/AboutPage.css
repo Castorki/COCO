@@ -216,6 +216,7 @@
   animation: slide-left 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) 1.3s both;
 }
 .ourBeliefs__miniBlog_title {
+  opacity: 0;
   padding-top: 24px;
   font-style: normal;
   font-weight: 600;
@@ -228,6 +229,7 @@
   animation: slide-left 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
 }
 .ourBeliefs__miniBlog_article {
+  opacity: 0;
   padding-top: 8px;
   padding-bottom: 32px;
   max-width: 70%;
@@ -241,6 +243,7 @@
   animation: slide-left 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) 2.7s both;
 }
 .ourBeliefs__miniBlog_button {
+  opacity: 0;
   cursor: pointer;
   padding: 16px 46px;
   background-color: #1D1E25;
