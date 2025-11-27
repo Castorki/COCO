@@ -55,22 +55,6 @@
     opacity: 1;
   }
 }
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -86,6 +70,11 @@ body {
 
 input {
   outline: none;
+}
+
+.no-animations * {
+  animation: none !important;
+  transition: none !important;
 }
 
 .center {
