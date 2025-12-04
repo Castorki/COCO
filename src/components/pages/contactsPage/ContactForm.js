@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 export const ContactForm = () => {
 
@@ -9,7 +10,10 @@ export const ContactForm = () => {
     const [wrongPhonenumber, setWrongPhonenumber] = useState(false);
     const [requestError, setRequestError] = useState(null);
 
-
+    const { ref: contactsFormRef, inView: contactsFormInView } = useInView({
+        threshold: 0.3,
+        triggerOnce: true
+    })
 
     const [formData, setFormData] = useState({
         firstName: '',
@@ -106,8 +110,8 @@ export const ContactForm = () => {
     }
 
     return (
-        <div className='contactsForm center'>
-            <form className='contactsForm__form' noValidate onSubmit={handleSubmit}>
+        <div ref={contactsFormRef} className='contactsForm center'>
+            <form className={`contactsForm__form ${contactsFormInView ? 'animated' : ''}`} noValidate onSubmit={handleSubmit}>
                 <div className='form__header'>
                     <h2 className='form__header_title'>Let's level up your brand</h2>
                     <p className='form__header_article'>You can reach us anytime
@@ -230,7 +234,7 @@ export const ContactForm = () => {
                 </div>
             )}
             <div className='contactsForm__wrapper'>
-                <img className='contactsForm__wrapper_photo' src='contactsFormPicture.png' alt=''></img>
+                <img className={`contactsForm__wrapper_photo ${contactsFormInView ? 'animated' : ''}`} src='contactsFormPicture.png' alt=''></img>
             </div>
         </div>
     )

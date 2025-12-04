@@ -1,3 +1,42 @@
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -20,12 +59,22 @@ input[type=number] {
   max-width: 975px;
 }
 .contactsHeader__icon_title {
+  opacity: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
   line-height: 120%;
   letter-spacing: -3px;
   color: #1D1E25;
+}
+.contactsHeader__icon_title.animated {
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
+}
+.contactsHeader__icon_map {
+  opacity: 0;
+}
+.contactsHeader__icon_map.animated {
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s both;
 }
 .contactsHeader__teamContacts {
   display: flex;
@@ -34,9 +83,13 @@ input[type=number] {
   justify-content: flex-end;
 }
 .contactsHeader__teamContacts .teamContacts__item {
+  opacity: 0;
   width: 165px;
   padding-bottom: 14px;
   border-bottom: 1px solid #ACACB9;
+}
+.contactsHeader__teamContacts .teamContacts__item.animated {
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) var(--delay, 0s) both;
 }
 .contactsHeader__teamContacts .teamContacts__item_title {
   font-style: normal;
@@ -68,6 +121,7 @@ input[type=number] {
   overflow: hidden;
 }
 .contactsForm__form {
+  opacity: 0;
   margin-bottom: 261px;
   max-width: 550px;
   padding: 56px 48px;
@@ -76,6 +130,9 @@ input[type=number] {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+.contactsForm__form.animated {
+  animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
 }
 .contactsForm__form .form__header {
   padding-bottom: 24px;
@@ -251,10 +308,14 @@ input[type=number] {
   position: relative;
 }
 .contactsForm__wrapper_photo {
+  opacity: 0;
   position: absolute;
   left: 35%;
   z-index: -1;
   bottom: 170px;
+}
+.contactsForm__wrapper_photo.animated {
+  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
 }
 
 @media (max-width: 1025px) {
