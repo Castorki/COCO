@@ -1,3 +1,42 @@
+@keyframes slide-top {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .pricingHeader {
   padding-top: 90px;
   padding-bottom: 122px;
@@ -32,6 +71,7 @@
   left: 120px;
 }
 .pricingHeader__icon {
+  opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +85,11 @@
   line-height: 24px;
   color: #1463FF;
 }
+.pricingHeader__icon.animated {
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+}
 .pricingHeader__title {
+  opacity: 0;
   padding-top: 24px;
   padding-bottom: 26px;
   max-width: 80%;
@@ -57,7 +101,11 @@
   letter-spacing: -3px;
   color: #1D1E25;
 }
+.pricingHeader__title.animated {
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.3s both;
+}
 .pricingHeader__annual {
+  opacity: 0;
   display: flex;
   font-style: normal;
   font-weight: 500;
@@ -66,18 +114,31 @@
   color: #7E8492;
   gap: 12px;
 }
+.pricingHeader__annual.animated {
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.3s both;
+}
 
 .pricingPlans {
   display: flex;
   gap: 32px;
 }
 .pricingPlans__plan {
+  opacity: 0;
   position: relative;
   margin-top: 64px;
   margin-bottom: 78px;
   padding: 40px 24px;
   border: 1px solid #EDEDED;
   border-radius: 16px;
+}
+.pricingPlans__plan:first-child.animated {
+  animation: slide-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1.8s both;
+}
+.pricingPlans__plan:nth-child(2).animated {
+  animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+}
+.pricingPlans__plan:last-child.animated {
+  animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
 }
 .pricingPlans__plan_bestOffer {
   position: absolute;
@@ -222,6 +283,7 @@
   padding-bottom: 80px;
 }
 .frequantlyQuestions__header_title {
+  opacity: 0;
   font-style: normal;
   font-weight: 600;
   font-size: 56px;
@@ -229,14 +291,22 @@
   letter-spacing: -2px;
   color: #1D1E25;
 }
+.frequantlyQuestions__header_title.animated {
+  animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+}
 .frequantlyQuestions__header_article {
+  opacity: 0;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
   color: #7E8492;
 }
+.frequantlyQuestions__header_article.animated {
+  animation: slide-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.7s both;
+}
 .frequantlyQuestions__question {
+  opacity: 0;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -244,6 +314,12 @@
   border-bottom: 1px solid #EDEDED;
   padding-bottom: 32px;
   margin-bottom: 56px;
+}
+.frequantlyQuestions__question.animated {
+  animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) var(--delay, 0s) both;
+}
+.frequantlyQuestions__question:nth-child(even).animated {
+  animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) var(--delay, 0s) both;
 }
 .frequantlyQuestions__question:last-child {
   margin-bottom: 0;

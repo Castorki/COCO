@@ -1,3 +1,57 @@
+@keyframes slide-top {
+    0% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .pricingHeader {
 
     padding-top: 90px;
@@ -37,6 +91,7 @@
     }
 
     &__icon {
+        opacity: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -50,9 +105,14 @@
         line-height: 24px;
 
         color: #1463FF;
+
+        &.animated {
+            animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+        }
     }
 
     &__title {
+        opacity: 0;
         padding-top: 24px;
         padding-bottom: 26px;
         max-width: 80%;
@@ -63,9 +123,14 @@
         line-height: 120%;
         letter-spacing: -3px;
         color: #1D1E25;
+
+        &.animated {
+            animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.3s both;
+        }
     }
 
     &__annual {
+        opacity: 0;
         display: flex;
         font-style: normal;
         font-weight: 500;
@@ -73,6 +138,10 @@
         line-height: 26px;
         color: #7E8492;
         gap: 12px;
+
+        &.animated {
+            animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.3s both;
+        }
     }
 }
 
@@ -81,12 +150,26 @@
     gap: 32px;
 
     &__plan {
+        opacity: 0;
         position: relative;
         margin-top: 64px;
         margin-bottom: 78px;
         padding: 40px 24px;
         border: 1px solid #EDEDED;
         border-radius: 16px;
+
+        &:first-child.animated {
+            animation: slide-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.8s both;
+        }
+
+
+        &:nth-child(2).animated {
+            animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+        }
+
+        &:last-child.animated {
+            animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+        }
 
         &_bestOffer {
             position: absolute;
@@ -245,24 +328,35 @@
         padding-bottom: 80px;
 
         &_title {
+            opacity: 0;
             font-style: normal;
             font-weight: 600;
             font-size: 56px;
             line-height: 120%;
             letter-spacing: -2px;
             color: #1D1E25;
+
+            &.animated {
+                animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+            }
         }
 
         &_article {
+            opacity: 0;
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
             line-height: 32px;
             color: #7E8492;
+
+            &.animated {
+                animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.7s both;
+            }
         }
     }
 
     &__question {
+        opacity: 0;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -270,6 +364,14 @@
         border-bottom: 1px solid #EDEDED;
         padding-bottom: 32px;
         margin-bottom: 56px;
+
+        &.animated {
+            animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) var(--delay, 0s) both;
+        }
+
+        &:nth-child(even).animated {
+            animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) var(--delay, 0s) both;
+        }
 
         &:last-child {
             margin-bottom: 0;

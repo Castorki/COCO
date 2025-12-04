@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
+import { useInView } from 'react-intersection-observer';
 
 
 export const PricingPlans = () => {
 
     const plans = useSelector(state => state.plans);
     const [showSuccess, setShowSuccess] = useState(false);
+
+    const { ref: pricingPlansRef, inView: pricingPlansInView } = useInView({
+        threshold: 0.5,
+        triggerOnce: true
+    })
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -17,9 +23,9 @@ export const PricingPlans = () => {
     }
 
     return (
-        <div className='pricingPlans center'>
+        <div ref={pricingPlansRef} className='pricingPlans center'>
             {plans.map(item => (
-                <div key={item.id} className={`pricingPlans__plan ${item.type.toLowerCase() === 'popular' ? ('popular') : ('')}`}>
+                <div key={item.id} className={`pricingPlans__plan ${item.type.toLowerCase() === 'popular' ? ('popular') : ('')} ${pricingPlansInView ? 'animated' : ''}`}>
                     <img className='pricingPlans__plan_icon' src={item.icon} alt=''></img>
                     {item.type.toLowerCase() === 'popular' ? (
                         <p className='pricingPlans__plan_bestOffer'>Best Offers <img src='pricingPlanBestOffer.png' alt=''></img></p>
