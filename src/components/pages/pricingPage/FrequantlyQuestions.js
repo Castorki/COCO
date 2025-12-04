@@ -30,7 +30,7 @@ export const FrequantlyQuestions = () => {
                         '--delay': `${(index + 1.5) * 0.4}s`
                     }}>
                     <h3 className='frequantlyQuestions__question_title'>{question.title}</h3>
-                    <p className={`frequantlyQuestions__question_article ${openIndex === index ? `open` : ``}`}>
+                    <p className={`frequantlyQuestions__question_article ${openIndex === index ? 'open' : ''}`}>
                         {question.article}
                     </p>
                     <button className='frequantlyQuestions__question_button'
