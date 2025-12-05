@@ -77,7 +77,7 @@ export const Prewie = () => {
                     Be where the world is going</p>
 
                 <form className={`prewie__info_buttonWrapper ${prewieInView ? 'animated' : ''}`} noValidate onSubmit={hendleSubmit}>
-                    <input className='prewie__info_buttonWrapper_email'
+                    <input className='prewie__info_email'
                         placeholder='Enter your email'
                         type='email'
                         id='info_email'
@@ -85,7 +85,7 @@ export const Prewie = () => {
                         onChange={hendleChange}
                     >
                     </input>
-                    <button type='submit' className='prewie__info_buttonWrapper_button'
+                    <button type='submit' className='prewie__info_button'
                     >
                         Try for free
                     </button>

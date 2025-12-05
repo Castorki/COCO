@@ -39,12 +39,12 @@ export const TrandingNews = () => {
                 {trendinNews.length > 0 ? (
                     trendinNews.slice(0, 2).map(item => (
                         <div key={item.id} className='trandingNews__wrapper_itemWrapper'>
-                            <img className='trandingNews__wrapper_itemWrapper_img' src={item.img} alt='' ></img>
-                            <div className='trandingNews__wrapper_itemWrapper_publishData'>
-                                <p className='trandingNews__wrapper_itemWrapper_publishData_dateOfPublication'> {item.publishDate}</p>
-                                <p className='trandingNews__wrapper_itemWrapper_publishData_author'>by : {item.author}</p>
+                            <img className='trandingNews__itemWrapper_img' src={item.img} alt='' ></img>
+                            <div className='trandingNews__itemWrapper_publishData'>
+                                <p className='trandingNews__itemWrapper_dateOfPublication'> {item.publishDate}</p>
+                                <p className='trandingNews__itemWrapper_author'>by : {item.author}</p>
                             </div>
-                            <Link to={'/detailBlog'} state={{ title: item.title, author: item.author }}><h2 className='trandingNews__wrapper_itemWrapper_title'>{item.title}</h2></Link>
+                            <Link to={'/detailBlog'} state={{ title: item.title, author: item.author }}><h2 className='trandingNews__itemWrapper_title'>{item.title}</h2></Link>
                         </div>
                     ))
                 ) : (
@@ -53,10 +53,10 @@ export const TrandingNews = () => {
                         <h2 className='wrapper__emptyNews_title'>Interesting news will be added soon</h2>
                     </div>
                 )}
-                <div ref={buttonWrapper} className='trandingNews__wrapper_itemWrapper_nav'>
-                    <img className='trandingNews__wrapper_itemWrapper_nav_arrows' src='newsArrows.svg' alt='news navigation'></img>
-                    <button className='trandingNews__wrapper_itemWrapper_nav_button left' onClick={handleSwitchLeft}></button>
-                    <button className='trandingNews__wrapper_itemWrapper_nav_button right' onClick={handleSwitchRight}></button>
+                <div ref={buttonWrapper} className='trandingNews__wrapper_nav'>
+                    <img className='trandingNews_nav_arrows' src='newsArrows.svg' alt='news navigation'></img>
+                    <button className='trandingNews__nav_button left' onClick={handleSwitchLeft}></button>
+                    <button className='trandingNews__nav_button right' onClick={handleSwitchRight}></button>
                 </div>
             </div>
         </div>

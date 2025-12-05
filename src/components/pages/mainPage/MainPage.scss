@@ -180,7 +180,7 @@
                 animation: slide-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.5s both;
             }
 
-            &_email {
+            .prewie__info_email {
                 padding-right: 118px;
                 padding-bottom: 23px;
                 border: none;
@@ -194,7 +194,7 @@
                 color: #7E8492;
             }
 
-            &_button {
+            .prewie__info_button {
                 cursor: pointer;
                 padding: 16px 46px;
                 background-color: #1D1E25;
@@ -319,7 +319,7 @@
                 animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) var(--delay, 0s) both;
             }
 
-            &_title {
+            .ourOffers__listElement_title {
                 width: 51%;
                 font-style: normal;
                 font-weight: 600;
@@ -329,7 +329,7 @@
                 color: #FFFFFF;
             }
 
-            &_article {
+            .ourOffers__listElement_article {
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
@@ -443,7 +443,7 @@
             flex-direction: column;
             position: relative;
 
-            &_title {
+            .growthWithUs__info_title {
                 font-style: normal;
                 font-weight: 600;
                 font-size: 64px;
@@ -451,7 +451,7 @@
                 color: #1D1E25;
             }
 
-            &_article {
+            .growthWithUs__info_article {
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
@@ -752,14 +752,14 @@
 
         &_itemWrapper {
 
-            &_publishData {
+            .trandingNews__itemWrapper_publishData {
 
                 padding-top: 16px;
                 padding-bottom: 16px;
                 display: flex;
                 justify-content: space-between;
 
-                &_dateOfPublication {
+                .trandingNews__itemWrapper_dateOfPublication {
                     font-style: normal;
                     font-weight: 400;
                     font-size: 14px;
@@ -767,7 +767,7 @@
                     color: #7E8492;
                 }
 
-                &_author {
+                .trandingNews__itemWrapper_author {
                     font-style: normal;
                     font-weight: 400;
                     font-size: 14px;
@@ -777,7 +777,7 @@
 
             }
 
-            &_title {
+            .trandingNews__itemWrapper_title {
                 font-style: normal;
                 font-weight: 600;
                 font-size: 32px;
@@ -785,39 +785,35 @@
                 letter-spacing: -0.02em;
                 color: #1D1E25;
             }
+        }
 
-            &_nav {
-                display: flex;
+        &_nav {
+            display: flex;
+            position: absolute;
+            z-index: 1;
+            right: 47%;
+            bottom: 50%;
+            background-color: #fff;
+            padding: 33px 27px;
+            border-radius: 100%;
+
+            .trandingNews__nav_button {
                 position: absolute;
-                z-index: 1;
-                right: 47%;
-                bottom: 50%;
-                background-color: #fff;
-                padding: 33px 27px;
-                border-radius: 100%;
+                width: 20px;
+                height: 40px;
+                background: none;
+                border: none;
 
-                &_button {
-                    position: absolute;
-                    width: 20px;
-                    height: 40px;
-                    background: none;
-                    border: none;
-
-                    &.left {
-                        left: 21px;
-                        top: 22px;
-                    }
-
-                    &.right {
-                        left: 42px;
-                        top: 22px;
-                    }
+                &.left {
+                    left: 21px;
+                    top: 22px;
                 }
 
-
+                &.right {
+                    left: 42px;
+                    top: 22px;
+                }
             }
-
-
         }
 
         &_emptyNews {
@@ -901,7 +897,6 @@
     }
 
 
-
     &__rewieWrapper {
         opacity: 0;
 
@@ -950,19 +945,19 @@
             display: flex;
             justify-content: space-between;
 
-            &_author {
+            .rewies__footer_author {
 
                 display: flex;
                 gap: 24px;
 
-                &_authorInfo {
+                .rewies___footer_authorInfo {
 
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     gap: 4px;
 
-                    &_name {
+                    .rewies__footer_name {
                         font-style: normal;
                         font-weight: 600;
                         font-size: 18px;
@@ -970,7 +965,7 @@
                         color: #1D1E25;
                     }
 
-                    &_position {
+                    .rewies__footer_position {
                         font-style: normal;
                         font-weight: 500;
                         font-size: 16px;
@@ -980,11 +975,11 @@
                 }
             }
 
-            &_buttonWrapper {
+            .rewies__footer_buttonWrapper {
                 display: flex;
                 gap: 16px;
 
-                &_button {
+                .rewies__footer_button {
                     padding: 19px 18px;
                     border-radius: 100%;
                     display: flex;
@@ -1271,7 +1266,7 @@
             &_buttonWrapper {
                 gap: 8px;
 
-                &_email {
+                .prewie__info_email {
                     padding-right: 110px;
                     padding-bottom: 16px;
                     font-weight: 500;
@@ -1279,7 +1274,7 @@
                     line-height: 20px;
                 }
 
-                &_button {
+                .prewie__info_button {
                     cursor: pointer;
                     padding: 8px 16px;
                     font-size: 12px;
@@ -1321,17 +1316,17 @@
             &_listElement {
                 gap: 16px;
 
-                &_icon {
+                .ourOffers__listElement_icon {
                     width: 24px;
                     height: 24px;
                 }
 
-                &_title {
+                .ourOffers__listElement_title {
                     font-size: 18px;
                     line-height: 26px;
                 }
 
-                &_article {
+                .ourOffers__listElement_article {
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 20px;
@@ -1401,12 +1396,12 @@
 
             &_element {
 
-                &_title {
+                .growthWithUs__info_title {
                     font-size: 32px;
                     line-height: 42px;
                 }
 
-                &_article {
+                .growthWithUs__info_article {
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 24px;
@@ -1569,55 +1564,51 @@
 
             &_itemWrapper {
 
-                &_publishData {
+                .trandingNews__itemWrapper_publishData {
 
                     padding-top: 16px;
                     padding-bottom: 16px;
                     display: flex;
                     justify-content: space-between;
 
-                    &_dateOfPublication {
+                    .trandingNews__itemWrapper_dateOfPublication {
                         font-size: 12px;
                         line-height: 20px;
                     }
 
-                    &_author {
+                    .trandingNews__itemWrapper_author {
                         font-size: 12px;
                         line-height: 20px;
                     }
 
                 }
 
-                &_title {
+                .trandingNews__itemWrapper_title {
                     font-size: 16px;
                     line-height: 24px;
                     letter-spacing: 0;
                 }
+            }
 
-                &_nav {
-                    display: flex;
-                    justify-content: center;
-                    right: 47%;
-                    bottom: 50%;
-                    padding: 16px 10px;
+            &_nav {
+                display: flex;
+                justify-content: center;
+                right: 47%;
+                bottom: 50%;
+                padding: 16px 10px;
 
-                    &_button {
+                .trandingNews__nav_button {
 
-                        &.left {
-                            left: 9px;
-                            top: 6px;
-                        }
-
-                        &.right {
-                            left: 27px;
-                            top: 5px;
-                        }
+                    &.left {
+                        left: 9px;
+                        top: 6px;
                     }
 
-
+                    &.right {
+                        left: 27px;
+                        top: 5px;
+                    }
                 }
-
-
             }
 
             &_emptyNews {
@@ -1690,27 +1681,27 @@
 
             &_footer {
 
-                &_author {
+                .rewies__footer_author {
                     gap: 12px;
 
-                    &_authorInfo {
+                    .rewies___footer_authorInfo {
 
-                        &_name {
+                        .rewies__footer_name {
                             font-size: 14px;
                             line-height: 20px;
                         }
 
-                        &_position {
+                        .rewies__footer_position {
                             font-size: 12px;
                             line-height: 26px;
                         }
                     }
                 }
 
-                &_buttonWrapper {
+                .rewies__footer_buttonWrapper {
                     gap: 8px;
 
-                    &_button {
+                    .rewies__footer_button {
                         padding: 12px;
 
                         .rewies__button_arrow {
@@ -1779,7 +1770,7 @@
             &_itemWrapper {
                 width: 300px;
 
-                &_img {
+                .trandingNews__itemWrapper_img {
                     width: 300px;
                 }
 
@@ -1787,15 +1778,13 @@
                     position: absolute;
                     left: 90%;
                 }
-
-                &_nav {
-                    right: 7%;
-                    bottom: 54%;
-                }
             }
-
-
-
+            
+            &_nav {
+                right: 7%;
+                bottom: 54%;
+            }
+            
             .wrapper__emptyNews_title {
                 font-weight: 500;
                 font-size: 28px;

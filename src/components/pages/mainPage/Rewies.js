@@ -51,19 +51,19 @@ export const Rewies = () => {
                             {item.rewie}
                         </h2>
                         <div className='rewies__rewieWrapper_footer'>
-                            <div className='rewies__rewieWrapper_footer_author'>
-                                <img className='rewies__rewieWrapper_footer_author_authorImeg' src={item.authorAvatar} alt=''></img>
-                                <div className='rewies__rewieWrapper_footer_author_authorInfo'>
-                                    <p className='rewies__rewieWrapper_footer_author_authorInfo_name' >{item.authorName}</p>
-                                    <p className='rewies__rewieWrapper_footer_author_authorInfo_position'>{item.authorJobTitle}</p>
+                            <div className='rewies__footer_author'>
+                                <img className='rewies__footer_authorImeg' src={item.authorAvatar} alt=''></img>
+                                <div className='rewies___footer_authorInfo'>
+                                    <p className='rewies__footer_name' >{item.authorName}</p>
+                                    <p className='rewies__footer_position'>{item.authorJobTitle}</p>
                                 </div>
                             </div>
-                            <div className='rewies__rewieWrapper_footer_buttonWrapper'>
-                                <button className='rewies__rewieWrapper_footer_buttonWrapper_button left'
+                            <div className='rewies__footer_buttonWrapper'>
+                                <button className='rewies__footer_button left'
                                     onClick={handleSwitchLeft}>
                                     <img className='rewies__button_arrow' src='rewieNavLeft.svg' alt='left'></img>
                                 </button>
-                                <button className='rewies__rewieWrapper_footer_buttonWrapper_button right'
+                                <button className='rewies__footer_button right'
                                     onClick={handleSwitchRight}>
                                     <img className='rewies__button_arrow' src='rewieNavRight.svg' alt='right'></img>
                                 </button>

@@ -20,8 +20,8 @@ export const GrowthWithUs = () => {
                         style={{
                             '--delay': `${index * 0.2}s`
                         }}>
-                        <h2 className='growthWithUs__info_element_title'>{item.title}</h2>
-                        <p className='growthWithUs__info_element_article'>
+                        <h2 className='growthWithUs__info_title'>{item.title}</h2>
+                        <p className='growthWithUs__info_article'>
                             {item.article}
                         </p>
                     </div>

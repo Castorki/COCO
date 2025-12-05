@@ -26,11 +26,11 @@ export const OurOffers = () => {
                         style={{
                             '--delay': `${(index + 1.5) * 0.4}s`
                         }}>
-                        <img className='ourOffers__list_listElement_icon' src={offer.img} alt=''></img>
-                        <h3 className='ourOffers__list_listElement_title'>
+                        <img className='ourOffers__listElement_icon' src={offer.img} alt=''></img>
+                        <h3 className='ourOffers__listElement_title'>
                             {offer.title}
                         </h3>
-                        <p className='ourOffers__list_listElement_article'>
+                        <p className='ourOffers__listElement_article'>
                             {offer.article}
                         </p>
                     </div>
