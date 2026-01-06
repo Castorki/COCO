@@ -21,7 +21,6 @@ export const OurTeam = () => {
             teamButton.current.style.display = 'none'
         } else {
             teamButton.current.style.display = 'flex'
-
         }
     })
 
@@ -60,18 +59,6 @@ export const OurTeam = () => {
 
         setCurrentIndex(prev => (prev - 1 + team.length) % team.length);
     };
-
-    // const handleSwitchLeft = (e) => {
-    //     e.preventDefault();
-
-    //     setTeamArray(prev => [prev[prev.length - 1], ...prev.slice(0, -1)]);
-    // };
-
-    // const handleSwitchRight = (e) => {
-    //     e.preventDefault();
-
-    //     setTeamArray(prev => [...prev.slice(1), prev[0]]);
-    // };
 
     return (
         <div ref={teamRef} className='ourTeam center'>

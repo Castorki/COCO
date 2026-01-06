@@ -58,6 +58,66 @@
     opacity: 1;
   }
 }
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromLeftToCenter {
+  from {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromRightToCenter {
+  from {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-out-left {
+  from {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slide-out-right {
+  from {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .blogHeader {
   padding-top: 95px;
   padding-bottom: 128px;
@@ -362,6 +422,45 @@
 }
 .articles__list_item.animated {
   animation: slide-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) var(--delay, 0s) both;
+}
+.articles__list_item:first-child {
+  display: none;
+}
+.articles__list_item:last-child {
+  display: none;
+}
+.articles__list_item.animated {
+  animation: slide-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) var(--delay, 0s) both;
+}
+.articles__list_item.slide-next {
+  opacity: 1;
+}
+.articles__list_item.slide-next.item-1 {
+  animation: slide-out-left 0.5s ease;
+}
+.articles__list_item.slide-next.item-2 {
+  animation: slideFromRightToCenter 0.5s ease;
+}
+.articles__list_item.slide-next.item-3 {
+  animation: slideFromRightToCenter 0.5s ease;
+}
+.articles__list_item.slide-next.item-4 {
+  animation: slideFromRight 0.5s ease;
+}
+.articles__list_item.slide-prev {
+  opacity: 1;
+}
+.articles__list_item.slide-prev.item-0 {
+  animation: slideFromLeft 0.5s ease;
+}
+.articles__list_item.slide-prev.item-1 {
+  animation: slideFromLeftToCenter 0.5s ease;
+}
+.articles__list_item.slide-prev.item-2 {
+  animation: slideFromLeftToCenter 0.5s ease;
+}
+.articles__list_item.slide-prev.item-3 {
+  animation: slide-out-right 0.5s ease;
 }
 .articles__list .list__item_photo {
   max-width: 350px;

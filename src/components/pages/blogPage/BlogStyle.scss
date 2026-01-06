@@ -80,6 +80,78 @@
     }
 }
 
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeftToCenter {
+    from {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRightToCenter {
+    from {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out-left {
+    from {
+        opacity: 1;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out-right {
+    from {
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .blogHeader {
     padding-top: 95px;
     padding-bottom: 128px;
@@ -435,6 +507,58 @@
 
             &.animated {
                 animation: slide-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) var(--delay, 0s) both;
+            }
+
+            &:first-child {
+                display: none;
+            }
+
+            &:last-child {
+                display: none;
+            }
+
+            &.animated {
+                animation: slide-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) var(--delay, 0s) both;
+            }
+
+            &.slide-next {
+                opacity: 1;
+
+                &.item-1 {
+                    animation: slide-out-left 0.5s ease;
+                }
+
+                &.item-2 {
+                    animation: slideFromRightToCenter 0.5s ease;
+                }
+
+                &.item-3 {
+                    animation: slideFromRightToCenter 0.5s ease;
+                }
+
+                &.item-4 {
+                    animation: slideFromRight 0.5s ease;
+                }
+            }
+
+            &.slide-prev {
+                opacity: 1;
+
+                &.item-0 {
+                    animation: slideFromLeft 0.5s ease;
+                }
+
+                &.item-1 {
+                    animation: slideFromLeftToCenter 0.5s ease;
+                }
+
+                &.item-2 {
+                    animation: slideFromLeftToCenter 0.5s ease;
+                }
+
+                &.item-3 {
+                    animation: slide-out-right 0.5s ease;
+                }
             }
         }
 
