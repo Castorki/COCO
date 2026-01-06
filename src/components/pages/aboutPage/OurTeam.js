@@ -6,8 +6,10 @@ import { useInView } from 'react-intersection-observer';
 export const OurTeam = () => {
 
     const team = useSelector(state => state.team);
-    const [teamArray, setTeamArray] = useState(team);
     const teamButton = useRef(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [displayedItems, setDisplayedItems] = useState([]);
+    const [direction, setDirection] = useState('');
 
     const { ref: teamRef, inView: teamInView } = useInView({
         threshold: 0.5,
@@ -15,22 +17,61 @@ export const OurTeam = () => {
     })
 
     useEffect(() => {
-        if (teamArray.length < 1) {
+        if (team.length < 1) {
             teamButton.current.style.display = 'none'
+        } else {
+            teamButton.current.style.display = 'flex'
+
         }
     })
 
-    const handleSwitchLeft = (e) => {
-        e.preventDefault();
+    const getDisplayedItems = (index) => {
+        if (team.length === 0) return [];
 
-        setTeamArray(prev => [prev[prev.length - 1], ...prev.slice(0, -1)]);
+        const items = [];
+        for (let i = -1; i <= 3; i++) {
+            let itemIndex = index + i;
+            if (itemIndex < 0) itemIndex += team.length;
+            if (itemIndex >= team.length) itemIndex -= team.length;
+
+            items.push({
+                ...team[itemIndex]
+            });
+        }
+        return items;
     };
 
-    const handleSwitchRight = (e) => {
-        e.preventDefault();
+    useEffect(() => {
+        setDisplayedItems(getDisplayedItems(currentIndex));
+    }, [team, currentIndex]);
 
-        setTeamArray(prev => [...prev.slice(1), prev[0]]);
+    const handleNext = () => {
+        if (team.length === 0) return;
+
+        setDirection('next');
+
+        setCurrentIndex(prev => (prev + 1) % team.length);
     };
+
+    const handlePrev = () => {
+        if (team.length === 0) return;
+
+        setDirection('prev');
+
+        setCurrentIndex(prev => (prev - 1 + team.length) % team.length);
+    };
+
+    // const handleSwitchLeft = (e) => {
+    //     e.preventDefault();
+
+    //     setTeamArray(prev => [prev[prev.length - 1], ...prev.slice(0, -1)]);
+    // };
+
+    // const handleSwitchRight = (e) => {
+    //     e.preventDefault();
+
+    //     setTeamArray(prev => [...prev.slice(1), prev[0]]);
+    // };
 
     return (
         <div ref={teamRef} className='ourTeam center'>
@@ -41,12 +82,13 @@ export const OurTeam = () => {
             </div>
             <ul className='ourTeam__list'>
                 <div ref={teamButton} className={`ourTeam__list_buttonWraper ${teamInView ? 'animated' : ''}`}>
-                    <img className='ourTeam__buttonWraper_arrows' src='newsArrows.svg' alt='Team list navigation'></img>
-                    <button className='ourTeam__buttonWraper_button left' onClick={handleSwitchLeft}></button>
-                    <button className='ourTeam__buttonWraper_button right' onClick={handleSwitchRight}></button>
+                    <img className='ourTeam__buttonWraper_arrows' src='teamArrows.svg' alt='Team list navigation'></img>
+                    <button className='ourTeam__buttonWraper_button left' onClick={handlePrev}></button>
+                    <button className='ourTeam__buttonWraper_button right' onClick={handleNext}></button>
                 </div>
-                {teamArray.map((item, index) => (
-                    <li key={item.id} className={`ourTeam__item ${teamInView ? 'animated' : ''}`}
+                {displayedItems.map((item, index) => (
+                    <li key={`item_${index} - ${item.id}`} className={`ourTeam__item ${teamInView ? 'animated' : ''} ${`item-${index}`} 
+                    ${`slide-${direction}`}`}
                         style={{
                             '--delay': `${(index + 1.5) * 0.4}s`
                         }}>

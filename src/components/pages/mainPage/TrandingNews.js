@@ -66,11 +66,11 @@ export const TrandingNews = () => {
         <div ref={newsRef} className='trandingNews center'>
             <h2 className={`trandingNews__title ${newsInView ? 'animated' : ''}`}>Trending news from Coca</h2>
             <p className={`trandingNews__article ${newsInView ? 'animated' : ''}`}>we have some new Service to pamper you</p>
-            <div className='trandingNews__wrapper'>
+            <div className={`trandingNews__wrapper ${newsInView ? 'animated' : ''}`}>
                 {displayedItems.length > 0 ? (
                     displayedItems.map((item, index) => (
                         <div key={`item_${index} - ${item.id}`} className={`trandingNews__wrapper_itemWrapper ${`item-${index}`}
-                        ${newsInView ? 'animated' : ''} ${`slide-${direction}`}`}>
+                         ${`slide-${direction}`}`}>
                             <img className='trandingNews__itemWrapper_img' src={item.img} alt='' ></img>
                             <div className='trandingNews__itemWrapper_publishData'>
                                 <p className='trandingNews__itemWrapper_dateOfPublication'> {item.publishDate}</p>
