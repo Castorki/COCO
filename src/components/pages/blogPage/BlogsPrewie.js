@@ -7,22 +7,64 @@ export const BlogsPrewie = () => {
 
     const blogs = useSelector(state => state.blogs);
     const filter = useSelector(state => state.filters)
-    const [blogsArray, setBlogsArray] = useState(blogs);
     const blogButton = useRef(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [displayedItems, setDisplayedItems] = useState([]);
+    const [direction, setDirection] = useState('');
 
     const { ref: blogsPrewieRef, inView: blogsPrewieInView } = useInView({
         threshold: 0.3,
         triggerOnce: true
     })
 
+    console.log(displayedItems);
+
     useEffect(() => {
 
-        if (blogsArray.length < 1) {
+        if (blogs.length < 1) {
             blogButton.current.style.display = 'none'
         } else {
             blogButton.current.style.display = 'flex'
         }
     })
+
+    const getDisplayedItems = (index) => {
+        if (blogs.length === 0) {
+            return [];
+        }
+
+        const items = [];
+        for (let i = -1; i <= 3; i++) {
+            let itemIndex = index + i;
+            if (itemIndex < 0) itemIndex += blogs.length;
+            if (itemIndex >= blogs.length) itemIndex -= blogs.length;
+
+            items.push({
+                ...blogs[itemIndex]
+            });
+        }
+        return items;
+    };
+
+    useEffect(() => {
+        setDisplayedItems(getDisplayedItems(currentIndex));
+    }, [blogs, currentIndex]);
+
+    const handleNext = () => {
+        if (blogs.length === 0) return;
+
+        setDirection('next');
+
+        setCurrentIndex(prev => (prev + 1) % blogs.length);
+    };
+
+    const handlePrev = () => {
+        if (blogs.length === 0) return;
+
+        setDirection('prev');
+
+        setCurrentIndex(prev => (prev - 1 + blogs.length) % blogs.length);
+    };
 
     const handleFilter = (e) => {
         e.preventDefault();
@@ -34,28 +76,15 @@ export const BlogsPrewie = () => {
                 blog.type.toLowerCase() === filterValue
             );
 
-            setBlogsArray(filteredBlogs);
+            setDisplayedItems(filteredBlogs);
         } else {
-            setBlogsArray(blogs);
+            setDisplayedItems(blogs);
         }
 
     }
 
-
-    const handleSwitchLeft = (e) => {
-        e.preventDefault();
-
-        setBlogsArray(prev => [prev[prev.length - 1], ...prev.slice(0, -1)]);
-    }
-
-    const handleSwitchRight = (e) => {
-        e.preventDefault();
-
-        setBlogsArray(prev => [...prev.slice(1), prev[0]])
-    }
-
     return (
-        <div ref={blogsPrewieRef} className='blogsPrewie center'>
+        <div ref={blogsPrewieRef} className={`blogsPrewie center ${blogsPrewieInView ? 'loaded' : ''}`}>
             <div className='blogsPrewie__filters'>
                 {filter.map((item, index) =>
                     <button className={`blogsPrewie__filters_filter ${blogsPrewieInView ? 'animated' : ''}`}
@@ -65,9 +94,13 @@ export const BlogsPrewie = () => {
                         onClick={handleFilter}>{item}</button>
                 )}
             </div>
-            <ul className='blogsPrewie__blogs'>
-                {blogsArray.slice(0, 3).map(item => (
-                    <li key={item.id} className='blogsPrewie__blog'>
+            <ul className="blogsPrewie__blogs">
+                {displayedItems.map((item, index) => (
+                    <li key={`item_${index} - ${item.id}`} className={`blogsPrewie__blog ${`item-${index} `}
+                    ${`slide-${direction}`}`}
+                        style={{
+                            'display': `${displayedItems.length >= 5 && index === 0 ? 'none' : ''}`
+                        }}>
                         <img className={`blogsPrewie__blog_photo ${blogsPrewieInView ? 'animated' : ''}`} src={item.photo} alt=''></img>
                         <div className={`blogsPrewie__blog_data ${blogsPrewieInView ? 'animated' : ''}`}>
                             <p className='blogsPrewie__blog_dateOfPublish'>{item.dateOfPublish}</p>
@@ -83,8 +116,8 @@ export const BlogsPrewie = () => {
                 ))}
                 <div ref={blogButton} className={`blogsPrewie__buttonWrapper ${blogsPrewieInView ? 'animated' : ''}`}>
                     <img className='blogsPrewie__buttonWraper_arrows' src='newsArrows.svg' alt='Blogs prewie navigation'></img>
-                    <button className='blogsPrewie__buttonWrapper_button left' onClick={handleSwitchLeft}></button>
-                    <button className='blogsPrewie__buttonWrapper_button right' onClick={handleSwitchRight}></button>
+                    <button className='blogsPrewie__buttonWrapper_button left' onClick={handlePrev} disabled={displayedItems.length < 3}></button>
+                    <button className='blogsPrewie__buttonWrapper_button right' onClick={handleNext} disabled={displayedItems.length < 3}></button>
                 </div>
             </ul>
         </div>
