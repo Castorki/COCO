@@ -26,8 +26,6 @@ export const ContactForm = () => {
 
     const checkValidity = () => {
 
-        console.log(formData);
-
         for (let key in formData) {
             if (key !== 'message' && formData[key] === '') {
                 setEmptyField(true);

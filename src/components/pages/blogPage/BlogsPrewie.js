@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
@@ -17,8 +17,6 @@ export const BlogsPrewie = () => {
         triggerOnce: true
     })
 
-    console.log(displayedItems);
-
     useEffect(() => {
 
         if (blogs.length < 1) {
@@ -28,7 +26,7 @@ export const BlogsPrewie = () => {
         }
     })
 
-    const getDisplayedItems = (index) => {
+    const getDisplayedItems = useCallback((index) => {
         if (blogs.length === 0) {
             return [];
         }
@@ -44,11 +42,11 @@ export const BlogsPrewie = () => {
             });
         }
         return items;
-    };
+    },[blogs]);
 
     useEffect(() => {
         setDisplayedItems(getDisplayedItems(currentIndex));
-    }, [blogs, currentIndex]);
+    }, [getDisplayedItems, currentIndex]);
 
     const handleNext = () => {
         if (blogs.length === 0) return;

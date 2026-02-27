@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
@@ -25,7 +25,7 @@ export const TrandingNews = () => {
         }
     })
 
-    const getDisplayedItems = (index) => {
+    const getDisplayedItems = useCallback((index) => {
         if (news.length === 0) return [];
 
         const items = [];
@@ -39,11 +39,11 @@ export const TrandingNews = () => {
             });
         }
         return items;
-    };
+    }, [news]);
 
     useEffect(() => {
         setDisplayedItems(getDisplayedItems(currentIndex));
-    }, [news, currentIndex]);
+    }, [getDisplayedItems, currentIndex]);
 
 
     const handleNext = () => {

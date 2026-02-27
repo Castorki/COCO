@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect,useCallback, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
@@ -24,7 +24,7 @@ export const OurTeam = () => {
         }
     })
 
-    const getDisplayedItems = (index) => {
+    const getDisplayedItems = useCallback((index) => {
         if (team.length === 0) return [];
 
         const items = [];
@@ -38,11 +38,11 @@ export const OurTeam = () => {
             });
         }
         return items;
-    };
+    }, [team]);
 
     useEffect(() => {
         setDisplayedItems(getDisplayedItems(currentIndex));
-    }, [team, currentIndex]);
+    }, [currentIndex, getDisplayedItems]);
 
     const handleNext = () => {
         if (team.length === 0) return;
