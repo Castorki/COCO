@@ -74,6 +74,26 @@
     }
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -208,6 +228,7 @@ input {
         display: inherit;
         gap: 32px;
         position: relative;
+        z-index: 1;
 
         &.animated {
             animation: slide-right 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -219,10 +240,9 @@ input {
 
         &_hiddenWrapper {
             width: 105px;
-            left: -23px;
+            left: -110px;
             margin-top: 30px;
             position: absolute;
-            z-index: 1;
             display: flex;
             flex-direction: column;
             padding: 10px 12px;
@@ -583,8 +603,8 @@ input {
     }
 
     .center {
-        padding-left: calc(50% - 300px);
-        padding-right: calc(50% - 300px);
+        padding-left: calc(50% - 330px);
+        padding-right: calc(50% - 330px);
     }
 
     .header {
@@ -746,8 +766,8 @@ input {
     }
 
     .center {
-        padding-left: calc(50% - 180px);
-        padding-right: calc(50% - 180px);
+        padding-left: calc(50% - 150px);
+        padding-right: calc(50% - 150px);
     }
 
     .header {

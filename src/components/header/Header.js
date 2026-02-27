@@ -14,28 +14,26 @@ export const Header = () => {
   });
 
   const handleToggleMenu = () => {
-
-    if (hiddenMenu.current) {
-
-      const isCurrentlyClosed = hiddenMenu.current.classList.contains('close');
-
-
-      if (isCurrentlyClosed) {
-
-        hiddenMenu.current.style.animation = 'fade-in 0.5s ease-in-out forwards';
-
-      } else {
-
-        hiddenMenu.current.style.animation = 'fade-out 0.5s ease-in-out forwards';
-
-      }
-
-      hiddenMenu.current.addEventListener('animationend', () => {
-        hiddenMenu.current.classList.toggle('close');
+    if (!hiddenMenu.current) return;
+  
+    const isCurrentlyClosed = hiddenMenu.current.classList.contains('close');
+  
+    if (isCurrentlyClosed) {
+      hiddenMenu.current.classList.remove('close');
+      hiddenMenu.current.style.animation = 'fade-in 0.5s ease-in-out forwards';
+    } 
+    else {
+      hiddenMenu.current.style.animation = 'fade-out 0.5s ease-in-out forwards';
+  
+      const onAnimationEnd = () => {
+        hiddenMenu.current.classList.add('close');
         hiddenMenu.current.style.animation = '';
-      }, { once: true });
+        hiddenMenu.current.removeEventListener('animationend', onAnimationEnd);
+      };
+  
+      hiddenMenu.current.addEventListener('animationend', onAnimationEnd, { once: true });
     }
-  }
+  };
 
   useEffect(() => {
     const handleResize = () => {
