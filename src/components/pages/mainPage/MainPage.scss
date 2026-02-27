@@ -822,10 +822,11 @@
         &.animated {
             animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1.1s both;
         }
+
         &_itemWrapper {
             transition: transform 0.5s ease, opacity 0.5s ease;
 
-            
+
             &:first-child {
                 display: none;
             }
@@ -1948,7 +1949,7 @@
             }
 
             &_nav {
-                right: 7%;
+                right: 4%;
                 bottom: 54%;
             }
 

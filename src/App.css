@@ -619,13 +619,13 @@ input {
 }
 @media (max-width: 427px) {
   img {
-    max-width: 335px;
+    max-width: 320px;
     -o-object-fit: cover;
        object-fit: cover;
   }
   .center {
-    padding-left: calc(50% - 150px);
-    padding-right: calc(50% - 150px);
+    padding-left: calc(50% - 170px);
+    padding-right: calc(50% - 170px);
   }
   .header {
     margin-top: 24px;
