@@ -1388,7 +1388,7 @@
     gap: 16px;
   }
   .trandingNews__wrapper_itemWrapper .trandingNews__itemWrapper_img {
-    max-width: 39vw;
+    max-width: 291px;
   }
   .trandingNews__wrapper_itemWrapper .trandingNews__itemWrapper_publishData {
     padding-top: 16px;
@@ -1515,6 +1515,12 @@
     top: 0;
     left: 80%;
   }
+  .ourOffers__title {
+    width: 95%;
+  }
+  .ourOffers__article {
+    width: 95%;
+  }
   .growthWithUs__info {
     display: grid;
     grid-template-columns: repeat(2, 160px);
@@ -1542,7 +1548,7 @@
     width: 300px;
   }
   .trandingNews__wrapper_itemWrapper .trandingNews__itemWrapper_img {
-    width: 300px;
+    max-width: 300px;
   }
   .trandingNews__wrapper_itemWrapper:nth-child(2) {
     position: absolute;
@@ -1567,6 +1573,10 @@
     font-size: 24px;
     line-height: 34px;
     letter-spacing: 0;
+    width: 67%;
+  }
+  .rewies__header .rewies__header_article {
+    width: 67%;
   }
   .rewies .rewies__watermarkWrapper_watermark {
     width: 32px;

@@ -1739,7 +1739,7 @@
             &_itemWrapper {
 
                 .trandingNews__itemWrapper_img {
-                    max-width: 39vw;
+                    max-width: 291px;
                 }
 
                 .trandingNews__itemWrapper_publishData {
@@ -1916,6 +1916,14 @@
         }
     }
 
+    .ourOffers__title {
+        width: 95%;
+    }
+
+    .ourOffers__article {
+        width: 95%;
+    }
+
     .growthWithUs {
 
         &__info {
@@ -1947,12 +1955,11 @@
         &__wrapper {
             position: relative;
 
-
             &_itemWrapper {
                 width: 300px;
 
                 .trandingNews__itemWrapper_img {
-                    width: 300px;
+                    max-width: 300px;
                 }
 
                 &:nth-child(2) {
@@ -1988,6 +1995,11 @@
                 font-size: 24px;
                 line-height: 34px;
                 letter-spacing: 0;
+                width: 67%;
+            }
+
+            .rewies__header_article {
+                width: 67%;
             }
         }
 

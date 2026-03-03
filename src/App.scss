@@ -700,6 +700,13 @@ input {
     }
 }
 
+@media (max-width: 640px) {
+    .center {
+        padding-left: calc(50% - 275px);
+        padding-right: calc(50% - 275px);
+    }
+}
+
 @media (max-width: 576px) {
 
     img {

@@ -590,6 +590,12 @@ input {
     padding-left: 0;
   }
 }
+@media (max-width: 640px) {
+  .center {
+    padding-left: calc(50% - 275px);
+    padding-right: calc(50% - 275px);
+  }
+}
 @media (max-width: 576px) {
   img {
     max-width: 320px;

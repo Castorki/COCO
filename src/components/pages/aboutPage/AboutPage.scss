@@ -1033,7 +1033,7 @@
             gap: 16px;
 
             &_buttonWraper {
-                left: 43%;
+                left: 47%;
                 padding: 16px 13px;
 
                 .ourTeam__buttonWraper_button {
@@ -1103,6 +1103,12 @@
     }
 }
 
+@media (max-width: 640px) {
+    .ourTeam__list_buttonWraper {
+        left: 51%;
+    }
+}
+
 @media (max-width: 576px) {
     .audienceAttention {
         padding-bottom: 169px;
@@ -1167,6 +1173,14 @@
     }
 
     .ourTeam {
+
+        .ourTeam__header_title {
+            max-width: 100%;
+        }
+
+        .ourTeam__header_article {
+            max-width: 83%;
+        }
 
         .ourTeam__list_buttonWraper {
             left: 82%;
