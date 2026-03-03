@@ -539,7 +539,7 @@
   color: #1D1E25;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1260px) {
   .blogsPrewie__buttonWrapper {
     left: 47%;
   }
@@ -561,7 +561,7 @@
     overflow: hidden;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 950px) {
   .blogHeader {
     padding-top: 32px;
     padding-bottom: 56px;
@@ -728,7 +728,7 @@
     line-height: 20px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 576px) {
   .blogHeader {
     padding-top: 32px;
     padding-bottom: 56px;

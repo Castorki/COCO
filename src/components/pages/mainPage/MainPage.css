@@ -970,7 +970,7 @@
   border: 1px solid #1D1E25;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1260px) {
   .prewie {
     padding-top: 70px;
     padding-bottom: 125px;
@@ -1124,7 +1124,7 @@
     letter-spacing: 0;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 950px) {
   .prewie {
     flex-direction: column;
     padding-top: 32px;
@@ -1387,6 +1387,9 @@
   .trandingNews__wrapper {
     gap: 16px;
   }
+  .trandingNews__wrapper_itemWrapper .trandingNews__itemWrapper_img {
+    max-width: 39vw;
+  }
   .trandingNews__wrapper_itemWrapper .trandingNews__itemWrapper_publishData {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -1439,6 +1442,9 @@
     padding-top: 17px;
     padding-bottom: 80px;
   }
+  .rewies__header .rewies__header_title {
+    font-size: 42px;
+  }
   .rewies__header_article {
     width: 35%;
     font-size: 14px;
@@ -1456,7 +1462,10 @@
   .rewies__rewieWrapper {
     padding-left: 32px;
     padding-top: 80px;
-    width: 525px;
+    width: 500px;
+  }
+  .rewies__rewieWrapper_rewie {
+    height: 235px;
   }
   .rewies__rewieWrapper_rating {
     font-size: 14px;
@@ -1494,7 +1503,7 @@
     width: 16px;
   }
 }
-@media (max-width: 427px) {
+@media (max-width: 576px) {
   .prewie .prewie__info_buttonWrapper {
     flex-direction: column;
   }

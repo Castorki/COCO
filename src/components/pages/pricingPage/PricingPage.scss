@@ -412,7 +412,7 @@
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1260px) {
     .pricingHeader {
         overflow: hidden;
 
@@ -444,7 +444,7 @@
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 950px) {
     .pricingHeader {
         padding-top: 32px;
         padding-bottom: 56px;
@@ -495,6 +495,19 @@
             margin-top: 0;
             margin-bottom: 0;
             padding: 24px 20px;
+
+            &:first-child.animated {
+                animation: slide-left 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.8s both;
+            }
+
+
+            &:nth-child(2).animated {
+                animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.8s both;
+            }
+
+            &:last-child.animated {
+                animation: slide-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.8s both;
+            }
 
             &_bestOffer {
                 top: 30px;

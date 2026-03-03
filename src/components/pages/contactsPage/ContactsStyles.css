@@ -318,13 +318,13 @@ input[type=number] {
   animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1260px) {
   .contactsForm__wrapper_photo {
     left: 60%;
     bottom: 650px;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 950px) {
   .contactsHeader {
     gap: 59px;
     flex-direction: column;
@@ -397,7 +397,7 @@ input[type=number] {
     display: none;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 576px) {
   .contactsHeader__teamContacts {
     grid-template-columns: repeat(2, 160px);
   }

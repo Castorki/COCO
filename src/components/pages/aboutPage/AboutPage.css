@@ -611,7 +611,7 @@
   animation: slide-top 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1.4s both;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1260px) {
   .audienceAttention {
     padding-top: 75px;
     padding-bottom: 100px;
@@ -685,7 +685,7 @@
     bottom: -35px;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 950px) {
   .audienceAttention {
     padding-top: 32px;
     padding-bottom: 69px;
@@ -739,6 +739,7 @@
   }
   .ourBeliefs__miniBlog_prewie {
     max-height: 246px;
+    max-width: 41vw;
   }
   .ourBeliefs__miniBlog_title {
     padding-top: 16px;
@@ -879,7 +880,7 @@
     line-height: 20px;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 576px) {
   .audienceAttention {
     padding-bottom: 169px;
   }

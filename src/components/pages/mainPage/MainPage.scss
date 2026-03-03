@@ -1172,7 +1172,7 @@
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1260px) {
 
     .prewie {
         padding-top: 70px;
@@ -1400,7 +1400,7 @@
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 950px) {
     .prewie {
         flex-direction: column;
         padding-top: 32px;
@@ -1738,6 +1738,10 @@
 
             &_itemWrapper {
 
+                .trandingNews__itemWrapper_img {
+                    max-width: 39vw;
+                }
+
                 .trandingNews__itemWrapper_publishData {
 
                     padding-top: 16px;
@@ -1809,6 +1813,10 @@
 
         &__header {
 
+            .rewies__header_title {
+                font-size: 42px;
+            }
+
             &_article {
                 width: 35%;
                 font-size: 14px;
@@ -1830,7 +1838,12 @@
         &__rewieWrapper {
             padding-left: 32px;
             padding-top: 80px;
-            width: 525px;
+            width: 500px;
+
+            &_rewie {
+                height: 235px;
+            }
+
 
             &_rating {
                 font-size: 14px;
@@ -1884,7 +1897,7 @@
     }
 }
 
-@media (max-width: 427px) {
+@media (max-width: 576px) {
     .prewie {
 
         .prewie__info_buttonWrapper {

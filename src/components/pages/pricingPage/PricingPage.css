@@ -354,7 +354,7 @@
   top: 5px;
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1260px) {
   .pricingHeader {
     overflow: hidden;
   }
@@ -377,7 +377,7 @@
     padding-bottom: 130px;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 950px) {
   .pricingHeader {
     padding-top: 32px;
     padding-bottom: 56px;
@@ -417,6 +417,15 @@
     margin-top: 0;
     margin-bottom: 0;
     padding: 24px 20px;
+  }
+  .pricingPlans__plan:first-child.animated {
+    animation: slide-left 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1.8s both;
+  }
+  .pricingPlans__plan:nth-child(2).animated {
+    animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2.8s both;
+  }
+  .pricingPlans__plan:last-child.animated {
+    animation: slide-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.8s both;
   }
   .pricingPlans__plan_bestOffer {
     top: 30px;

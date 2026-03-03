@@ -9,7 +9,7 @@ export const PricingPlans = () => {
     const [showSuccess, setShowSuccess] = useState(false);
 
     const { ref: pricingPlansRef, inView: pricingPlansInView } = useInView({
-        threshold: 0.5,
+        threshold: 0.2,
         triggerOnce: true
     })
 

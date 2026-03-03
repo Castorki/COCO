@@ -748,7 +748,7 @@
     }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1260px) {
 
     .audienceAttention {
         padding-top: 75px;
@@ -857,7 +857,7 @@
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 950px) {
     .audienceAttention {
         padding-top: 32px;
         padding-bottom: 69px;
@@ -928,6 +928,7 @@
 
             &_prewie {
                 max-height: 246px;
+                max-width: 41vw;
             }
 
             &_title {
@@ -1102,7 +1103,7 @@
     }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 576px) {
     .audienceAttention {
         padding-bottom: 169px;
 

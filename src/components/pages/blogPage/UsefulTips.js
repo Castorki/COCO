@@ -9,7 +9,7 @@ export const UsefulTips = () => {
   const tips = useSelector(state => state.tips);
 
   const { ref: usefulTipsRef, inView: usefulTipsInView } = useInView({
-    threshold: 0.3,
+    threshold: 0.2,
     triggerOnce: true
   })
 
