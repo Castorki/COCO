@@ -996,10 +996,10 @@
     display: flex;
     gap: 16px;
   }
-  .prewie__info_buttonWrapper_email {
+  .prewie__info_buttonWrapper .prewie__info_email {
     padding-right: 90px;
   }
-  .prewie__info_buttonWrapper_button {
+  .prewie__info_buttonWrapper .prewie__info_button {
     padding: 16px 30px;
   }
   .prewie .prewie__graphics_greenCircle {
